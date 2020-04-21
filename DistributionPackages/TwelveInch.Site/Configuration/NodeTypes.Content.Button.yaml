@@ -1,0 +1,31 @@
+
+'TwelveInch.Site:Content.Button':
+  superTypes:
+    'Neos.Neos:Content': true
+  ui:
+    label: Button
+    icon: external-link-alt
+    position: 400
+    inlineEditable: true
+    inspector:
+      groups:
+        link:
+          label: 'Link'
+          icon: external-link-alt
+  properties:
+    label:
+      ui:
+        inlineEditable: true
+        inline:
+          editorOptions:
+            placeholder: 'Enter link here'
+            hyphens: true
+      options:
+        silhouette: text.plain
+    link:
+      type: string
+      ui:
+        label: 'Link target'
+        inspector:
+          group: link
+          editor: Neos.Neos/Inspector/Editors/LinkEditor
