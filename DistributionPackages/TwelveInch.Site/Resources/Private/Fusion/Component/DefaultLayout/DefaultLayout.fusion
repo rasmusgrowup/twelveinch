@@ -1,0 +1,9 @@
+prototype(TwelveInch.Site:Component.DefaultLayout) < prototype(Neos.Fusion:Component) {
+    content = ''
+
+    renderer = afx`
+        <TwelveInch.Site:Component.Header />
+        {props.content}
+        <TwelveInch.Site:Component.Footer />
+    `
+}

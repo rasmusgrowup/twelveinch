@@ -1,0 +1,22 @@
+'TwelveInch.Site:Document.AbstractPage':
+  abstract: true
+  superTypes:
+    'Neos.Neos:Document': true
+  childNodes:
+    main:
+      type: 'Neos.Neos:ContentCollection'
+      constraints:
+        nodeTypes:
+          'TwelveInch.Site:Constraint.Content.Restricted': false
+  constraints:
+    nodeTypes:
+      'TwelveInch.Site:Document.HomePage': false
+      'TwelveInch.Site:Constraint.Document.Restricted': false
+  properties:
+    hideFromMainMenu:
+      type: boolean
+      ui:
+        label: i18n
+        reloadPageIfChanged: true
+        inspector:
+          group: visibility
