@@ -1,11 +1,12 @@
 
-'TwelveInch.Site:Content.ProductGrid':
+'TwelveInch.Site:Content.ProductItem':
   superTypes:
     'Neos.Neos:Content': true
   ui:
-    label: 'Product Grid'
-    icon: grip-horizontal
+    label: 'Product Item'
+    icon: tag
     position: 150
+    inlineEditable: true
     inspector:
       groups:
         image:
@@ -26,15 +27,23 @@
         inspector:
           group: image
     productText:
-      type: string
       ui:
-        label: 'Product Desription'
-        inspector:
-          group: image
+        inline:
+          editorOptions:
+            placeholder: '<p>Enter text here...</p>'
+            hyphens: true
+      options:
+        silhouette: text.free
+      inspector:
+        group: image
     productLink:
-      type: string
       ui:
-        label: 'Product Link'
+        inline:
+          editorOptions:
+            placeholder: '<p>Enter text here...</p>'
+            hyphens: true
+      options:
+        silhouette: text.free
         inspector:
           group: image
           editor: Neos.Neos/Inspector/Editors/LinkEditor

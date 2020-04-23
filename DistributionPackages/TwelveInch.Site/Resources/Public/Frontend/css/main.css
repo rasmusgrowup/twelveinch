@@ -7237,18 +7237,5 @@ label.panel-block {
     width: 100%;
     object-fit: cover; }
 
-.twelveinch-hero {
-  display: flex;
-  margin: 0 auto; }
-  @media screen and (min-width: 1024px) {
-    .twelveinch-hero {
-      width: 100%;
-      height: 56vw;
-      max-width: 1600px;
-      padding: 0 40px; } }
-  @media screen and (min-width: 1600px) {
-    .twelveinch-hero {
-      height: auto; } }
-  .twelveinch-hero img {
-    width: 100%;
-    object-fit: cover; }
+.productItem {
+  display: flex; }

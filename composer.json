@@ -9,7 +9,8 @@
         }
     },
     "require": {
-        "twelveinch/site": "@dev"
+        "twelveinch/site": "@dev",
+        "neos/nodetypes-columnlayouts": "^5.1"
     },
     "repositories": {
         "distribution": {

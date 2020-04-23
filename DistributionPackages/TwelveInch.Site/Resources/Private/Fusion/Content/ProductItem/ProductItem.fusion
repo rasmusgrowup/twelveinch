@@ -1,17 +1,17 @@
-prototype(TwelveInch.Site:Content.ProductGrid) < prototype(Neos.Neos:ContentComponent) {
+prototype(TwelveInch.Site:Content.ProductItem) < prototype(Neos.Neos:ContentComponent) {
     alternativeText = ${node.properties.alternativeText}
     src = TwelveInch.Site:Component.ImageUri {
         @context.asset = ${q(node).property('image')}
     }
     productText = Neos.Neos:Editable {
-        property = 'text'
+        property = 'productText'
     }
     productLink = Neos.Neos:Editable {
-        property = 'link'
+        property = 'productLink'
     }
 
     renderer = afx`
-        <div class="productGrid" data-aos="fade-up">
+        <div class="productItem">
             <div class="">
                 <img class="" src={props.src} alt={props.alternativeText} />
                 <div class="">{props.productText}</div>
