@@ -1,0 +1,48 @@
+$animate: all 0.1s ease-in-out;
+
+.twelveinch-items {
+    li {
+        a {
+            color: #1f1f1f;
+            font-size: 0.76rem;
+            /*font-weight: 300;*/
+            text-transform: uppercase;
+
+            &:hover {
+                color: #CC1D53;
+            }
+
+            @media screen and (min-width: $desktop) {
+
+                &:before, &:after {
+                    content: " ";
+                    position: absolute;
+                    /*transition: $animate;
+                    transition-duration: 0.1s;*/
+                    display: block;
+                    bottom: 0;
+                    height: 1px;
+                    left: 50%;
+                    background: #CC1D53;
+                    width: 0%;
+                    }
+
+                &:hover:after {
+                    width: 75%;
+                    left: 12.5%;
+                }
+            }
+        }
+    }
+}
+
+.navbar-item {
+    padding: 0.3rem 1.2rem;
+}
+
+.twelveinch-navbar-end {
+
+    img {
+        margin-left: 10px;
+    }
+}

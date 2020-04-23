@@ -3,7 +3,7 @@ prototype(TwelveInch.Site:Component.Navigation.LevelRenderer) < prototype(Neos.F
     node = ${node}
     itemTitle = ${q(node).property('title')}
     itemClass = Neos.Fusion:RawArray {
-        base = 'navigation-item'
+        base = 'navbar-item'
         level = ${'navigation-item--level-' + nodeDepth}
         current = 'navigation-item--state-current'
         current.@if.isCurrent = ${node == documentNode}

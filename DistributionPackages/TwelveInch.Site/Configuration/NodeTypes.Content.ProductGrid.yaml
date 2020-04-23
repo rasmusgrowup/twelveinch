@@ -1,0 +1,40 @@
+
+'TwelveInch.Site:Content.ProductGrid':
+  superTypes:
+    'Neos.Neos:Content': true
+  ui:
+    label: 'Product Grid'
+    icon: grip-horizontal
+    position: 150
+    inspector:
+      groups:
+        image:
+          label: 'Image'
+          icon: icon-image
+  properties:
+    image:
+      type: Neos\Media\Domain\Model\ImageInterface
+      ui:
+        label: 'Image'
+        reloadIfChanged: true
+        inspector:
+          group: image
+    alternativeText:
+      type: string
+      ui:
+        label: 'Alternative Text'
+        inspector:
+          group: image
+    productText:
+      type: string
+      ui:
+        label: 'Product Desription'
+        inspector:
+          group: image
+    productLink:
+      type: string
+      ui:
+        label: 'Product Link'
+        inspector:
+          group: image
+          editor: Neos.Neos/Inspector/Editors/LinkEditor

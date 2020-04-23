@@ -1,0 +1,26 @@
+
+'TwelveInch.Site:Content.HeroText':
+  superTypes:
+    'Neos.Neos:Content': true
+  ui:
+    label: Hero Text
+    icon: icon-file-text
+    position: 100
+    inlineEditable: true
+  properties:
+    text:
+      ui:
+        inline:
+          editorOptions:
+            placeholder: '<p>Enter text here...</p>'
+            hyphens: true
+      options:
+        silhouette: text.free
+    headline:
+      ui:
+        inline:
+          editorOptions:
+            placeholder: '<p>Enter headline here...</p>'
+            hyphens: true
+      options:
+        silhouette: text.free

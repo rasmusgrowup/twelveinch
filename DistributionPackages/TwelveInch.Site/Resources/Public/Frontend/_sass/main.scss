@@ -1,29 +1,43 @@
 @charset "utf-8";
 
-// Customization
+@font-face {
+    font-family: 'Titillium Web';
+    font-weight: 900;
+    font-style: normal;
+    src: url("../fonts/TitilliumWeb-Black.ttf") format("truetype"),;
+}
 
-// You can easily customize Bulma with your own variables.
-// Just uncomment the following block to see the result.
+@font-face {
+    font-family: 'Titillium Web';
+    font-weight: 400;
+    font-style: normal;
+    src: url("../fonts/TitilliumWeb-Regular.ttf") format("truetype"),;
+}
 
-/*
-// 1. Import the initial variables
+@font-face {
+    font-family: 'Titillium Web';
+    font-weight: 300;
+    font-style: normal;
+    src: url("../fonts/TitilliumWeb-Light.ttf") format("truetype"),;
+}
+
 @import "../node_modules/bulma/sass/utilities/initial-variables";
 
-// 2. Set your own initial variables
-// Update the blue shade, used for links
-$blue: #06bcef;
-// Add pink and its invert
-$pink: #ff8080;
-$pink-invert: #fff;
-// Update the sans-serif font family
-$family-sans-serif: "Helvetica", "Arial", sans-serif;
-
-// 3. Set the derived variables
-// Use the new pink as the primary color
-$primary: $pink;
-$primary-invert: $pink-invert;
-
-// 4. Import the rest of Bulma
-*/
+$black: #1f1f1f;
+$grey: #f2f2f2;
+$red: #CC1D53;
+$green: #1DCC89;
+$family-sans-serif: 'Titillium Web', "Helvetica", "Arial", sans-serif;
+$primary: $black;
+$primary-invert: $grey;
 
 @import "../node_modules/bulma/bulma";
+
+// Components
+@import "../../../Private/Fusion/Component/Footer/Footer";
+@import "../../../Private/Fusion/Content/Text/Text";
+@import "../../../Private/Fusion/Content/SeoText/SeoText";
+@import "../../../Private/Fusion/Content/HeaderText/HeaderText";
+@import "../../../Private/Fusion/Component/Header/TiHeader";
+@import "../../../Private/Fusion/Content/Hero/Hero";
+@import "../../../Private/Fusion/Content/ProductGrid/ProductGrid"

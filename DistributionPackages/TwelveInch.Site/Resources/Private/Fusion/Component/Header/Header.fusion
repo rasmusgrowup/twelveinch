@@ -2,11 +2,40 @@ prototype(TwelveInch.Site:Component.Header) < prototype(Neos.Fusion:Component) {
     homeLink = Neos.Neos:NodeUri {
         node = ${site}
     }
+    logoUri = Neos.Fusion:ResourceUri {
+    path = 'resource://TwelveInch.Site/Public/Frontend/img/twelve_inch_sort_400.png'
+    }
+    bagUri = Neos.Fusion:ResourceUri {
+    path = 'resource://TwelveInch.Site/Public/Frontend/svg/bag.svg'
+    }
+    pinUri = Neos.Fusion:ResourceUri {
+    path = 'resource://TwelveInch.Site/Public/Frontend/svg/pin.svg'
+    }
 
     renderer = afx`
-        <header class="main-header">
-            <a class="logo" href={props.homeLink}>BRAND NAME</a>
+
+    <header>
+        <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+          <div class="navbar-brand">
+            <a class="navbar-item" href={props.homeLink}>
+              <img src={props.logoUri} alt="Twelve Inch" width="105" height="28" />
+            </a>
+
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
+
+          <div id="navbarBasicExample" class="twelveinch-navbar  navbar-menu">
             <TwelveInch.Site:Component.Navigation startingPoint={site} />
-        </header>
+            <div class="twelveinch-navbar-end navbar-end">
+                <img src={props.pinUri} alt="Shopping Bag" width="16" height="25" />
+                <img src={props.bagUri} alt="Shopping Bag" width="16" height="25" />
+            </div>
+          </div>
+        </nav>
+    </header>
     `
 }

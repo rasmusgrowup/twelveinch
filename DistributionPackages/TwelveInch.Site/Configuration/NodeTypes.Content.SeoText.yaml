@@ -1,0 +1,26 @@
+
+'TwelveInch.Site:Content.SeoText':
+  superTypes:
+    'Neos.Neos:Content': true
+  ui:
+    label: SEO Text
+    icon: icon-file-text
+    position: 2000
+    inlineEditable: true
+  properties:
+    text:
+      ui:
+        inline:
+          editorOptions:
+            placeholder: '<p>Enter text here...</p>'
+            hyphens: true
+      options:
+        silhouette: text.free
+    headline:
+      ui:
+        inline:
+          editorOptions:
+            placeholder: '<p>Enter headline here...</p>'
+            hyphens: true
+      options:
+        silhouette: text.free

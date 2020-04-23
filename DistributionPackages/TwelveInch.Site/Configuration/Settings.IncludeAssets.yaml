@@ -14,5 +14,7 @@ Carbon:
         General:
           Head:
             - main.css
+            - aos.css
           Body:
             - main.js
+            - aos.js

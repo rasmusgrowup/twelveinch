@@ -1,0 +1,12 @@
+prototype(TwelveInch.Site:Content.Hero) < prototype(Neos.Neos:ContentComponent) {
+    alternativeText = ${node.properties.alternativeText}
+    src = TwelveInch.Site:Component.ImageUri {
+        @context.asset = ${q(node).property('image')}
+    }
+
+    renderer = afx`
+        <div class="twelveinch-hero" data-aos="fade-up">
+            <img class="" src={props.src} alt={props.alternativeText} />
+        </div>
+    `
+}

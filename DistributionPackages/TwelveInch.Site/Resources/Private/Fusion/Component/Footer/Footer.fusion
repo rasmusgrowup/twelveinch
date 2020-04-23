@@ -13,11 +13,25 @@ prototype(TwelveInch.Site:Component.Footer) < prototype(Neos.Neos:ContentCompone
         }
     }
 
+    paymentUri = Neos.Fusion:ResourceUri {
+    path = 'resource://TwelveInch.Site/Public/Frontend/img/payment-options.png'
+    }
+
     renderer = afx`
-        <footer class="main-footer">
-            <div>{props.footerInfo}</div>
-            <div>&copy; {props.year}</div>
-            {props.footerItems}
+
+        <footer class="twelveinch-footer footer">
+          <div class="content has-text-centered">
+                <div class="">{props.footerItems}</div>
+                <div class=""><ul>
+                    <li>Twelve Inch Aps Borgervænget 14,1, Odense c, Denmark</li>
+                    <li><a href="tel: +4523433464">+45 2343 3464</a></li>
+                    <li><a href="mailto:info@twelve-inch.com">info@twelve-inch.com</a></li>
+                    <li>Vat nr 23433464</li>
+                </ul></div>
+                <img src={props.paymentUri} alt="Payment Options" width="180" height="auto" />
+                <div class="copyright">&copy; 2015-{props.year} Twelve Inch ApS - All rights reserved</div>
+          </div>
         </footer>
+
     `
 }

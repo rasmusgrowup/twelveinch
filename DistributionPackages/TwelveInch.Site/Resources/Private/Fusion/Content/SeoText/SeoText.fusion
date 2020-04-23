@@ -1,0 +1,15 @@
+prototype(TwelveInch.Site:Content.SeoText) < prototype(Neos.Neos:ContentComponent) {
+    text = Neos.Neos:Editable {
+        property = 'text'
+    }
+    headline = Neos.Neos:Editable {
+        property = 'headline'
+    }
+
+    renderer = afx`
+        <div class="TwelveinchSeoText">
+            <div class="SeoHeadline" data-aos="fade-up">{props.headline}</div>
+            <div class="SeoText" data-aos="fade-up" data-aos-delay="100" data-aos-anchor=".SeoHeadline">{props.text}</div>
+        </div>
+    `
+}
