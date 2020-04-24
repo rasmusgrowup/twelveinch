@@ -11,6 +11,9 @@ prototype(TwelveInch.Site:Component.Header) < prototype(Neos.Fusion:Component) {
     pinUri = Neos.Fusion:ResourceUri {
     path = 'resource://TwelveInch.Site/Public/Frontend/svg/pin.svg'
     }
+    languageMenu = Neos.Neos:DimensionsMenu {
+    dimension = 'language'
+    }
 
     renderer = afx`
 
@@ -31,8 +34,9 @@ prototype(TwelveInch.Site:Component.Header) < prototype(Neos.Fusion:Component) {
           <div id="navbarBasicExample" class="twelveinch-navbar  navbar-menu">
             <TwelveInch.Site:Component.Navigation startingPoint={site} />
             <div class="twelveinch-navbar-end navbar-end">
-                <img src={props.pinUri} alt="Shopping Bag" width="16" height="25" />
-                <img src={props.bagUri} alt="Shopping Bag" width="16" height="25" />
+                <div class="twelveinchLanguageMenu">{props.languageMenu}</div>
+                <a href="#"><img src={props.pinUri} alt="Shopping Bag" width="15" height="15" /></a>
+                <a href="#"><img src={props.bagUri} alt="Shopping Bag" width="15" height="15" /></a>
             </div>
           </div>
         </nav>

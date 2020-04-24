@@ -10,6 +10,9 @@
   properties:
     image:
       type: Neos\Media\Domain\Model\ImageInterface
+      editorOptions:
+        features:
+          resize: TRUE
       ui:
         label: 'Image'
         reloadIfChanged: true

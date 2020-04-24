@@ -1,3 +1,33 @@
+$link-color: $black;
+$link-hover-color: $red;
+
+
 .productItem {
-    display: flex;
+    display: inline-block;
+
+    .productImage {
+        margin-bottom: 20px;
+    }
+
+    .productItemText {
+        text-transform: uppercase;
+        font-size: 1rem;
+    }
+
+    .productItemLink {
+        display: flex;
+        color: $link-color;
+        align-items: baseline;
+
+        &:hover {
+            color: $link-hover-color;
+            cursor: pointer;
+        }
+
+        img {
+            width: auto;
+            height: 9px;
+            margin-left: 5px;
+        }
+    }
 }

@@ -1,0 +1,9 @@
+
+'TwelveInch.Site:Content.ProductGrid':
+  superTypes:
+    'Neos.Neos:Content': true
+  ui:
+    label: 'Product Grid'
+    icon: columns
+    position: 180
+    inlineEditable: true

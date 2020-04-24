@@ -10,7 +10,10 @@
     },
     "require": {
         "twelveinch/site": "@dev",
-        "neos/nodetypes-columnlayouts": "^5.1"
+        "neos/nodetypes-columnlayouts": "^5.1",
+        "neos/nodetypes-basemixins": "^5.1",
+        "symfony/css-selector": "^4.4",
+        "neos/behat": "^6.0"
     },
     "repositories": {
         "distribution": {

@@ -1,0 +1,10 @@
+.productGrid {
+    margin: 0 auto;
+
+        @media screen and (min-width: $desktop) {
+            width: 100%;
+            max-width: 1500px;
+            padding-left: calc(40px - 0.75rem);
+            padding-right: calc(40px - 0.75rem);
+        }
+}

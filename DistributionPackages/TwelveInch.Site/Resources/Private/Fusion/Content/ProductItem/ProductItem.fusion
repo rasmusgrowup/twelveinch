@@ -9,14 +9,15 @@ prototype(TwelveInch.Site:Content.ProductItem) < prototype(Neos.Neos:ContentComp
     productLink = Neos.Neos:Editable {
         property = 'productLink'
     }
+    chevronUri = Neos.Fusion:ResourceUri {
+    path = 'resource://TwelveInch.Site/Public/Frontend/img/Chevron Right.png'
+    }
 
     renderer = afx`
-        <div class="productItem">
-            <div class="">
-                <img class="" src={props.src} alt={props.alternativeText} />
-                <div class="">{props.productText}</div>
-                <div class="">{props.productLink}</div>
-            </div>
+        <div class="productItem" data-aos="fade-up">
+            <img class="productImage" src={props.src} alt={props.alternativeText} />
+            <div class="productItemText">{props.productText}</div>
+            <div class="productItemLink">{props.productLink}<img src={props.chevronUri} alt="Follow Link"/></div>
         </div>
     `
 }

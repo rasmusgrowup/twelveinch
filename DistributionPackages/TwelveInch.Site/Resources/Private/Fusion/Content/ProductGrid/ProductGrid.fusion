@@ -1,0 +1,13 @@
+prototype(TwelveInch.Site:Content.ProductGrid) < prototype(Neos.Neos:ContentComponent) {
+    productItem = ${TwelveInch.Site:Content.ProductItem}
+
+
+    renderer = afx`
+        <div class="productGrid columns">
+            <div class="column">{productItem}</div>
+            <div class="column">{productItem}</div>
+            <div class="column">{productItem}</div>
+            <div class="column">{productItem}</div>
+        </div>
+    `
+}

@@ -1,5 +1,15 @@
 $animate: all 0.1s ease-in-out;
 
+.navbar {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0;
+
+    @media screen and (min-width: $desktop) {
+        padding: 0 40px
+    }
+}
+
 .twelveinch-items {
     li {
         a {
@@ -36,13 +46,38 @@ $animate: all 0.1s ease-in-out;
     }
 }
 
+.navbar-end {
+    padding: 0.3rem 1.2rem;
+
+    @media screen and (min-width: $desktop) {
+        margin-left: 46px;
+    }
+}
+
 .navbar-item {
     padding: 0.3rem 1.2rem;
 }
 
 .twelveinch-navbar-end {
+    .twelveinchLanguageMenu {
+        font-size: 0.76rem;
 
-    img {
+        a {
+            color: #1f1f1f;
+
+            &:hover {
+                color: #CC1D53;
+            }
+        }
+    }
+
+    a {
         margin-left: 10px;
+
+        img {
+            @media screen and (min-width: $desktop) {
+                display: inline;
+            }
+        }
     }
 }

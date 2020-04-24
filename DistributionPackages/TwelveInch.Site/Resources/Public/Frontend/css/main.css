@@ -4266,14 +4266,8 @@ a.list-item {
   background-color: #f2f2f2;
   min-height: 4rem;
   width: 100%;
-  max-width: 1600px;
-  margin: 0 auto;
-  padding: 0;
   position: relative;
   z-index: 30; }
-  @media screen and (min-width: 1024px) {
-    .navbar {
-      padding: 0 40px; } }
   .navbar.is-white {
     background-color: white;
     color: #1f1f1f; }
@@ -4976,8 +4970,7 @@ a.navbar-item,
     /*justify-content: flex-start*/
     margin: 0 auto; }
   .navbar-end {
-    justify-content: flex-end;
-    margin-left: 80px; }
+    justify-content: flex-end; }
   .navbar-dropdown {
     background-color: #f2f2f2;
     border-bottom-left-radius: 6px;
@@ -7192,6 +7185,14 @@ label.panel-block {
     .TwelveinchHeader .HeaderHeadline p {
       font-weight: 900; }
 
+.navbar {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0; }
+  @media screen and (min-width: 1024px) {
+    .navbar {
+      padding: 0 40px; } }
+
 .twelveinch-items li a {
   color: #1f1f1f;
   font-size: 0.76rem;
@@ -7215,11 +7216,27 @@ label.panel-block {
       width: 75%;
       left: 12.5%; } }
 
+.navbar-end {
+  padding: 0.3rem 1.2rem; }
+  @media screen and (min-width: 1024px) {
+    .navbar-end {
+      margin-left: 46px; } }
+
 .navbar-item {
   padding: 0.3rem 1.2rem; }
 
-.twelveinch-navbar-end img {
+.twelveinch-navbar-end .twelveinchLanguageMenu {
+  font-size: 0.76rem; }
+  .twelveinch-navbar-end .twelveinchLanguageMenu a {
+    color: #1f1f1f; }
+    .twelveinch-navbar-end .twelveinchLanguageMenu a:hover {
+      color: #CC1D53; }
+
+.twelveinch-navbar-end a {
   margin-left: 10px; }
+  @media screen and (min-width: 1024px) {
+    .twelveinch-navbar-end a img {
+      display: inline; } }
 
 .twelveinch-hero {
   display: flex;
@@ -7228,9 +7245,9 @@ label.panel-block {
     .twelveinch-hero {
       width: 100%;
       height: 56vw;
-      max-width: 1600px;
+      max-width: 1500px;
       padding: 0 40px; } }
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1501px) {
     .twelveinch-hero {
       height: auto; } }
   .twelveinch-hero img {
@@ -7238,4 +7255,29 @@ label.panel-block {
     object-fit: cover; }
 
 .productItem {
-  display: flex; }
+  display: inline-block; }
+  .productItem .productImage {
+    margin-bottom: 20px; }
+  .productItem .productItemText {
+    text-transform: uppercase;
+    font-size: 1rem; }
+  .productItem .productItemLink {
+    display: flex;
+    color: #1f1f1f;
+    align-items: baseline; }
+    .productItem .productItemLink:hover {
+      color: #CC1D53;
+      cursor: pointer; }
+    .productItem .productItemLink img {
+      width: auto;
+      height: 9px;
+      margin-left: 5px; }
+
+.productGrid {
+  margin: 0 auto; }
+  @media screen and (min-width: 1024px) {
+    .productGrid {
+      width: 100%;
+      max-width: 1500px;
+      padding-left: calc(40px - 0.75rem);
+      padding-right: calc(40px - 0.75rem); } }
