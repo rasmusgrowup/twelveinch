@@ -26,6 +26,16 @@
         label: 'Alternative Text'
         inspector:
           group: image
+    productName:
+      ui:
+        inline:
+          editorOptions:
+            placeholder: '<p>Enter text here...</p>'
+            hyphens: true
+      options:
+        silhouette: text.free
+      inspector:
+        group: image
     productText:
       ui:
         inline:

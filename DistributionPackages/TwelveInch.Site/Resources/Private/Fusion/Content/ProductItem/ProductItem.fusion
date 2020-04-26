@@ -3,6 +3,12 @@ prototype(TwelveInch.Site:Content.ProductItem) < prototype(Neos.Neos:ContentComp
     src = TwelveInch.Site:Component.ImageUri {
         @context.asset = ${q(node).property('image')}
     }
+    headline = Neos.Neos:Editable {
+        property = 'headline'
+    }
+    productName = Neos.Neos:Editable {
+        property = 'productName'
+    }
     productText = Neos.Neos:Editable {
         property = 'productText'
     }
@@ -14,8 +20,9 @@ prototype(TwelveInch.Site:Content.ProductItem) < prototype(Neos.Neos:ContentComp
     }
 
     renderer = afx`
-        <div class="productItem" data-aos="fade-up">
-            <img class="productImage" src={props.src} alt={props.alternativeText} />
+        <div class="productItem"  data-aos="fade-up" data-aos-anchor=".headline" data-aos-delay="100">
+            <img class="productImage" src={props.src} alt={props.alternativeText}/>
+            <div class="productItemName">{props.productName}</div>
             <div class="productItemText">{props.productText}</div>
             <div class="productItemLink">{props.productLink}<img src={props.chevronUri} alt="Follow Link"/></div>
         </div>

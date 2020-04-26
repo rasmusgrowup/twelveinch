@@ -4,6 +4,6 @@ prototype(TwelveInch.Site:Content.Headline) < prototype(Neos.Neos:ContentCompone
     }
 
     renderer = afx`
-        <div class="headline">{props.title}</div>
+        <div class="headline" data-aos="fade-up">{props.title}</div>
     `
 }

@@ -1,23 +1,41 @@
 $link-color: $black;
 $link-hover-color: $red;
 
-
 .productItem {
+    margin: 20px auto 40px;
     display: inline-block;
 
     .productImage {
-        margin-bottom: 20px;
+        margin-bottom: 1.5rem;
+
+        &:hover {
+            outline: 1px $dark-grey solid;
+            cursor: pointer;
+        }
+    }
+
+    .productItemName {
+        text-transform: capitalize;
+        font-size: 1em;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
     }
 
     .productItemText {
-        text-transform: uppercase;
-        font-size: 1rem;
+        text-transform: capitalize;
+        font-size: 0.8em;
+        margin-bottom: 0.25rem;
     }
 
     .productItemLink {
         display: flex;
         color: $link-color;
         align-items: baseline;
+
+        p {
+            font-size: 0.8em;
+            font-weight: 300;
+        }
 
         &:hover {
             color: $link-hover-color;
