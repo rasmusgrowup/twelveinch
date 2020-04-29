@@ -1,6 +1,18 @@
 .twelveinch-footer {
     background-color: $scheme-main;
 
+    .SoMe-icons {
+        display: flex;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+
+        a {
+            padding: 0 5px;
+        }
+
+    }
+
     ul {
         color: $black;
         margin: 15px 0;

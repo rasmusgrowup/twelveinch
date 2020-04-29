@@ -20,12 +20,26 @@
         reloadIfChanged: true
         inspector:
           group: image
+    hoverimage:
+      type: Neos\Media\Domain\Model\ImageInterface
+      ui:
+        label: 'Hover Image'
+        reloadIfChanged: true
+        inspector:
+          group: image
     alternativeText:
       type: string
       ui:
         label: 'Alternative Text'
         inspector:
           group: image
+    link:
+      type: string
+      ui:
+        label: 'Link target'
+        inspector:
+          group: image
+          editor: Neos.Neos/Inspector/Editors/LinkEditor
     productName:
       ui:
         inline:

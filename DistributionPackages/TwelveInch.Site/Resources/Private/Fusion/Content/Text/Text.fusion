@@ -4,6 +4,6 @@ prototype(TwelveInch.Site:Content.Text) < prototype(Neos.Neos:ContentComponent) 
     }
 
     renderer = afx`
-        <div class="twelveinch-text container">{props.text}</div>
+        <div class="twelveinch-text container" data-aos="fade-up" data-aos-delay="100">{props.text}</div>
     `
 }

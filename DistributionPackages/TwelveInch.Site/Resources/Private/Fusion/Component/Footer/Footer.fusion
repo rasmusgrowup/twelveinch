@@ -5,23 +5,36 @@ prototype(TwelveInch.Site:Component.Footer) < prototype(Neos.Neos:ContentCompone
         node = ${site}
         property = 'footerInfo'
     }
-    footerItems = Neos.Fusion:Collection {
-        collection = ${q(site).property('footerItems')}
-        itemName = 'node'
-        itemRenderer = Carbon.Link:Link {
-            node = ${node}
-        }
-    }
 
     paymentUri = Neos.Fusion:ResourceUri {
     path = 'resource://TwelveInch.Site/Public/Frontend/img/payment-options.png'
     }
 
-    renderer = afx`
+    pinUri = Neos.Fusion:ResourceUri {
+    path = 'resource://TwelveInch.Site/Public/Frontend/svg/marker.svg'
+    }
 
+    instagramUri = Neos.Fusion:ResourceUri {
+    path = 'resource://TwelveInch.Site/Public/Frontend/svg/instagram.svg'
+    }
+
+    pinterestUri = Neos.Fusion:ResourceUri {
+    path = 'resource://TwelveInch.Site/Public/Frontend/svg/pinterest.svg'
+    }
+
+    facebookUri = Neos.Fusion:ResourceUri {
+    path = 'resource://TwelveInch.Site/Public/Frontend/svg/facebook.svg'
+    }
+
+    renderer = afx`
         <footer class="twelveinch-footer footer">
           <div class="content has-text-centered">
-                <div class="">{props.footerItems}</div>
+                <div class="SoMe-icons">
+                    <a href="/find-us-here"><img src={props.pinUri} alt="Find us here" width="18" height="18" /></a>
+                    <a href="https://http://facebook.com/twelveinchdk"><img src={props.facebookUri} alt="Link to Facebook profil" width="18" height="18" /></a>
+                    <a href="https://instagram.com/twelve_inch_official/"><img src={props.instagramUri} alt="Link to Instagram profil" width="18" height="18" /></a>
+                    <a href="https://www.pinterest.dk/twelveinchofficial/"><img src={props.pinterestUri} alt="Link to Pinterest profil" width="18" height="18" /></a>
+                </div>
                 <div class=""><ul>
                     <li>Twelve Inch Aps, Borgervænget 14,1, Odense c, Denmark</li>
                     <li><a href="tel: +4523433464">+45 2343 3464</a></li>
@@ -33,6 +46,5 @@ prototype(TwelveInch.Site:Component.Footer) < prototype(Neos.Neos:ContentCompone
                 <div class="copyright">&copy; 2015-{props.year} Twelve Inch ApS - All rights reserved</div>
           </div>
         </footer>
-
     `
 }

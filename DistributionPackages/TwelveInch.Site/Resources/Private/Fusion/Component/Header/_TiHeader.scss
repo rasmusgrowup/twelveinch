@@ -1,13 +1,13 @@
 $animate: all 0.1s ease-in-out;
 
 .navbar {
-    max-width: 1500px;
-    margin: 0 auto;
-    padding: 0;
-    /*background-color: transparent;*/
 
+    /*background-color: transparent;*/
     @media screen and (min-width: $desktop) {
-        padding: 0 40px;
+        max-width: 1500px;
+        margin: 0 auto;
+        padding: 0;
+        padding: 0 calc(40px - 1.2rem);
     }
 }
 
@@ -110,9 +110,14 @@ $animate: all 0.1s ease-in-out;
                 }
             }
         }
-        @media screen and (max-width: $desktop) {
+
+        &:first-child {
+            margin-top: 20px;
+        }
+
+        @media screen and (min-width: $desktop) {
             &:first-child {
-                margin-top: 20px;
+                margin-top: 0;
             }
         }
     }
@@ -183,6 +188,30 @@ $animate: all 0.1s ease-in-out;
 }
 
 .twelveinch-desktop-navbar-end {
+
+    .marker, .shoppingbag {
+        position: relative;
+
+        &:hover {
+            img:nth-child(1){opacity: 0;}
+            img:nth-child(2){opacity: 1;}
+        }
+
+        img:nth-child(1) {
+            opacity: 1;
+        }
+
+        img:nth-child(2) {
+            display: block;
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 18px;
+            width: 18px;
+        }
+    }
+
     .twelveinchLanguageMenu {
         font-size: 2rem;
         font-weight: 900;

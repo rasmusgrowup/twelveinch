@@ -1,0 +1,19 @@
+prototype(TwelveInch.Site:Content.FAQ) < prototype(Neos.Neos:ContentComponent) {
+    answer = Neos.Neos:Editable {
+        property = 'answer'
+    }
+    question = Neos.Neos:Editable {
+        property = 'question'
+    }
+
+    renderer = afx`
+        <article class="faq-content">
+            <div class="question" data-aos="fade-in">
+                    <h2>{props.question}</h2>
+            </div>
+            <div class="answer" data-aos="fade-in">
+                <p>{props.answer}</p>
+            </div>
+        </article>
+    `
+}

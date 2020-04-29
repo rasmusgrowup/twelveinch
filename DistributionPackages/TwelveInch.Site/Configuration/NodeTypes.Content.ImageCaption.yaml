@@ -1,0 +1,30 @@
+'TwelveInch.Site:Content.ImageCaption':
+  superTypes:
+    'Neos.Neos:Content': true
+    'TwelveInch.Site:Mixin.Image': true
+  ui:
+    label: Image w/ caption
+    icon: icon-picture
+    position: 350
+  properties:
+    image:
+      type: Neos\Media\Domain\Model\ImageInterface
+      ui:
+        label: 'Image'
+        reloadIfChanged: true
+        inspector:
+          group: image
+    alternativeText:
+      type: string
+      ui:
+        label: 'Alternative Text'
+        inspector:
+          group: image
+    caption:
+      ui:
+        inline:
+          editorOptions:
+            placeholder: '<p>Enter caption here...</p>'
+            hyphens: true
+      options:
+        silhouette: text.free

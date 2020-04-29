@@ -1,0 +1,23 @@
+.faq-content {
+    margin: 0 auto 40px;
+    padding: 0 25px;
+
+    p {
+        font-size: .9em;
+        font-weight: 300;
+        margin-bottom: .9em;
+    }
+
+    .question {
+        p {
+            font-size: 1.2em;
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+    }
+
+    @media screen and (min-width: $desktop) {
+        max-width: 900px;
+        padding: 0 40px;
+    }
+}

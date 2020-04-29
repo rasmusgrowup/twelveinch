@@ -1,0 +1,12 @@
+
+'TwelveInch.Site:Content.Container':
+  superTypes:
+    'Neos.Neos:Content': TRUE
+  ui:
+    group: structure
+    label: Container
+    icon: icon-columns
+    inlineEditable: true
+  childNodes:
+    column0:
+      type: 'Neos.Neos:ContentCollection'

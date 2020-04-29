@@ -1,4 +1,14 @@
 .headline {
+    margin: 15px auto;
+    padding: 0 25px;
+    color: #1f1f1f;
+
+    @media screen and (min-width: $desktop) {
+        margin: 30px auto 15px;
+        max-width: 780px;
+        padding: 0 40px;
+    }
+
     h1 {
         font-size: 2rem;
         font-weight: 900;
@@ -9,5 +19,11 @@
         font-size: 1.5rem;
         font-weight: 900;
         text-align: center;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+        font-weight: 900;
+        text-align: left;
     }
 }

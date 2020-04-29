@@ -1,0 +1,18 @@
+prototype(TwelveInch.Site:Content.ImageCaption) < prototype(Neos.Neos:ContentComponent) {
+    alternativeText = ${node.properties.alternativeText}
+    src = TwelveInch.Site:Component.ImageUri {
+        @context.asset = ${q(node).property('image')}
+        @context.maximumWidth = 900
+    }
+    caption = Neos.Neos:Editable {
+        property = 'caption'
+    }
+
+    renderer = afx`
+
+        <div class="ImageCaption" data-aos="fade-up">
+            <img src={props.src} alt={props.alternativeText} />
+            <p>{props.caption}</p>
+        </div>
+    `
+}

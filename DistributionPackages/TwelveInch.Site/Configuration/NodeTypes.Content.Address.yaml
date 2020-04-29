@@ -1,0 +1,18 @@
+
+'TwelveInch.Site:Content.Address':
+  superTypes:
+    'Neos.Neos:Content': true
+  ui:
+    label: Address
+    icon: map-marker-alt
+    position: 250
+    inlineEditable: true
+  properties:
+    address:
+      ui:
+        inline:
+          editorOptions:
+            placeholder: '<p>Enter address here...</p>'
+            hyphens: true
+      options:
+        silhouette: text.free

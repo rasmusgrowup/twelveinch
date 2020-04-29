@@ -1,16 +1,38 @@
 $link-color: $black;
 $link-hover-color: $red;
 
+.column {
+    padding: 0 0.5rem;
+
+    @media screen and (min-width: $desktop) {
+        padding: 0.75rem;
+    }
+}
+
 .productItem {
     margin: 20px auto 40px;
     display: inline-block;
 
     .productImage {
         margin-bottom: 1.5rem;
+    }
 
-        &:hover {
-            outline: 1px $dark-grey solid;
-            cursor: pointer;
+    .productImageHover {
+        display: none;
+
+        @media screen and (min-width: $desktop) {
+        opacity: 0;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 99;
+
+            &:hover {
+                opacity: 1;
+                /*outline: 1px $dark-grey solid;*/
+                cursor: pointer;
+            }
         }
     }
 

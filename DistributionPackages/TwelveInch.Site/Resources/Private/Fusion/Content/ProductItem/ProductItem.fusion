@@ -3,6 +3,10 @@ prototype(TwelveInch.Site:Content.ProductItem) < prototype(Neos.Neos:ContentComp
     src = TwelveInch.Site:Component.ImageUri {
         @context.asset = ${q(node).property('image')}
     }
+    srchover = TwelveInch.Site:Component.ImageUri {
+        @context.asset = ${q(node).property('hoverimage')}
+    }
+
     headline = Neos.Neos:Editable {
         property = 'headline'
     }
@@ -19,9 +23,15 @@ prototype(TwelveInch.Site:Content.ProductItem) < prototype(Neos.Neos:ContentComp
     path = 'resource://TwelveInch.Site/Public/Frontend/img/Chevron Right.png'
     }
 
+    link = ${q(node).property('link')}
+    linkTarget = ${q(node).property('linkTarget') ? '_blank' : '_self'}
+
     renderer = afx`
         <div class="productItem"  data-aos="fade-up" data-aos-anchor=".headline" data-aos-delay="100">
-            <img class="productImage" src={props.src} alt={props.alternativeText}/>
+            <a href="{props.link}">
+                <img class="productImageHover" src={props.srchover} alt={props.alternativeText}/>
+                <img class="productImage" src={props.src} alt={props.alternativeText}/>
+            </a>
             <div class="productItemName">{props.productName}</div>
             <div class="productItemText">{props.productText}</div>
             <div class="productItemLink">{props.productLink}<img src={props.chevronUri} alt="Follow Link"/></div>

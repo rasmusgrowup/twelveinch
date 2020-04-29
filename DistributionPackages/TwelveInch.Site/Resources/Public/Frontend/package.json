@@ -35,6 +35,7 @@
     "start": "npm-run-all --parallel css-watch js-watch"
   },
   "dependencies": {
-    "aos": "^2.3.4"
+    "aos": "^2.3.4",
+    "bulma-accordion": "^2.0.1"
   }
 }

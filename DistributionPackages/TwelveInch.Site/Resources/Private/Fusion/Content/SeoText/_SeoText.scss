@@ -1,10 +1,12 @@
 .TwelveinchSeoText {
-    margin: 40px auto 20px;
-    max-width: 780px;
-    padding: 0 40px;
+    margin: 0 auto 40px;
+    padding: 0 25px;
     color: #1f1f1f;
 
     @media screen and (min-width: $desktop) {
+        margin: 40px auto 20px;
+        max-width: 780px;
+        padding: 0 40px;
         text-align: center;
     }
 
@@ -18,7 +20,10 @@
         text-transform: uppercase;
 
         p {
-            margin-bottom: 20px;
+            margin-bottom: 15px;
+            @media screen and (min-width: $desktop) {
+                margin-bottom: 20px;
+            }
         }
     }
 }

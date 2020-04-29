@@ -1,0 +1,26 @@
+
+'TwelveInch.Site:Content.Instagram':
+  superTypes:
+    'Neos.Neos:Content': true
+  ui:
+    label: Instagram Module
+    icon: instagram
+    position: 850
+    inlineEditable: true
+  properties:
+    text:
+      ui:
+        inline:
+          editorOptions:
+            placeholder: '<p>Enter text here...</p>'
+            hyphens: true
+      options:
+        silhouette: text.free
+    headline:
+      ui:
+        inline:
+          editorOptions:
+            placeholder: '<p>Enter headline here...</p>'
+            hyphens: true
+      options:
+        silhouette: text.free

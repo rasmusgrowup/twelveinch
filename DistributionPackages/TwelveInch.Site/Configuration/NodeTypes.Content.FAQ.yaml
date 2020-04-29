@@ -1,0 +1,27 @@
+
+'TwelveInch.Site:Content.FAQ':
+  superTypes:
+    'Neos.Neos:Content': true
+  ui:
+    label: FAQ
+    icon: list
+    position: 300
+    inlineEditable: true
+  properties:
+    answer:
+      ui:
+        inline:
+          editorOptions:
+            placeholder: '<p>Enter answer here...</p>'
+            hyphens: true
+      options:
+        silhouette: 'codeq.text.title'
+    question:
+      ui:
+        inline:
+          editorOptions:
+            placeholder: '<p>Enter question here...</p>'
+            hyphens: true
+            editor: Neos.Neos/Inspector/Editors/LinkEditor
+      options:
+        silhouette: text.free

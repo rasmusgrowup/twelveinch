@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "57e8d9313d4e55ed8fd1223f8fc0e264",
+    "content-hash": "1b6fa6f48499e08cf13d224f22960367",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -263,6 +263,41 @@
                 "link"
             ],
             "time": "2019-09-23T06:19:17+00:00"
+        },
+        {
+            "name": "codeq/instagram",
+            "version": "v1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/code-q-web-factory/neos-instagram.git",
+                "reference": "0374a0d293df81e312f4d135f5b2808006abb751"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/code-q-web-factory/neos-instagram/zipball/0374a0d293df81e312f4d135f5b2808006abb751",
+                "reference": "0374a0d293df81e312f4d135f5b2808006abb751",
+                "shasum": ""
+            },
+            "require": {
+                "neos/neos": "~3.2 || ~4.0 || ~5.0 || dev-master"
+            },
+            "type": "neos-package",
+            "extra": {
+                "neos": {
+                    "package-key": "CodeQ.Instagram"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "CodeQ\\Instagram": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0+"
+            ],
+            "description": "EEL helper to query the Instagram API",
+            "time": "2019-09-24T07:46:10+00:00"
         },
         {
             "name": "codeq/unicodenormalizer",

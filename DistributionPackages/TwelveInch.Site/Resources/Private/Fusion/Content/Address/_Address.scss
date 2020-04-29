@@ -1,0 +1,12 @@
+.TwelveinchAddress {
+    margin: 0 auto 40px;
+    padding: 0 25px;
+
+    @media screen and (min-width: $desktop) {
+        max-width: 500px;
+        margin: 0 auto 80px;
+        padding: 0 40px;
+        text-align: center;
+    }
+
+}
