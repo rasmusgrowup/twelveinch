@@ -1,0 +1,17 @@
+.TwelveinchButton {
+    display: block;
+    width: fit-content;
+    width: -webkit-fit-content;
+    padding: 6px 18px;
+    margin: 0 auto;
+    background-color: $black;
+    color: $grey;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    font-weight: 900;
+
+    &:hover {
+        background-color: $red;
+        color: $grey;
+    }
+}

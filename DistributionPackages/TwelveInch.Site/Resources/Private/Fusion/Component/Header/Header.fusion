@@ -3,7 +3,7 @@ prototype(TwelveInch.Site:Component.Header) < prototype(Neos.Fusion:Component) {
         node = ${site}
     }
     logoUri = Neos.Fusion:ResourceUri {
-    path = 'resource://TwelveInch.Site/Public/Frontend/img/twelve_inch_sort_400.png'
+    path = 'resource://TwelveInch.Site/Public/Frontend/img/iinch_r.png'
     }
     bagUri = Neos.Fusion:ResourceUri {
     path = 'resource://TwelveInch.Site/Public/Frontend/svg/shopping-bag.svg'
@@ -37,7 +37,7 @@ prototype(TwelveInch.Site:Component.Header) < prototype(Neos.Fusion:Component) {
                   </a>
 
                 <a class="navbar-item" href={props.homeLink}>
-                    <img src={props.logoUri} alt="Twelve Inch" width="105" height="28" />
+                    <img src={props.logoUri} alt="Twelve Inch" width="auto" height="28" />
                 </a>
 
                 <div class="twelveinch-navbar-bag-mobile">

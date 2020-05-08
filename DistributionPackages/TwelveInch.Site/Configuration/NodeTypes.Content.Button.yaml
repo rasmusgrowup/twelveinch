@@ -19,7 +19,6 @@
         inline:
           editorOptions:
             placeholder: 'Enter link here'
-            hyphens: true
       options:
         silhouette: text.plain
     link:

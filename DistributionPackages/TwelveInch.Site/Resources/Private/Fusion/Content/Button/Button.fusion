@@ -7,6 +7,8 @@ prototype(TwelveInch.Site:Content.Button) < prototype(Neos.Neos:ContentComponent
     renderAsLink = ${site.context.inBackend ? false : true}
 
     renderer = afx`
-        <Carbon.Link:Link link={props.link} additionalClass="button">{props.label}</Carbon.Link:Link>
+    <div class="" data-aos="fade-up">
+        <Carbon.Link:Link link={props.link} additionalClass="TwelveinchButton">{props.label}</Carbon.Link:Link>
+    </div>
     `
 }

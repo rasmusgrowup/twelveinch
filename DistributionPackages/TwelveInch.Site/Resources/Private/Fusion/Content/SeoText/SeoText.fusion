@@ -9,7 +9,7 @@ prototype(TwelveInch.Site:Content.SeoText) < prototype(Neos.Neos:ContentComponen
     renderer = afx`
         <div class="TwelveinchSeoText">
             <div class="SeoHeadline" data-aos="fade-up">{props.headline}</div>
-            <div class="SeoText" data-aos="fade-up" data-aos-delay="100" data-aos-anchor=".SeoHeadline">{props.text}</div>
+            <div class="SeoText" data-aos="fade-up" data-aos-delay="100">{props.text}</div>
         </div>
     `
 }

@@ -28,20 +28,35 @@ prototype(TwelveInch.Site:Component.Footer) < prototype(Neos.Neos:ContentCompone
 
     renderer = afx`
         <footer class="twelveinch-footer footer">
-          <div class="content has-text-centered">
+            <span></span>
+          <div class="content">
+              <div class="footerMenu">
+                  <ul>
+                      <li><a href="/products">Products</a></li>
+                      <li><a href="/the-grid">The Grid</a></li>
+                      <li><a href="/how-to">How To</a></li>
+                      <li><a href="/stories">Stories</a></li>
+                      <li><a href="/about-us">About Us</a></li>
+                      <li><a href="/faq">FAQ</a></li>
+                      <li><a href="/legal">Legal</a></li>
+                      <li><a href="#">B2B</a></li>
+                      <li><a href="#">Press</a></li>
+                  </ul>
+              </div>
+                <div class="footerAddress"><ul>
+                    <li>Contact us</li>
+                    <li>Borgervænget 14, 1, Odense C, 5000, Denmark</li>
+                    <li><a href="tel: +4523433464">+45 2343 3464</a></li>
+                    <li><a href="mailto:info@twelve-inch.com">info@twelve-inch.com</a></li>
+                    <li>CVR. NR. 38417517</li>
+                    <li><a href="javascript:window.Metomic('ConsentManager:show')">Manage Cookie Settings</a></li>
+                </ul></div>
                 <div class="SoMe-icons">
                     <a href="/find-us-here"><img src={props.pinUri} alt="Find us here" width="18" height="18" /></a>
                     <a href="https://http://facebook.com/twelveinchdk"><img src={props.facebookUri} alt="Link to Facebook profil" width="18" height="18" /></a>
                     <a href="https://instagram.com/twelve_inch_official/"><img src={props.instagramUri} alt="Link to Instagram profil" width="18" height="18" /></a>
                     <a href="https://www.pinterest.dk/twelveinchofficial/"><img src={props.pinterestUri} alt="Link to Pinterest profil" width="18" height="18" /></a>
                 </div>
-                <div class=""><ul>
-                    <li>Twelve Inch Aps, Borgervænget 14,1, Odense c, Denmark</li>
-                    <li><a href="tel: +4523433464">+45 2343 3464</a></li>
-                    <li><a href="mailto:info@twelve-inch.com">info@twelve-inch.com</a></li>
-                    <li>Vat nr 23433464</li>
-                    <li><a href="javascript:window.Metomic('ConsentManager:show')">Manage Cookie Settings</a></li>
-                </ul></div>
                 <img src={props.paymentUri} alt="Payment Options" width="180" height="auto" />
                 <div class="copyright">&copy; 2015-{props.year} Twelve Inch ApS - All rights reserved</div>
           </div>

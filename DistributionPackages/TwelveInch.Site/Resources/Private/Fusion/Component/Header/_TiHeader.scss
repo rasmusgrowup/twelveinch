@@ -1,4 +1,4 @@
-$animate: all 0.1s ease-in-out;
+$animate: all 0.5s ease-in-out;
 
 .navbar {
 
@@ -9,6 +9,16 @@ $animate: all 0.1s ease-in-out;
         padding: 0;
         padding: 0 calc(40px - 1.2rem);
     }
+}
+
+.navbar-start {
+    margin-right: auto;
+}
+
+.navbar-brand {
+    /*@media screen and (min-width: $desktop) {
+        margin-right: 59px;
+    }*/
 }
 
 .navbar-burger span {
@@ -22,12 +32,6 @@ $animate: all 0.1s ease-in-out;
 .navbar-brand {
     .navbar-item {
         margin: 0 auto;
-
-        @media screen and (max-width: $desktop)  {
-            img {
-                width: 100px;
-            }
-        }
     }
 }
 
@@ -43,7 +47,7 @@ $animate: all 0.1s ease-in-out;
     text-align: center;
 
     img {
-        width: 100px;
+        width: 130px;
     }
 }
 
@@ -79,9 +83,10 @@ $animate: all 0.1s ease-in-out;
         }
         a {
             color: $black;
-            font-size: 2rem;
+            font-size: 9vw;
+            line-height: 1.2;
             font-weight: 900;
-            text-transform: uppercase;
+            text-transform: lowercase;
 
             &:hover {
                 color: $red;
@@ -91,28 +96,37 @@ $animate: all 0.1s ease-in-out;
                 font-size: 0.8rem;
                 font-weight: 600;
 
-                &:before, &:after {
+
+                /*&:before, &:after {
                     content: " ";
                     position: absolute;
-                    /*transition: $animate;
-                    transition-duration: 0.1s;*/
-                    display: block;
+                    background-color: transparent;
+                    transition: $animate;
+                    display: none;
+                    opacity: 0;
                     bottom: 0;
-                    height: 1px;
-                    left: 50%;
-                    background: $red;
-                    width: 0%;
+                    border:1px solid $red;
+                    border-radius: 50%;
+                    -moz-border-radius:50%;
+                    -webkit-border-radius:50%;
+                    width: 0;
+                    height: 0;
                     }
 
                 &:hover:after {
-                    width: 75%;
-                    left: 12.5%;
-                }
+                    opacity: 1;
+                    display: block;
+                    width: 35px;
+                    height: 35px;
+                    left: 50%;
+                    top:50%;
+                    transform: translate(-50%,-50%);
+                }*/
             }
         }
 
         &:first-child {
-            margin-top: 20px;
+            margin-top: 1rem;
         }
 
         @media screen and (min-width: $desktop) {
@@ -123,16 +137,8 @@ $animate: all 0.1s ease-in-out;
     }
 }
 
-.navbar-end {
-    padding: 0.3rem 1.2rem;
-
-    @media screen and (min-width: $desktop) {
-        margin-left: 46px;
-    }
-}
-
 .navbar-item, .navbar-end {
-    padding: 0.3rem 3rem;
+    padding: 0.4rem 1.4rem;
     @media screen and (min-width: $desktop){
         padding: 0.3rem 1.2rem;
     }
@@ -174,9 +180,9 @@ $animate: all 0.1s ease-in-out;
         transition: opacity .2s ease-in-out 0s;
         display: block;
         color: $black;
-        font-size: 1rem;
-        text-transform: capitalize;
-        padding: 5px 0;
+        font-size: 4vw;
+        text-transform: lowercase;
+        padding: 0.2vw 0;
 
         &:hover {
             color: $red;
@@ -215,6 +221,7 @@ $animate: all 0.1s ease-in-out;
     .twelveinchLanguageMenu {
         font-size: 2rem;
         font-weight: 900;
+        text-transform: lowercase;
 
         @media screen and (min-width: $desktop) {
             font-size: 0.8rem;

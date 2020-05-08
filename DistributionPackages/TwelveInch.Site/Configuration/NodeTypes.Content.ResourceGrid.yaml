@@ -1,0 +1,26 @@
+
+'TwelveInch.Site:Content.ResourceGrid':
+  superTypes:
+    'Neos.Neos:Content': true
+  ui:
+    label: 'Resource Grid'
+    icon: th-large
+    position: 180
+    inlineEditable: true
+  properties:
+    link:
+      type: string
+      ui:
+        label: 'Link target'
+        inspector:
+          group: image
+          editor: Neos.Neos/Inspector/Editors/LinkEditor
+    label:
+      ui:
+        inlineEditable: true
+        inline:
+          editorOptions:
+            placeholder: 'Enter link here'
+            hyphens: true
+      options:
+        silhouette: text.plain

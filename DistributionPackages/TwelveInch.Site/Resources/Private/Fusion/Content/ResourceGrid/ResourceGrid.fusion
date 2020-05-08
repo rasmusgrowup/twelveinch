@@ -1,0 +1,23 @@
+prototype(TwelveInch.Site:Content.ResourceGrid) < prototype(Neos.Neos:ContentComponent) {
+    alternativeText = ${node.properties.alternativeText}
+    src = TwelveInch.Site:Component.ImageUri {
+        @context.asset = ${q(node).property('image')}
+    }
+
+    item = Neos.Neos:Editable {
+        property = 'item'
+    }
+
+    label = Neos.Neos:Editable {
+        property = 'label'
+    }
+
+    link = ${q(node).property('link')}
+    linkTarget = ${q(node).property('linkTarget') ? '_blank' : '_self'}
+    renderAsLink = ${site.context.inBackend ? false : true}
+
+
+    renderer = afx`
+
+    `
+}

@@ -43,31 +43,27 @@
     productName:
       ui:
         inline:
+          inlineEditable: true
           editorOptions:
-            placeholder: '<p>Enter text here...</p>'
+            placeholder: '<p>Enter product name ...</p>'
             hyphens: true
       options:
         silhouette: text.free
-      inspector:
-        group: image
     productText:
       ui:
         inline:
+          inlineEditable: true
           editorOptions:
             placeholder: '<p>Enter text here...</p>'
             hyphens: true
       options:
         silhouette: text.free
-      inspector:
-        group: image
-    productLink:
+    label:
       ui:
+        inlineEditable: true
         inline:
           editorOptions:
-            placeholder: '<p>Enter text here...</p>'
+            placeholder: 'Enter link here'
             hyphens: true
       options:
-        silhouette: text.free
-        inspector:
-          group: image
-          editor: Neos.Neos/Inspector/Editors/LinkEditor
+        silhouette: text.plain

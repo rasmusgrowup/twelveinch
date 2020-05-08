@@ -1,38 +1,46 @@
 @charset "utf-8";
 
 @font-face {
-    font-family: 'Titillium Web';
-    font-weight: 900;
+    font-family: 'Manrope';
+    font-weight: 800;
     font-style: normal;
-    src: url("../fonts/TitilliumWeb-Black.ttf") format("truetype"),;
+    src: url("../fonts/Manrope-ExtraBold.ttf") format("truetype"),;
 }
 
 @font-face {
-    font-family: 'Titillium Web';
+    font-family: 'Manrope';
     font-weight: 600;
     font-style: normal;
-    src: url("../fonts/TitilliumWeb-SemiBold.ttf") format("truetype"),;
+    src: url("../fonts/Manrope-SemiBold.ttf") format("truetype"),;
 }
 
-@font-face {
-    font-family: 'Titillium Web';
+/*@font-face {
+    font-family: 'Manrope';
     font-weight: 400;
     font-style: italic;
-    src: url("../fonts/TitilliumWeb-Italic.ttf") format("truetype"),;
-}
+    src: url("../fonts/Manrope-Regular.ttf") format("truetype"),;
+}*/
 
 @font-face {
-    font-family: 'Titillium Web';
+    font-family: 'Manrope';
     font-weight: 400;
     font-style: normal;
-    src: url("../fonts/TitilliumWeb-Regular.ttf") format("truetype"),;
+    src: url("../fonts/Manrope-Regular.ttf") format("truetype"),;
 }
 
 @font-face {
-    font-family: 'Titillium Web';
+    font-family: 'Manrope';
     font-weight: 300;
     font-style: normal;
-    src: url("../fonts/TitilliumWeb-Light.ttf") format("truetype"),;
+    src: url("../fonts/Manrope-Light.ttf") format("truetype"),;
+}
+
+[data-aos="custom"] {
+  transform: translateY(110%);
+
+  &.aos-animate {
+    transform: translateY(0);
+  }
 }
 
 @import "../node_modules/bulma/sass/utilities/initial-variables";
@@ -42,7 +50,7 @@ $dark-grey: #4f4f4f;
 $grey: #f8f8f8;
 $red: #FF6666;
 $green: #1DCC89;
-$family-sans-serif: 'Titillium Web', "Helvetica", "Arial", sans-serif;
+$family-sans-serif: 'Manrope', "Helvetica", "Arial", sans-serif;
 $primary: $black;
 $primary-invert: $grey;
 
@@ -61,4 +69,5 @@ $primary-invert: $grey;
 @import "../../../Private/Fusion/Content/FAQ/FAQ";
 @import "../../../Private/Fusion/Content/Address/Address";
 @import "../../../Private/Fusion/Content/ImageCaption/ImageCaption";
+@import "../../../Private/Fusion/Content/Button/Buttons";
 @import "../../../Private/Fusion/Content/Instagram/Instagram"
