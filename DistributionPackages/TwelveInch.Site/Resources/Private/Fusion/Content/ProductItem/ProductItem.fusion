@@ -22,14 +22,19 @@ prototype(TwelveInch.Site:Content.ProductItem) < prototype(Neos.Neos:ContentComp
     chevronUri = Neos.Fusion:ResourceUri {
     path = 'resource://TwelveInch.Site/Public/Frontend/img/Chevron Right.png'
     }
-
+    newUri = Neos.Fusion:ResourceUri {
+    path = 'resource://TwelveInch.Site/Public/Frontend/svg/new_product_green.svg'
+    }
+    saleUri = Neos.Fusion:ResourceUri {
+    path = 'resource://TwelveInch.Site/Public/Frontend/svg/on_sale.svg'
+    }
     label = Neos.Neos:Editable {
         property = 'label'
     }
 
     link = ${q(node).property('link')}
-    linkTarget = ${q(node).property('linkTarget') ? '_blank' : '_self'}
-    renderAsLink = ${site.context.inBackend ? false : true}
+    addTag = ${q(node).property('addTag') ? 'display:block;' : 'display:none;'}
+    addSaleTag = ${q(node).property('addSaleTag') ? 'display:block;' : 'display:none;'}
 
     renderer = afx`
         <div class="productItem"  data-aos="fade-up" data-aos-delay="100">
@@ -37,6 +42,8 @@ prototype(TwelveInch.Site:Content.ProductItem) < prototype(Neos.Neos:ContentComp
                 <img class="productImageHover" src={props.srchover} alt={props.alternativeText}/>
                 <img class="productImage" src={props.src} alt={props.alternativeText}/>
             </Carbon.Link:Link>
+            <div class="ProductTag" style={props.addTag}><img src={props.newUri} alt="new product icon" width="40" height="auto"/></div>
+            <div class="ProductTag" style={props.addSaleTag}><img src={props.saleUri} alt="product on sale icon" width="40" height="auto"/></div>
             <div class="productItemName">{props.productName}</div>
             <div class="productItemText">{props.productText}</div>
             <div class="productItemLink">

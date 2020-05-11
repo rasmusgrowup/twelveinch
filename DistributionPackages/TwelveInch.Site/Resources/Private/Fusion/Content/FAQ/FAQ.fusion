@@ -7,15 +7,15 @@ prototype(TwelveInch.Site:Content.FAQ) < prototype(Neos.Neos:ContentComponent) {
     }
 
     renderer = afx`
-        <article class="faq-content">
-            <div class="question accordion" data-aos="fade-in">
+        <article class="faq-content" data-aos="fade-up">
+            <div class="question accordion">
                     <h2>{props.question}</h2>
                     <div class="cross">
                         <span></span>
                         <span></span>
                     </div>
             </div>
-            <div class="answer" data-aos="fade-in">
+            <div class="answer">
                 <p>{props.answer}</p>
             </div>
         </article>

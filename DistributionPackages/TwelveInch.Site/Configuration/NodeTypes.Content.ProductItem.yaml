@@ -40,6 +40,20 @@
         inspector:
           group: image
           editor: Neos.Neos/Inspector/Editors/LinkEditor
+    addTag:
+      type: boolean
+      ui:
+        label: 'Add new product tag'
+        reloadIfChanged: true
+        inspector:
+          group: image
+    addSaleTag:
+      type: boolean
+      ui:
+        label: 'Add sale tag'
+        reloadIfChanged: true
+        inspector:
+          group: image
     productName:
       ui:
         inline:

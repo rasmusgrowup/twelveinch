@@ -22,6 +22,5 @@
           editorOptions:
             placeholder: '<p>Enter question here...</p>'
             hyphens: true
-            editor: Neos.Neos/Inspector/Editors/LinkEditor
       options:
         silhouette: text.free

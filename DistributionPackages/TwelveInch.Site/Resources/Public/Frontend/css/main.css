@@ -7159,16 +7159,19 @@ label.panel-block {
       .twelveinch-footer span {
         display: none; } }
   .twelveinch-footer .footerMenu ul li {
+    font-size: 18px;
     font-weight: 600;
     text-transform: uppercase;
-    margin: 0 !important; }
+    margin: 0 !important 10px; }
     @media screen and (min-width: 1024px) {
-      .twelveinch-footer .footerMenu ul li:after {
-        content: '/';
-        margin: 0 15px; }
-      .twelveinch-footer .footerMenu ul li:last-child:after {
-        content: '';
-        margin: 0; } }
+      .twelveinch-footer .footerMenu ul li {
+        font-size: 12px; }
+        .twelveinch-footer .footerMenu ul li:after {
+          content: '/';
+          margin: 0 15px; }
+        .twelveinch-footer .footerMenu ul li:last-child:after {
+          content: '';
+          margin: 0; } }
   .twelveinch-footer .footerAddress ul li {
     margin-top: 10px; }
     .twelveinch-footer .footerAddress ul li:first-child {
@@ -7176,7 +7179,11 @@ label.panel-block {
       margin-bottom: 10px; }
       @media screen and (min-width: 1024px) {
         .twelveinch-footer .footerAddress ul li:first-child {
-          display: none; } }
+          display: none;
+          margin: 0 9px; } }
+    @media screen and (min-width: 1024px) {
+      .twelveinch-footer .footerAddress ul li {
+        margin: 0 9px; } }
   .twelveinch-footer .footerMenu, .twelveinch-footer .footerAddress {
     display: inline-flex;
     width: calc(50% - .5rem); }
@@ -7199,8 +7206,7 @@ label.panel-block {
           margin: 10px auto;
           font-size: 12px; }
           .twelveinch-footer .footerMenu ul li, .twelveinch-footer .footerAddress ul li {
-            display: inline-block;
-            margin: 0 9px; } }
+            display: inline-block; } }
   .twelveinch-footer .SoMe-icons {
     display: flex;
     margin: 10px auto;
@@ -7289,6 +7295,8 @@ label.panel-block {
 
 .navbar-burger span {
   height: 2px; }
+  .navbar-burger span:nth-child(2) {
+    width: 20px; }
 
 .navbar-burger {
   margin-left: 0; }
@@ -7325,25 +7333,27 @@ label.panel-block {
   .twelveinch-navbar-secondmenu-desktop {
     display: none; } }
 
-.twelveinch-items li {
-  opacity: 0;
-  transition: opacity .2s ease-in-out 0s; }
-  @media screen and (min-width: 1024px) {
-    .twelveinch-items li {
-      opacity: 1; } }
-  .twelveinch-items li a {
-    color: #1f1f1f;
-    font-size: 9vw;
-    line-height: 1.2;
-    font-weight: 900;
-    text-transform: lowercase; }
-    .twelveinch-items li a:hover {
-      color: #FF6666; }
+.twelveinch-items {
+  overflow: hidden; }
+  .twelveinch-items li {
+    opacity: 0;
+    transition: opacity .2s ease-in-out 0s; }
     @media screen and (min-width: 1024px) {
-      .twelveinch-items li a {
-        font-size: 0.8rem;
-        font-weight: 600;
-        /*&:before, &:after {
+      .twelveinch-items li {
+        opacity: 1; } }
+    .twelveinch-items li a {
+      color: #1f1f1f;
+      font-size: 9vw;
+      line-height: 1.2;
+      font-weight: 900;
+      text-transform: lowercase; }
+      .twelveinch-items li a:hover {
+        color: #FF6666; }
+      @media screen and (min-width: 1024px) {
+        .twelveinch-items li a {
+          font-size: 0.8rem;
+          font-weight: 600;
+          /*&:before, &:after {
                     content: " ";
                     position: absolute;
                     background-color: transparent;
@@ -7368,11 +7378,11 @@ label.panel-block {
                     top:50%;
                     transform: translate(-50%,-50%);
                 }*/ } }
-  .twelveinch-items li:first-child {
-    margin-top: 1rem; }
-  @media screen and (min-width: 1024px) {
     .twelveinch-items li:first-child {
-      margin-top: 0; } }
+      margin-top: 1rem; }
+    @media screen and (min-width: 1024px) {
+      .twelveinch-items li:first-child {
+        margin-top: 0; } }
 
 .navbar-item, .navbar-end {
   padding: 0.4rem 1.4rem; }
@@ -7528,6 +7538,11 @@ label.panel-block {
           opacity: 1;
           /*outline: 1px $dark-grey solid;*/
           cursor: pointer; } }
+  .productItem .ProductTag {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 100; }
   .productItem .productItemName {
     font-size: 1em;
     font-weight: 600;

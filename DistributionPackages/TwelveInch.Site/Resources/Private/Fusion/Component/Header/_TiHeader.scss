@@ -23,6 +23,10 @@ $animate: all 0.5s ease-in-out;
 
 .navbar-burger span {
     height: 2px;
+
+    &:nth-child(2) {
+        width: 20px;
+    }
 }
 
 .navbar-burger {
@@ -74,6 +78,7 @@ $animate: all 0.5s ease-in-out;
 }
 
 .twelveinch-items {
+        overflow: hidden;
 
     li {
         opacity: 0;

@@ -35,6 +35,3 @@ Neos:
       frontendConfiguration:
         defaultInlineEditor: 'ckeditor5'
         hotkeys: ~
-  CodeQ:
-  Instagram:
-    accessToken: XXX

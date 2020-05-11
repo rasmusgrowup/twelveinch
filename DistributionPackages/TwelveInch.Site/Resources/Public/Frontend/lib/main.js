@@ -26,17 +26,8 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
-// Initialization of Animate On Scroll
-// See https://github.com/michalsnik/aos/tree/v2 for docs
-document.addEventListener('DOMContentLoaded', function () {
-  AOS.init({
-    //offset: 50,
-    duration: 900,
-    easing: 'ease-out-quad'
-  });
-});
-
-var acc = document.getElementsByClassName("question");
+// Accordion Script
+var acc = document.getElementsByClassName("accordion");
 var i;
 
 for (i = 0; i < acc.length; i++) {
@@ -46,11 +37,22 @@ for (i = 0; i < acc.length; i++) {
     this.classList.toggle("active");
 
     /* Toggle between hiding and showing the active panel */
-    var answer = this.nextElementSibling;
-    if (answer.style.display === "block") {
-      answer.style.display = "none";
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
     } else {
-      answer.style.display = "block";
+      panel.style.display = "block";
     }
   });
 }
+
+
+// Initialization of Animate On Scroll
+// See https://github.com/michalsnik/aos/tree/v2 for docs
+document.addEventListener('DOMContentLoaded', function () {
+  AOS.init({
+    //offset: 50,
+    duration: 900,
+    easing: 'ease-out-quad'
+  });
+});
