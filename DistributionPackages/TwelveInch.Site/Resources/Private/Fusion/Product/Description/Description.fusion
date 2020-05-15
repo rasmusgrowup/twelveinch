@@ -1,0 +1,32 @@
+prototype(TwelveInch.Site:Product.Description) < prototype(Neos.Neos:ContentComponent) {
+    title = Neos.Neos:Editable {
+        property = 'title'
+    }
+    text = Neos.Neos:Editable {
+        property = 'text'
+    }
+    price = Neos.Neos:Editable {
+        property = 'price'
+    }
+    label = Neos.Neos:Editable {
+        property = 'label'
+    }
+    starsUri = Neos.Fusion:ResourceUri {
+    path = 'resource://TwelveInch.Site/Public/Frontend/img/stars.png'
+    }
+    link = ${q(node).property('link')}
+    linkTarget = ${q(node).property('linkTarget') ? '_blank' : '_self'}
+    renderAsLink = ${site.context.inBackend ? false : true}
+
+    renderer = afx`
+    <div class="productDescription" data-aos="fade-up" data-aos-delay="300">
+        <div class="headline">{props.title}</div>
+        <span class="avgratings">AVG. RATINGS: 4.9</span>
+        <img src={props.starsUri} alt="Stars" width="100" height="auto" />
+        <div class="productInfo">{props.text}</div>
+        <div class="productPrice">{props.price}</div>
+        <Carbon.Link:Link link={props.link} additionalClass="TwelveinchButton">{props.label}</Carbon.Link:Link>
+        <span class="stock">In stock</span>
+    </div>
+    `
+}

@@ -5,9 +5,9 @@ prototype(TwelveInch.Site:Document.HomePage) < prototype(TwelveInch.Site:Documen
         }
 
         renderer = afx`
-            <main class="main has-navbar-fixed-top">
-                {props.main}
-            </main>
+        <main class="main has-navbar-fixed-top">
+            {props.main}
+        </main>
         `
     }
 }

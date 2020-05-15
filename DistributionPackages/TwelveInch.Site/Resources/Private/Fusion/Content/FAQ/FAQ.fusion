@@ -1,4 +1,5 @@
 prototype(TwelveInch.Site:Content.FAQ) < prototype(Neos.Neos:ContentComponent) {
+
     answer = Neos.Neos:Editable {
         property = 'answer'
     }

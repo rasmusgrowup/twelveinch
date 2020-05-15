@@ -32,15 +32,16 @@ prototype(TwelveInch.Site:Component.Footer) < prototype(Neos.Neos:ContentCompone
           <div class="content">
               <div class="footerMenu">
                   <ul>
-                      <li><a href="/products">Products</a></li>
-                      <li><a href="/the-grid">The Grid</a></li>
-                      <li><a href="/how-to">How To</a></li>
-                      <li><a href="/stories">Stories</a></li>
-                      <li><a href="/about-us">About Us</a></li>
-                      <li><a href="/faq">FAQ</a></li>
-                      <li><a href="/legal">Legal</a></li>
-                      <li><a href="#">B2B</a></li>
-                      <li><a href="#">Press</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/products">Products</a></li>
+                    <li><a href="/the-grid">The Grid</a></li>
+                    <li><a href="/how-to">How To</a></li>
+                    <li><a href="/stories">Stories</a></li>
+                    <li><a href="/about-us">About Us</a></li>
+                    <li><a href="/faq">FAQ</a></li>
+                    <li><a href="/legal">Legal</a></li>
+                    <li><a href="#">B2B</a></li>
+                    <li><a href="#">Press</a></li>
                   </ul>
               </div>
                 <div class="footerAddress"><ul>

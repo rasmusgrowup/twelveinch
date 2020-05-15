@@ -1,17 +1,17 @@
 .TwelveinchSeoText {
-    margin: 0 auto 40px;
+    margin: 0 auto;
     padding: 0 25px;
     color: #1f1f1f;
 
     @media screen and (min-width: $desktop) {
-        margin: 40px auto 20px;
+        margin: 0 auto;
         max-width: 840px;
         padding: 0 40px;
         text-align: center;
     }
 
     p {
-        margin-bottom: 15px;
+        margin-bottom: 30px;
     }
 
     .SeoHeadline {

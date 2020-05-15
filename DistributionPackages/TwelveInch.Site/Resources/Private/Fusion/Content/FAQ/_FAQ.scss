@@ -27,7 +27,7 @@
         .cross {
             display: block;
             position: absolute;
-            right: 0;
+            right: 40px;
             top: 10px;
             height: 15px;
             width: 15px;
@@ -38,6 +38,7 @@
                 background-color: $black;
                 height: 2px;
                 width: 15px;
+                /*transition: width 0.3s cubic-bezier(0.25, 1, 0.5, 1);*/
 
                 &:last-child {
                     transform: rotate(90deg);
@@ -54,13 +55,17 @@
             span {
                 &:last-child {
                     display: none;
+                    /*width: 0;*/
                 }
             }
         }
     }
 
     .answer {
-        display: none;
+        /*display: none;*/
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s cubic-bezier(0.25, 1, 0.5, 1);
 
         p {
             padding-right: 40px;

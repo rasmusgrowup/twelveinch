@@ -1,0 +1,20 @@
+
+'TwelveInch.Site:Content.Newsletter':
+  superTypes:
+    'Neos.Neos:Content': true
+    'TwelveInch.Site:Content.Button': true
+  ui:
+    label: Newsletter Element
+    icon: envelope
+    position: 1000
+    inlineEditable: true
+    reloadIfChanged: true
+  properties:
+    text:
+      ui:
+        inline:
+          editorOptions:
+            placeholder: '<p>Enter text here...</p>'
+            hyphens: true
+      options:
+        silhouette: text.free

@@ -1,7 +1,8 @@
 .headline {
-    margin: 15px auto;
+    margin: 0 auto;
     padding: 0 25px;
     color: #1f1f1f;
+    text-transform: uppercase;
 
     h1 {
         font-size: 2rem;
@@ -28,7 +29,7 @@
     }
 
     @media screen and (min-width: $desktop) {
-        margin: 30px auto 15px;
+        margin: 0 auto 0;
         max-width: 840px;
         padding: 0 40px;
 

@@ -1,0 +1,52 @@
+.productDescription {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-width: 570px;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 40px 0;
+
+    @media screen and (min-width: $desktop) {
+        padding: 40px;
+    }
+
+    .headline {
+        text-align: center;
+        font-size: 1.5em;
+        font-weight: 900;
+    }
+
+    .avgratings {
+        display: block;
+        margin: 10px auto 0;
+        font-size: .7em;
+        text-align: center;
+    }
+
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .productInfo {
+        text-align: center;
+        margin: 40px auto;
+    }
+
+    .productPrice {
+        display: block;
+        margin: 0 auto 10px;
+        text-align: center;
+        font-size: 1.2em;
+        font-weight: 900;
+    }
+
+    .stock {
+        display: block;
+        margin: 10px auto;
+        font-size: .7em;
+        text-align: center;
+        color: $green;
+    }
+}

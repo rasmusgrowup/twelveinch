@@ -1,0 +1,44 @@
+prototype(TwelveInch.Site:Content.Newsletter) < prototype(Neos.Neos:ContentComponent) {
+    text = Neos.Neos:Editable {
+        property = 'text'
+    }
+    label = Neos.Neos:Editable {
+        property = 'label'
+    }
+    turntableUri = Neos.Fusion:ResourceUri {
+    path = 'resource://TwelveInch.Site/Public/Frontend/img/turntable_image.jpg'
+    }
+    link = ${q(node).property('link')}
+    linkTarget = ${q(node).property('linkTarget') ? '_blank' : '_self'}
+    renderAsLink = ${site.context.inBackend ? false : true}
+
+renderer = afx`
+    <div class="newsletter">
+        <div class="" data-aos="fade-up">
+            <h2>{props.text}</h2>
+        </div>
+        <div class="" data-aos="fade-up">
+            <span class="TwelveinchButton" onclick="modalFunction()" data-target="modal" aria-haspopup="true">{props.label}</span>
+        </div>
+        <div class="modal" id="modal">
+          <div class="modal-background" onclick="modalFunction()"></div>
+          <div class="modal-content">
+              <div class="modalNewsletterLeftside">
+                    <img src={props.turntableUri} alt="Turntable"/>
+              </div>
+            <div class="modalNewsletterRightside">
+                <h3>STAY IN THE LOOP</h3>
+                <p>Carefully curated news about our products and everything vinyl-related. How does that sound? Good, now sign up below, and that’s what you get.</p>
+                <form class="">
+                    <input type="text" id="name" name="name" placeholder="Enter your name"/>
+                    <input type="text" id="email adress" name="email adress" placeholder="Enter your email address"/>
+                </form>
+                <span class="TwelveinchButton signup">Sign up now</span>
+                <span class="newsletterConsent"><p>By signing up to our newsletter, you are consenting to share with us your personal name and email address.</p></span>
+            </div>
+            <button class="modal-close is-large" aria-label="close" onclick="modalFunction()"></button>
+          </div>
+        </div>
+    </div>
+`
+}

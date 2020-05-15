@@ -1,0 +1,9 @@
+
+'TwelveInch.Site:Content.Breadcrumb':
+  superTypes:
+    'Neos.Neos:Content': true
+  ui:
+    label: Breadcrumb
+    icon: bread-slice
+    position: 40
+    reloadIfChanged: true

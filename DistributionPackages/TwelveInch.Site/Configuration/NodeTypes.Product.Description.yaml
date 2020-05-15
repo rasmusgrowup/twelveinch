@@ -1,0 +1,20 @@
+'TwelveInch.Site:Product.Description':
+  superTypes:
+    'Neos.Neos:Content': true
+    'TwelveInch.Site:Content.Headline': true
+    'TwelveInch.Site:Content.Text': true
+    'TwelveInch.Site:Content.Button': true
+  ui:
+    label: Product Description
+    icon: align-center
+    position: 720
+    inlineEditable: true
+  properties:
+    price:
+      ui:
+        inline:
+          editorOptions:
+            placeholder: '<p>Enter price here...</p>'
+            hyphens: true
+      options:
+        silhouette: text.free

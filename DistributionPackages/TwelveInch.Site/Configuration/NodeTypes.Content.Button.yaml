@@ -7,6 +7,7 @@
     icon: external-link-alt
     position: 400
     inlineEditable: true
+    reloadIfChanged: true
     inspector:
       groups:
         link:
@@ -14,13 +15,14 @@
           icon: external-link-alt
   properties:
     label:
+      type: string
       ui:
-        inlineEditable: true
         inline:
           editorOptions:
-            placeholder: 'Enter link here'
+            placeholder: '<p>Enter link...</p>'
+            hyphens: true
       options:
-        silhouette: text.plain
+        silhouette: text.free
     link:
       type: string
       ui:

@@ -1,0 +1,19 @@
+.breadcrumbs {
+    padding: 0 40px;
+    color: #1f1f1f;
+
+    ul {
+        font-size: .8em;
+        li{
+            display: inline-flex;
+        }
+    }
+
+    a {
+        padding: 0 0.1em;
+    }
+
+    .current {
+        padding: 0 0.1em;
+    }
+}

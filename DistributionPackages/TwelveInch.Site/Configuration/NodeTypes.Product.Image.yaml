@@ -1,0 +1,8 @@
+'TwelveInch.Site:Product.Image':
+  superTypes:
+    'Neos.Neos:Content': true
+    'TwelveInch.Site:Mixin.Image': true
+  ui:
+    label: Product Image
+    icon: icon-picture
+    position: 700

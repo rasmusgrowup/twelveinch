@@ -43,6 +43,33 @@
   }
 }
 
+/*  Scrool Weight
+
+body {
+  padding: 0;
+  overflow: hidden;
+}
+
+.scroll-wrapper {
+  width: 100vw;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 1px;
+  transform-style: preserve-3d
+}
+
+.scroll-wrapper2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: -10px;
+  margin:0;
+  padding:0;
+  transform: translateZ(-1px)  scale(2);
+} */
+
 @import "../node_modules/bulma/sass/utilities/initial-variables";
 
 $black: #1f1f1f;
@@ -59,6 +86,7 @@ $primary-invert: $grey;
 // Components
 @import "../../../Private/Fusion/Component/Footer/Footer";
 @import "../../../Private/Fusion/Content/Text/Text";
+@import "../../../Private/Fusion/Content/StatementText/StatementText";
 @import "../../../Private/Fusion/Content/SeoText/SeoText";
 @import "../../../Private/Fusion/Content/HeroText/HeroText";
 @import "../../../Private/Fusion/Component/Header/TiHeader";
@@ -70,4 +98,9 @@ $primary-invert: $grey;
 @import "../../../Private/Fusion/Content/Address/Address";
 @import "../../../Private/Fusion/Content/ImageCaption/ImageCaption";
 @import "../../../Private/Fusion/Content/Button/Buttons";
-@import "../../../Private/Fusion/Content/Instagram/Instagram"
+@import "../../../Private/Fusion/Content/Newsletter/Newsletter";
+@import "../../../Private/Fusion/Collection/Section/Section";
+@import "../../../Private/Fusion/Content/Breadcrumb/Breadcrumb";
+@import "../../../Private/Fusion/Product/Image/Image";
+@import "../../../Private/Fusion/Product/Description/Description";
+@import "../../../Private/Fusion/scss/columns"

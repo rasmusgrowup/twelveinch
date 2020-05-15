@@ -1,0 +1,26 @@
+
+'TwelveInch.Site:Content.StatementText':
+  superTypes:
+    'Neos.Neos:Content': true
+  ui:
+    label: Statement Text
+    icon: icon-file-text
+    position: 220
+    inlineEditable: true
+  properties:
+    statementText:
+      ui:
+        inline:
+          editorOptions:
+            placeholder: '<p>Enter statement here...</p>'
+            hyphens: true
+      options:
+        silhouette: text.free
+    text:
+      ui:
+        inline:
+          editorOptions:
+            placeholder: '<p>Enter text here...</p>'
+            hyphens: true
+      options:
+        silhouette: text.free

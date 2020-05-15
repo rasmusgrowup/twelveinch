@@ -1,0 +1,25 @@
+.statementBox {
+    display: block;
+    margin: 0 auto 40px;
+    padding: 0 25px;
+    color: #1f1f1f;
+
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        margin: 60px auto;
+        max-width: 1240px;
+        padding: 0 40px;
+    }
+
+    .statement {
+        font-size: 1.2em;
+        margin-bottom: 0.75rem;
+        @media screen and (min-width: $desktop) {
+            margin-bottom: 0;
+        }
+    }
+
+    .statementText {
+        max-width: 840px;
+    }
+}

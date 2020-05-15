@@ -1,0 +1,15 @@
+prototype(TwelveInch.Site:Content.StatementText) < prototype(Neos.Neos:ContentComponent) {
+    statementText = Neos.Neos:Editable {
+        property = 'statementText'
+    }
+    text = Neos.Neos:Editable {
+        property = 'text'
+    }
+
+    renderer = afx`
+    <div class="statementBox">
+        <div class="statement" data-aos="fade-up" data-aos-delay="100">{props.statementText}</div>
+        <div class="statementText" data-aos="fade-up" data-aos-delay="300">{props.text}</div>
+    </div>
+    `
+}

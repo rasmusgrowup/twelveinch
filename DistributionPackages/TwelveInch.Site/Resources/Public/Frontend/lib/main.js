@@ -26,33 +26,34 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
-// Accordion Script
+// Open & Close of modals javascript code
+function modalFunction() {
+  var element = document.getElementById("modal");
+  element.classList.toggle("is-active");
+}
+
+// Accordion javascript
 var acc = document.getElementsByClassName("accordion");
 var i;
 
 for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    /* Toggle between adding and removing the "active" class,
-    to highlight the button that controls the panel */
+  acc[i].addEventListener("click", function () {
     this.classList.toggle("active");
-
-    /* Toggle between hiding and showing the active panel */
     var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
     } else {
-      panel.style.display = "block";
+      panel.style.maxHeight = panel.scrollHeight + "px";
     }
   });
 }
-
 
 // Initialization of Animate On Scroll
 // See https://github.com/michalsnik/aos/tree/v2 for docs
 document.addEventListener('DOMContentLoaded', function () {
   AOS.init({
     //offset: 50,
-    duration: 900,
-    easing: 'ease-out-quad'
+    duration: 1000,
+    easing: 'ease-out-quart'
   });
 });

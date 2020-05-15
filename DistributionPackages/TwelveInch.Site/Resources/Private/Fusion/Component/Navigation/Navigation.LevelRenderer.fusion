@@ -3,7 +3,7 @@ prototype(TwelveInch.Site:Component.Navigation.LevelRenderer) < prototype(Neos.F
     node = ${node}
     itemTitle = ${q(node).property('title')}
     itemClass = Neos.Fusion:RawArray {
-        base = 'navbar-item'
+        base = 'navbar-item dropdown is-hoverable'
         level = ${'navigation-item--level-' + nodeDepth}
         current = 'navigation-item--state-current'
         current.@if.isCurrent = ${node == documentNode}
@@ -20,7 +20,7 @@ prototype(TwelveInch.Site:Component.Navigation.LevelRenderer) < prototype(Neos.F
 
     renderer = afx`
         <li class={props.itemClass}>
-            <Carbon.Link:Link title={props.itemTitle} node={node} additionalClass="navigation-link" backendLink={true} />
+            <Carbon.Link:Link title={props.itemTitle} node={node} additionalClass="navigation-link dropdown-trigger" backendLink={true} />
             <ul @if.hasItems={props.navigationItems} class={props.navigationClass}>
                 {props.navigationItems}
             </ul>

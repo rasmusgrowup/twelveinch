@@ -1,0 +1,34 @@
+.column {
+    padding: 0.4rem;
+}
+
+.columns-33-66 {
+    .column {
+        &:first-child {
+            flex-grow: 1;
+        }
+        &:last-child {
+            flex-grow: 2;
+        }
+    }
+}
+
+.columns-66-33 {
+    .column {
+        &:first-child {
+            flex-grow: 5;
+        }
+        &:last-child {
+            flex-grow: 3;
+        }
+
+        img {
+            object-fit: cover;
+            object-position: top;
+            @media screen and (min-width: $desktop){
+                height: 45vw;
+                width: 100%;
+            }
+        }
+    }
+}

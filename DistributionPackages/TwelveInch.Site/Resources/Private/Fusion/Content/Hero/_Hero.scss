@@ -2,7 +2,7 @@
     display: flex;
     margin: 0 auto;
     height: 62vh;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 
         @media screen and (min-width: $desktop) {
             width: 100%;
@@ -12,7 +12,7 @@
         }
 
         @media screen and (min-width: 1501px) {
-            height: 750px;
+            height: 840px;
         }
 
     img {

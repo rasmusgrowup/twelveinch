@@ -24,7 +24,8 @@
         "shel/neos-hyphens": "~1.0",
         "sitegeist/silhouettes": "~1.0",
 
-        "neos/nodetypes-contentreferences": "*"
+        "neos/nodetypes-contentreferences": "*",
+        "unikka/neos-slick": "^3.3"
     },
     "extra": {
         "neos": {

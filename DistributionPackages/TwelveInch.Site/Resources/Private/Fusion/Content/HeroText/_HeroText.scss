@@ -1,10 +1,10 @@
 .TwelveinchHeader {
-    margin: 25px auto 40px;
+    margin: 0 auto;
     padding: 0 25px;
     color: #1f1f1f;
 
     @media screen and (min-width: $desktop) {
-        margin: 60px auto;
+        margin: 0 auto;
         max-width: 840px;
         padding: 0 40px;
         text-align: center;

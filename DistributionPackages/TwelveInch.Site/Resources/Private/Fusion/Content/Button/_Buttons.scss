@@ -6,9 +6,13 @@
     margin: 0 auto;
     background-color: $black;
     color: $grey;
-    font-size: 0.8em;
+    font-size: 1em;
     text-transform: uppercase;
     font-weight: 900;
+
+    @media screen and (min-width: $desktop) {
+        font-size: 0.8em;
+    }
 
     &:hover {
         background-color: $red;
