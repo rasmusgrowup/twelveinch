@@ -4,7 +4,7 @@ prototype(TwelveInch.Site:Component.Navigation) < prototype(TwelveInch.Site:Comp
 
     // overrides the
     renderer = afx`
-        <ul class="twelveinch-items navbar-start">
+        <ul class="navigation-items">
             {props.navigationItems}
         </ul>
     `

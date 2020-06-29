@@ -15,7 +15,6 @@
           icon: external-link-alt
   properties:
     label:
-      type: string
       ui:
         inline:
           editorOptions:

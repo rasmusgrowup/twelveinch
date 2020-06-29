@@ -17,4 +17,5 @@ Carbon:
             - aos.css
           Body:
             - main.js
+            - shop.js
             - aos.js

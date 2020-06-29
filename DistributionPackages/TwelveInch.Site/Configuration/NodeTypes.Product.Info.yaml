@@ -1,0 +1,42 @@
+'TwelveInch.Site:Product.Info':
+  superTypes:
+    'Neos.Neos:Content': true
+    'TwelveInch.Site:Content.Text': true
+  ui:
+    label: Product Info
+    icon: info
+    position: 730
+    inlineEditable: true
+  properties:
+    SKU:
+      ui:
+        inline:
+          editorOptions:
+            placeholder: '<p>Enter SKU here...</p>'
+            hyphens: true
+      options:
+        silhouette: text.free
+    weight:
+      ui:
+        inline:
+          editorOptions:
+            placeholder: '<p>Enter weight here...</p>'
+            hyphens: true
+      options:
+        silhouette: text.free
+    dimensions:
+      ui:
+        inline:
+          editorOptions:
+            placeholder: '<p>Enter dimensions here...</p>'
+            hyphens: true
+      options:
+        silhouette: text.free
+    info:
+      ui:
+        inline:
+          editorOptions:
+            placeholder: '<p>Enter info text here...</p>'
+            hyphens: true
+      options:
+        silhouette: text.free

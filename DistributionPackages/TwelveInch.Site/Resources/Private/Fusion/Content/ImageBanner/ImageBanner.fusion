@@ -1,0 +1,13 @@
+prototype(TwelveInch.Site:Content.ImageBanner) < prototype(Neos.Neos:ContentComponent) {
+    alternativeText = ${node.properties.alternativeText}
+    src = TwelveInch.Site:Component.ImageUri {
+        @context.asset = ${q(node).property('image')}
+        @context.maximumWidth = 900
+    }
+
+    renderer = afx`
+    <div class="imageBanner" data-aos="fade-up">
+        <img src={props.src} alt={props.alternativeText} />
+    </div>
+    `
+}

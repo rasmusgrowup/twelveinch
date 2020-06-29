@@ -1,0 +1,36 @@
+prototype(TwelveInch.Site:Content.Slider) < prototype(Neos.Neos:ContentComponent) {
+    alternativeText = ${node.properties.alternativeText}
+    alternativeText2 = ${node.properties.alternativeText2}
+    alternativeText3 = ${node.properties.alternativeText3}
+    src = TwelveInch.Site:Component.ImageUri {
+        @context.asset = ${q(node).property('slide1')}
+        @context.maximumWidth = 900
+    }
+    src2 = TwelveInch.Site:Component.ImageUri {
+        @context.asset = ${q(node).property('slide2')}
+        @context.maximumWidth = 900
+    }
+    src3 = TwelveInch.Site:Component.ImageUri {
+        @context.asset = ${q(node).property('slide3')}
+        @context.maximumWidth = 900
+    }
+
+    renderer = afx`
+    <div class="slideshow-container">
+        <div class="mySlides">
+            <div class="numbertext">1 / 3</div>
+            <img src={props.src} alt={props.alternativeText} />
+      </div>
+        <div class="mySlides">
+            <div class="numbertext">2 / 3</div>
+            <img src={props.src2} alt={props.alternativeText2} />
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">3 / 3</div>
+            <img src={props.src3} alt={props.alternativeText3} />
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    `
+}

@@ -6,6 +6,7 @@
     label: 'Hero Image'
     icon: icon-picture
     position: 50
+    reloadIfChanged: true
     inspector:
       groups:
         image:
@@ -16,7 +17,6 @@
       type: Neos\Media\Domain\Model\ImageInterface
       ui:
         label: 'Image'
-        reloadIfChanged: true
         inspector:
           group: image
     alternativeText:
@@ -25,3 +25,26 @@
         label: 'Alternative Text'
         inspector:
           group: image
+    text:
+      ui:
+        inline:
+          editorOptions:
+            placeholder: '<h1>Enter text here...</h1>'
+            hyphens: true
+      options:
+        silhouette: text.free
+    label:
+      ui:
+        inline:
+          editorOptions:
+            placeholder: '<h1>Enter text here...</h1>'
+            hyphens: true
+      options:
+        silhouette: text.free
+    link:
+      type: string
+      ui:
+        label: 'Link target'
+        inspector:
+          group: image
+          editor: Neos.Neos/Inspector/Editors/LinkEditor

@@ -1,10 +1,9 @@
-
 // Open & Close of responsive menu javascript code
 // See https://bulma.io/documentation/components/navbar/ for docs
 document.addEventListener('DOMContentLoaded', () => {
 
   // Get all "navbar-burger" elements
-  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.open-navigation, .close-menu'), 0);
 
   // Check if there are any navbar burgers
   if ($navbarBurgers.length > 0) {
@@ -25,6 +24,12 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+// Close menu on click outside menu wrapper
+function closemenuFunction() {
+  var element = document.getElementById("navigation-menu");
+  element.classList.remove("is-active");
+}
 
 // Open & Close of modals javascript code
 function modalFunction() {
@@ -52,8 +57,31 @@ for (i = 0; i < acc.length; i++) {
 // See https://github.com/michalsnik/aos/tree/v2 for docs
 document.addEventListener('DOMContentLoaded', function () {
 AOS.init({
-	  //offset: 50,
-	  duration: 1000,
+	  offset: 20,
+	  duration: 1200,
 	  easing: 'ease-out-quart',
     });
+});
+
+var new_scroll_position = 0;
+var last_scroll_position;
+var header = document.getElementById("navigation-bar");
+
+window.addEventListener('scroll', function(e) {
+  last_scroll_position = window.scrollY;
+
+  // Scrolling down
+  if (new_scroll_position < last_scroll_position && last_scroll_position > 80) {
+    // header.removeClass('slideDown').addClass('slideUp');
+    header.classList.remove("show");
+    header.classList.add("hide");
+
+  // Scrolling up
+  } else if (new_scroll_position > last_scroll_position) {
+    // header.removeClass('slideUp').addClass('slideDown');
+    header.classList.remove("hide");
+    header.classList.add("show");
+  }
+
+  new_scroll_position = last_scroll_position;
 });

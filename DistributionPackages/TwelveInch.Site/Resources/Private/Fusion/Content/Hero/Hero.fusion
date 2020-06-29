@@ -3,10 +3,32 @@ prototype(TwelveInch.Site:Content.Hero) < prototype(Neos.Neos:ContentComponent) 
     src = TwelveInch.Site:Component.ImageUri {
         @context.asset = ${q(node).property('image')}
     }
+    text = Neos.Neos:Editable {
+        property = 'text'
+    }
+    btntext = Neos.Neos:Editable {
+        property = 'btntext'
+    }
+    label = Neos.Neos:Editable {
+        property = 'label'
+    }
+    link = ${q(node).property('link')}
+    linkTarget = ${q(node).property('linkTarget') ? '_blank' : '_self'}
+    renderAsLink = ${site.context.inBackend ? false : true}
+
+    arrowUri = Neos.Fusion:ResourceUri {
+    path = 'resource://TwelveInch.Site/Public/Frontend/svg/down-arrow-white.svg'
+    }
 
     renderer = afx`
-        <div class="twelveinch-hero" data-aos="fade-up">
+    <div class="hero-content">
+        <div class="hero-image">
             <img class="" src={props.src} alt={props.alternativeText} />
         </div>
+        <div class="hero-cta">
+            <div class="hero-headline">{props.text}</div>
+            <Carbon.Link:Link link={props.link} additionalClass="hero-button" role="button">{props.label}<img src={props.arrowUri} alt=""/></Carbon.Link:Link>
+        </div>
+    </div>
     `
 }

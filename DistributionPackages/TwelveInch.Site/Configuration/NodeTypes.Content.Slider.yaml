@@ -1,0 +1,65 @@
+'TwelveInch.Site:Content.Slider':
+  superTypes:
+    'Neos.Neos:Content': true
+  ui:
+    label: 'Slider'
+    position: 5
+    icon: images
+  properties:
+    slide1:
+      type: Neos\Media\Domain\Model\ImageInterface
+      editorOptions:
+        features:
+          resize: TRUE
+      ui:
+        label: 'Slide 1'
+        reloadIfChanged: true
+        inspector:
+          group: 'image'
+          position: 50
+    alternativeText:
+      type: string
+      ui:
+        label: 'Alternative Text'
+        reloadIfChanged: false
+        inspector:
+          group: 'image'
+          position: 51
+    slide2:
+      type: Neos\Media\Domain\Model\ImageInterface
+      editorOptions:
+        features:
+          resize: TRUE
+      ui:
+        label: 'Slide 2'
+        reloadIfChanged: true
+        inspector:
+          group: 'image'
+          position: 60
+    alternativeText2:
+      type: string
+      ui:
+        label: 'Alternative Text'
+        reloadIfChanged: false
+        inspector:
+          group: 'image'
+          position: 61
+    slide3:
+      type: Neos\Media\Domain\Model\ImageInterface
+      editorOptions:
+        features:
+          resize: TRUE
+      ui:
+        label: 'Slide 3'
+        reloadIfChanged: true
+        inspector:
+          group: 'image'
+          position: 70
+    alternativeText3:
+      type: string
+      ui:
+        label: 'Alternative Text'
+        reloadIfChanged: false
+        inspector:
+          group: 'image'
+          position: 71

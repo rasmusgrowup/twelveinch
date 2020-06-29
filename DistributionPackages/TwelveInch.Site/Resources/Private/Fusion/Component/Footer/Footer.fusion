@@ -1,9 +1,21 @@
 prototype(TwelveInch.Site:Component.Footer) < prototype(Neos.Neos:ContentComponent) {
     @context.node = ${site}
     year = ${Date.format(Date.now(), 'Y')}
-    footerInfo = Neos.Neos:Editable {
+
+    homeLink = Neos.Neos:NodeUri {
         node = ${site}
-        property = 'footerInfo'
+    }
+
+    languageMenu = Neos.Neos:DimensionsMenu {
+    dimension = 'language'
+    }
+
+    logoUri = Neos.Fusion:ResourceUri {
+    path = 'resource://TwelveInch.Site/Public/Frontend/img/twelve_inch_hvid_400.png'
+    }
+
+    avatarUri = Neos.Fusion:ResourceUri {
+    path = 'resource://TwelveInch.Site/Public/Frontend/img/footer-img.png'
     }
 
     paymentUri = Neos.Fusion:ResourceUri {
@@ -14,53 +26,78 @@ prototype(TwelveInch.Site:Component.Footer) < prototype(Neos.Neos:ContentCompone
     path = 'resource://TwelveInch.Site/Public/Frontend/svg/marker.svg'
     }
 
-    instagramUri = Neos.Fusion:ResourceUri {
-    path = 'resource://TwelveInch.Site/Public/Frontend/svg/instagram.svg'
+    fbUri = Neos.Fusion:ResourceUri {
+    path = 'resource://TwelveInch.Site/Public/Frontend/svg/facebook_white.svg'
     }
 
-    pinterestUri = Neos.Fusion:ResourceUri {
-    path = 'resource://TwelveInch.Site/Public/Frontend/svg/pinterest.svg'
+    inUri = Neos.Fusion:ResourceUri {
+    path = 'resource://TwelveInch.Site/Public/Frontend/svg/instagram_white.svg'
     }
 
-    facebookUri = Neos.Fusion:ResourceUri {
-    path = 'resource://TwelveInch.Site/Public/Frontend/svg/facebook.svg'
+    piUri = Neos.Fusion:ResourceUri {
+    path = 'resource://TwelveInch.Site/Public/Frontend/svg/pinterest_white.svg'
+    }
+
+    arrowUri = Neos.Fusion:ResourceUri {
+    path = 'resource://TwelveInch.Site/Public/Frontend/svg/down-arrow-white.svg'
     }
 
     renderer = afx`
-        <footer class="twelveinch-footer footer">
-            <span></span>
-          <div class="content">
-              <div class="footerMenu">
-                  <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/products">Products</a></li>
-                    <li><a href="/the-grid">The Grid</a></li>
-                    <li><a href="/how-to">How To</a></li>
-                    <li><a href="/stories">Stories</a></li>
-                    <li><a href="/about-us">About Us</a></li>
-                    <li><a href="/faq">FAQ</a></li>
-                    <li><a href="/legal">Legal</a></li>
-                    <li><a href="#">B2B</a></li>
-                    <li><a href="#">Press</a></li>
-                  </ul>
-              </div>
-                <div class="footerAddress"><ul>
-                    <li>Contact us</li>
-                    <li>Borgervænget 14, 1, Odense C, 5000, Denmark</li>
-                    <li><a href="tel: +4523433464">+45 2343 3464</a></li>
-                    <li><a href="mailto:info@twelve-inch.com">info@twelve-inch.com</a></li>
-                    <li>CVR. NR. 38417517</li>
-                    <li><a href="javascript:window.Metomic('ConsentManager:show')">Manage Cookie Settings</a></li>
-                </ul></div>
-                <div class="SoMe-icons">
-                    <a href="/find-us-here"><img src={props.pinUri} alt="Find us here" width="18" height="18" /></a>
-                    <a href="https://facebook.com/twelveinchdk"><img src={props.facebookUri} alt="Link to Facebook profil" width="18" height="18" /></a>
-                    <a href="https://instagram.com/twelve_inch_official/"><img src={props.instagramUri} alt="Link to Instagram profil" width="18" height="18" /></a>
-                    <a href="https://www.pinterest.dk/twelveinchofficial/"><img src={props.pinterestUri} alt="Link to Pinterest profil" width="18" height="18" /></a>
+    <footer class="footer">
+        <div class="footer-content" id="footer-content">
+            <div class="footer-avatar">
+                <img src={props.avatarUri} alt="Twelve Inch" width="160px" height="100%" />
+                <div class="footer-address" id="footer-adress">
+                    <ul>
+                        <li>Twelve Inch Aps</li>
+                        <li>Borgervænget 14, 1 <br/>Odense C, 5000 <br/>Denmark</li>
+                        <li><a href="tel: +4523433464">+45 2343 3464</a></li>
+                        <li><a href="mailto:info@twelve-inch.com">info@twelve-inch.com</a></li>
+                        <li>CVR. NR. 38417517</li>
+                    </ul>
                 </div>
-                <img src={props.paymentUri} alt="Payment Options" width="180" height="auto" />
-                <div class="copyright">&copy; 2015-{props.year} Twelve Inch ApS - All rights reserved</div>
-          </div>
-        </footer>
+            </div>
+            <div class="footer-about" id="footer-about">
+                <header>Elevator Pitch</header>
+                <p>Hello there! We are Twelve Inch; a small innovative family owned company with offices and production situated in the heart of Denmark. We design and produce what we think is the worlds greatest products for displaying records in the home like you do with art and paintings. Our products allow you to display your records on the wall without any frames or visible parts - unbelievable, but true! So are you interested?</p>
+            </div>
+            <div class="newsletter-cta" id="newsletter-cta">
+                <header>Sig up for our newsletters</header>
+                <p>Carefully curated news about music, reviews of new albums and occasional offers now and then. That’s what you get, if you sign up for our newsletter.</p>
+                <input type="text" name="" value="" placeholder="Enter your email"/>
+            </div>
+            <div class="footer-nav">
+                <span>Quick Menu</span>
+                <ul class="navigation-items">
+                    <li class="navigation-item">
+                        <a class="home-link" href={props.homeLink}>Home</a>
+                    </li>
+                </ul>
+                <TwelveInch.Site:Component.Navigation startingPoint={site} />
+            </div>
+            <div class="social-cta" id="social-cta">
+                <header>We're on social media</header>
+                <a href="https://facebook.com/twelveinchdk"><img src={props.fbUri} alt="Facebook icon" width="auto" height="18px" /></a>
+                <a href="https://instagram.com/twelve_inch_official/"><img src={props.inUri} alt="Instagram icon" width="auto" height="18px" /></a>
+                <a href="https://www.pinterest.dk/twelveinchofficial/"><img src={props.piUri} alt="Pinterest icon" width="auto" height="18px" /></a>
+            </div>
+            <span class="footer-line"></span>
+            <div class="footer-info">
+                <a class="logo" href={props.homeLink}>
+                    <img src={props.logoUri} alt="Twelve Inch" width="120px" height="auto" />
+                </a>
+                <div class="footer-legal">
+                    <div class="copyright" id="copyright">&copy; {props.year} Twelve Inch ApS - All rights reserved</div>
+                    <div class="secondary-links">
+                        <a href="/privacy">Privacy</a>
+                        <a href="/B2B">B2B</a>
+                        <a href="/press">Press</a>
+                        <a href="javascript:window.Metomic('ConsentManager:show')">Manage Cookies</a>
+                    </div>
+                </div>
+            </div>
+            <div class="language-selector" id="language-selector" role="button" aria-label="Select language">{props.languageMenu}<img src={props.arrowUri} alt="Marker" width="12" height="12" /></div>
+        </div>
+    </footer>
     `
 }

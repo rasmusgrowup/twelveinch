@@ -23,7 +23,7 @@ prototype(TwelveInch.Site:Product.Description) < prototype(Neos.Neos:ContentComp
         <div class="headline">{props.title}</div>
         <span class="avgratings">AVG. RATINGS: 4.9</span>
         <img src={props.starsUri} alt="Stars" width="100" height="auto" />
-        <div class="productInfo">{props.text}</div>
+        <div class="productText">{props.text}</div>
         <div class="productPrice">{props.price}</div>
         <Carbon.Link:Link link={props.link} additionalClass="TwelveinchButton">{props.label}</Carbon.Link:Link>
         <span class="stock">In stock</span>

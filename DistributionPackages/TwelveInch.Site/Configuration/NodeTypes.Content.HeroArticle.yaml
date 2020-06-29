@@ -1,9 +1,9 @@
 
-'TwelveInch.Site:Content.HeroText':
+'TwelveInch.Site:Content.HeroArticle':
   superTypes:
     'Neos.Neos:Content': true
   ui:
-    label: Hero Text
+    label: Hero Article
     icon: icon-file-text
     position: 100
     inlineEditable: true
@@ -20,7 +20,15 @@
       ui:
         inline:
           editorOptions:
-            placeholder: '<p>Enter headline here...</p>'
+            placeholder: '<h2>Enter headline here...</h2>'
+            hyphens: true
+      options:
+        silhouette: text.free
+    subheadline:
+      ui:
+        inline:
+          editorOptions:
+            placeholder: '<h3>Enter sub headline here...</h3>'
             hyphens: true
       options:
         silhouette: text.free

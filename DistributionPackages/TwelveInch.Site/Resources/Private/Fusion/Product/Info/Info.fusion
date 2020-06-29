@@ -1,0 +1,23 @@
+prototype(TwelveInch.Site:Product.Info) < prototype(Neos.Neos:ContentComponent) {
+    SKU = Neos.Neos:Editable {
+        property = 'SKU'
+    }
+    weight = Neos.Neos:Editable {
+        property = 'weight'
+    }
+    dimensions = Neos.Neos:Editable {
+        property = 'dimensions'
+    }
+    info = Neos.Neos:Editable {
+        property = 'info'
+    }
+
+    renderer = afx`
+    <div class="productInfoContainer" data-aos="fade-up">
+        <div class="productSKU"><span>SKU:</span>{props.SKU}</div>
+        <div class="productWeight"><span>Weight:</span>{props.weight}</div>
+        <div class="productDimensions"><span>Dimensions:</span>{props.dimensions}</div>
+        <div class="productInfo"><span>Product Information:</span>{props.info}</div>
+    </div>
+    `
+}
