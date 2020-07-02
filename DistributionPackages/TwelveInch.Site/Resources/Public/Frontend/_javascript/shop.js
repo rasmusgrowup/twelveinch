@@ -1,6 +1,6 @@
 var client = ShopifyBuy.buildClient({
   domain: 'twelve-inch.myshopify.com',
-  storefrontAccessToken: '378964198006c32920e6125db2eece4e', // previously apiKey, now deprecated
+  storefrontAccessToken: '77a08eb26ac8701f5d9989b7a9eb3039', // previously apiKey, now deprecated
 });
 
 var ui = ShopifyBuy.UI.init(client);
@@ -14,6 +14,10 @@ ui.createComponent('cart', {
 	      	contents: {
 	        	button: true
 			},
+			text: {
+		    	title: 'Your Bag',
+				empty: 'Your bag is empty, champ!',
+		    },
 		},
     	toggle: {
       		sticky: false,
@@ -29,3 +33,31 @@ ui.createComponent('cart', {
 	    	}
 	  	}
 });
+
+var element =  document.getElementById('original-add-to-cart');
+if (typeof(element) != 'undefined' && element != null)
+{
+	ui.createComponent('product', {
+		id: '343786815521',
+		node: document.getElementById('original-add-to-cart'),
+		options: {
+			product: {
+				iframe: false,
+				buttonDestination: 'cart',
+				contents: {
+					img: false,
+					button: false,
+					buttonWithQuantity: true,
+					title: false,
+					price: true,
+			    },
+				text: {
+			    	button: 'Add to cart',
+			    }
+			},
+			cart: {
+				startOpen: true,
+			},
+		}
+	});
+}

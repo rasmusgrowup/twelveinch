@@ -45,7 +45,7 @@ $animate: all 0.5s ease-in-out;
 
                 p {
                     font-weight: 500;
-                    font-size: 11px;
+                    font-size: 12px;
                 }
             }
         }
@@ -55,7 +55,7 @@ $animate: all 0.5s ease-in-out;
             justify-content: space-between;
             align-items: center;
             padding: 18px 24px;
-            border-bottom: 1px $black solid;
+            border-bottom: 1px rgba(6, 6, 6, 0.33) solid;
 
             .open-navigation {
                 span {
@@ -206,6 +206,7 @@ $animate: all 0.5s ease-in-out;
             }
 
             a {
+                display: inline-grid;
                 margin-top: 6px;
                 margin-right: 10px;
             }
@@ -306,7 +307,7 @@ $animate: all 0.5s ease-in-out;
 
         @media screen and (min-width: $desktop) {
             width: 420px;
-            border-right: 1px $black solid;
+            border-right: 1px rgba(6, 6, 6, 0.33) solid;
 
             .newsletter-cta, .social-cta, {
                 margin: 40px 0;

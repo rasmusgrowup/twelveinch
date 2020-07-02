@@ -1,13 +1,18 @@
 
 'TwelveInch.Site:Collection.Section':
   superTypes:
-    'Neos.NodeTypes.ColumnLayouts:Column': true
+    'Neos.Neos:Content': true
     'Neos.Neos:ContentCollection': true
   ui:
     group: 'structure'
     label: Section
     icon: 'square'
     inlineEditable: true
+    inspector:
+      groups:
+        section:
+          label: 'Section'
+          icon: square
   childNodes:
     column0:
       type: 'Neos.Neos:ContentCollection'
@@ -15,3 +20,11 @@
     nodeTypes:
       '*': false
       'Neos.Neos:Content': true
+  properties:
+    bottomPadding:
+      type: boolean
+      ui:
+        label: 'Add bottom padding'
+        reloadIfChanged: true
+        inspector:
+          group: section

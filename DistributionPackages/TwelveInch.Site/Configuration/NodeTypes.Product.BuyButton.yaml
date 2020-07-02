@@ -1,0 +1,20 @@
+'TwelveInch.Site:Product.BuyButton':
+  superTypes:
+    'Neos.Neos:Content': true
+  ui:
+    label: BuyButton
+    icon: money-bill-wave-alt
+    position: 750
+    inspector:
+      groups:
+        product:
+          label: 'Choose product'
+          icon: product-hunt
+  properties:
+    originalid:
+      type: boolean
+      ui:
+        label: 'Original'
+        reloadIfChanged: true
+        inspector:
+          group: image

@@ -17,8 +17,9 @@ $link-hover-color: $red;
 
 
 .productItem {
-    margin: 20px auto;
     display: block;
+    margin: 20px auto;
+    position: relative;
 
     .productImage, .productImageHover {
         width: 100%;

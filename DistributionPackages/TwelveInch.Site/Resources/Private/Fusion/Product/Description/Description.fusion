@@ -19,14 +19,12 @@ prototype(TwelveInch.Site:Product.Description) < prototype(Neos.Neos:ContentComp
     renderAsLink = ${site.context.inBackend ? false : true}
 
     renderer = afx`
-    <div class="productDescription" data-aos="fade-up" data-aos-delay="300">
-        <div class="headline">{props.title}</div>
-        <span class="avgratings">AVG. RATINGS: 4.9</span>
-        <img src={props.starsUri} alt="Stars" width="100" height="auto" />
-        <div class="productText">{props.text}</div>
-        <div class="productPrice">{props.price}</div>
-        <Carbon.Link:Link link={props.link} additionalClass="TwelveinchButton">{props.label}</Carbon.Link:Link>
-        <span class="stock">In stock</span>
+    <div class="product-description">
+        <div class="product-headline">{props.title}</div>
+        <span class="product-ratings">AVG. RATINGS: 4.9</span>
+        <img src={props.starsUri} alt="Stars" width="80px" height="auto" />
+        <div class="product-text">{props.text}</div>
+        <div id='original-add-to-cart' class="add-to-cart" role="button"></div>
     </div>
     `
 }

@@ -1,20 +1,12 @@
-.TwelveinchSeoText {
-    margin: 0 auto;
-    padding: 0 25px;
+.seo-text {
     color: #1f1f1f;
-
-    @media screen and (min-width: $desktop) {
-        margin: 0 auto;
-        max-width: 840px;
-        padding: 0 40px;
-        text-align: center;
-    }
+    margin: 0 auto;
 
     p {
         margin-bottom: 30px;
     }
 
-    .SeoHeadline {
+    .seo-headline {
         font-size: 1.2em;
         font-weight: 900;
         text-transform: uppercase;
@@ -25,5 +17,35 @@
                 margin-bottom: 20px;
             }
         }
+    }
+
+    a {
+        color: $black;
+        display: inline-block;
+        font-weight: 700;
+        font-size: .8rem;
+
+        img {
+            height: 10px;
+            margin-left: 12px;
+            transform: rotate(-90deg);
+            width: 10px;
+        }
+
+        &:after {
+            background-color: $black;
+            content: '';
+            display: block;
+            height: 1px;
+        }
+
+        &:hover {
+            color: $red;
+        }
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin: 0 auto;
+        max-width: 980px;
     }
 }

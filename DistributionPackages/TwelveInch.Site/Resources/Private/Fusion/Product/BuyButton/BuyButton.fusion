@@ -1,0 +1,10 @@
+prototype(TwelveInch.Site:Product.BuyButton) < prototype(Neos.Neos:ContentComponent) {
+
+    id = Neos.Neos:Editable {
+        property = 'id'
+    }
+
+    renderer = afx`
+        <div id={props.id} class="add-to-cart" role="button"></div>
+    `
+}

@@ -7,7 +7,7 @@ prototype(TwelveInch.Site:Product.Image) < prototype(Neos.Neos:ContentComponent)
 
     renderer = afx`
     <div class="productImage">
-        <img src={props.src} alt={props.alternativeText} data-aos="fade-up"/>
+        <img src={props.src} alt={props.alternativeText}/>
     </div>
     `
 }

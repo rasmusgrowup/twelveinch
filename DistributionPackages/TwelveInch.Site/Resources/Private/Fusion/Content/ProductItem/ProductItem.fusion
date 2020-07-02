@@ -37,7 +37,7 @@ prototype(TwelveInch.Site:Content.ProductItem) < prototype(Neos.Neos:ContentComp
     addSaleTag = ${q(node).property('addSaleTag') ? 'display:block;' : 'display:none;'}
 
     renderer = afx`
-        <div class="productItem"  data-aos="fade-up">
+        <div class="productItem">
             <Carbon.Link:Link link={props.link}>
                 <img class="productImageHover" src={props.srchover} alt={props.alternativeText}/>
                 <img class="productImage" src={props.src} alt={props.alternativeText}/>

@@ -1,17 +1,18 @@
-.TwelveinchButton {
-    display: block;
-    width: fit-content;
-    width: -webkit-fit-content;
-    padding: 6px 18px;
-    margin: 0 auto;
+.reg-button {
     background-color: $black;
+    border-radius: 3px;
     color: $grey;
+    display: block;
     font-size: 1em;
-    text-transform: uppercase;
-    font-weight: 900;
+    font-weight: 500;
+    margin: 0 auto;
+    padding: 12px 36px;
+    text-align: center;
 
     @media screen and (min-width: $desktop) {
         font-size: 0.8em;
+        width: fit-content;
+        width: -webkit-fit-content;
     }
 
     &:hover {

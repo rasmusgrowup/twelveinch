@@ -5,11 +5,14 @@ prototype(TwelveInch.Site:Content.SeoText) < prototype(Neos.Neos:ContentComponen
     headline = Neos.Neos:Editable {
         property = 'headline'
     }
+    arrowUri = Neos.Fusion:ResourceUri {
+    path = 'resource://TwelveInch.Site/Public/Frontend/svg/down-arrow.svg'
+    }
 
     renderer = afx`
-        <div class="TwelveinchSeoText">
-            <div class="SeoHeadline" data-aos="fade-up">{props.headline}</div>
-            <div class="SeoText" data-aos="fade-up" data-aos-delay="100">{props.text}</div>
-        </div>
+        <article class="seo-text">
+            <header class="seo-headline">{props.headline}</header>
+            <div class="seo-paragraph">{props.text}</div>
+        </article>
     `
 }

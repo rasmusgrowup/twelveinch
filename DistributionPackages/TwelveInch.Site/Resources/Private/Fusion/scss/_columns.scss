@@ -1,5 +1,5 @@
 .columns {
-    margin: 0 calc(25px - 0.4rem);
+    margin: 0;
         flex-wrap: wrap;
 
         @media screen and (min-width: 415px)  {
@@ -15,7 +15,18 @@
 }
 
 .column {
-    padding: 0.4rem;
+    padding: 0;
+}
+
+.columns-50-50 {
+    .column {
+        &:first-child {
+            flex-grow: 1;
+        }
+        &:last-child {
+            flex-grow: 1;
+        }
+    }
 }
 
 .columns-33-66 {

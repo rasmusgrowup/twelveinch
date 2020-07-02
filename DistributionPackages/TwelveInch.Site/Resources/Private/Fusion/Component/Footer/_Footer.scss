@@ -3,7 +3,7 @@ footer {
     color: white;
     font-size: 14px;
     font-weight: 400;
-    padding: 40px !important;
+    padding: 40px  25px !important;
 
     .footer-content {
         max-width: 1400px;
@@ -69,6 +69,7 @@ footer {
             }
 
             a {
+                display: inline-grid;
                 margin-top: 6px;
                 margin-right: 10px;
             }
@@ -184,6 +185,10 @@ footer {
 
             .social-cta {
                 text-align: right;
+
+                a {
+                    display: inline-grid;
+                }
             }
 
             .footer-nav {
@@ -199,7 +204,7 @@ footer {
 
                     li {
                         display: inline-block;
-                        margin-right: 12px;
+                        margin-right: 24px;
                     }
                 }
             }
@@ -220,6 +225,10 @@ footer {
             .footer-info {
                 padding: 0 25px;
                 margin: 25px 0;
+
+                .logo {
+                    margin-right: 24px;
+                }
             }
 
             .language-selector {

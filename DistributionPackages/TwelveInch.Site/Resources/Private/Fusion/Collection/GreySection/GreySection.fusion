@@ -1,4 +1,4 @@
-prototype(TwelveInch.Site:Collection.Section) < prototype(Neos.Fusion:Collection) {
+prototype(TwelveInch.Site:Collection.GreySection) < prototype(Neos.Fusion:Collection) {
     @context.nodeAvailable = ${node && String.length(node.context.workspace.name)}
 	# Set context removedContentShown to get removed nodes too.
 	# Needed for publish function to be able to publish removed nodes.
@@ -26,13 +26,20 @@ prototype(TwelveInch.Site:Collection.Section) < prototype(Neos.Fusion:Collection
 	@exceptionHandler = 'Neos\\Fusion\\Core\\ExceptionHandlers\\BubblingHandler'
 }
 
-prototype(TwelveInch.Site:Collection.Section) < prototype(Neos.Fusion:Tag) {
+prototype(TwelveInch.Site:Collection.GreySection) < prototype(Neos.Fusion:Tag) {
 	tagName = 'section'
+
 	attributes = Neos.Fusion:DataStructure
 
+  # The following is used to automatically append class and data attribute needed for editing.
+  # You can disable the following line with:
+  # prototype(TwelveInch.Site:Collection.GreySection) {
+  #   attributes.class.@process.collectionClass >
+  # }
+  # in your site's Fusion if you don't need that behavior.
   attributes {
     class.@process.collectionClass = Neos.Fusion:Case {
-      @context.collectionClass = 'section'
+      @context.collectionClass = 'section grey-section'
 
       classIsString {
         condition = ${Type.isString(value)}
@@ -43,10 +50,6 @@ prototype(TwelveInch.Site:Collection.Section) < prototype(Neos.Fusion:Tag) {
         condition = ${Type.isArray(value)}
         renderer = ${Array.push(value, collectionClass)}
       }
-    }
-
-    style = Neos.Fusion:DataStructure {
-        bottomPadding = ${q(node).property('bottomPadding') ? 'padding-bottom: 6rem' : 'padding-bottom: 0'}
     }
 
     data-__neos-insertion-anchor = true

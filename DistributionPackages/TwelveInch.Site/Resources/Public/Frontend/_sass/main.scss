@@ -48,6 +48,7 @@
 @import "../node_modules/bulma/sass/utilities/initial-variables";
 
 $black: #070707;
+$black-hover: #383838;
 $dark-grey: #4f4f4f;
 $grey: #f8f8f8;
 $darker-grey: #f2f2f2;
@@ -56,6 +57,7 @@ $green: #1DCC89;
 $family-sans-serif: 'Heebo', "Helvetica", "Arial", sans-serif;
 $primary: $black;
 $primary-invert: $grey;
+
 
 @import "../node_modules/bulma/bulma";
 
@@ -85,4 +87,20 @@ $primary-invert: $grey;
 @import "../../../Private/Fusion/Product/Description/Description";
 @import "../../../Private/Fusion/scss/Columns";
 @import "../../../Private/Fusion/scss/Dropdown";
-@import "../../../Private/Fusion/scss/Shop"
+@import "../../../Private/Fusion/scss/Shop";
+@import "../../../Private/Fusion/scss/Fonts";
+
+.has-navbar-fixed-top {
+    padding-top: 126px !important;
+    @media screen and (min-width: 767px) {
+        padding-top: 90px !important;
+    }
+}
+
+html {
+    background-color: $black;
+}
+
+main {
+    background-color: white;
+}
