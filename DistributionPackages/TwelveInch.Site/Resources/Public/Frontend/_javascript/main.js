@@ -71,7 +71,7 @@ window.addEventListener('scroll', function(e) {
   last_scroll_position = window.scrollY;
 
   // Scrolling down
-  if (new_scroll_position < last_scroll_position && last_scroll_position > 80) {
+  if (new_scroll_position < last_scroll_position && last_scroll_position > 90) {
     // header.removeClass('slideDown').addClass('slideUp');
     header.classList.remove("show");
     header.classList.add("hide");

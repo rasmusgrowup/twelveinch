@@ -558,7 +558,7 @@
         }
     }
 
-    @media screen and (min-width: $desktop) {
+    @media screen and (min-width: 767px) {
         max-width: 420px !important;
         min-width: 420px !important;
         border-left: 1px rgba(6, 6, 6, 0.33) solid;

@@ -59,7 +59,9 @@ prototype(TwelveInch.Site:Component.Header) < prototype(Neos.Fusion:Component) {
                     <a class="logo" href={props.homeLink}>
                         <img src={props.logoUri} alt="Twelve Inch" width="120px" height="auto" />
                     </a>
-                    <div class="shoppingbag cart" id="cart" role="button" aria-label="View cart" aria-expanded="false"></div>
+                    <div class="" style="min-width:27px">
+                        <div class="shoppingbag cart" id="cart" role="button" aria-label="View cart" aria-expanded="false"></div>
+                    </div>
                 </div>
             </div>
 
@@ -79,7 +81,7 @@ prototype(TwelveInch.Site:Component.Header) < prototype(Neos.Fusion:Component) {
                 <div class="newsletter-cta" id="newsletter-cta">
                     <header>Sig up for our newsletters</header>
                     <p>Carefully curated news about music, reviews of new albums and occasional offers now and then. That’s what you get, if you sign up for our newsletter.</p>
-                    <input type="text" name="" value="" placeholder="Enter your email"/>
+                    <div class="klaviyo-form-YhMKHk" style="min-height: 32px;"></div>
                 </div>
                 <div class="social-cta" id="social-cta">
                     <header>We're on social media</header>

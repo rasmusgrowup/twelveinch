@@ -16,13 +16,13 @@ $animate: all 0.5s ease-in-out;
 .hide {
   -webkit-transform: translateY(-100%);
   transform: translateY(-100%);
-  transition: transform .5s ease-out;
+  transition: transform .8s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .show {
   -webkit-transform: translateY(0);
   transform: translateY(0);
-  transition: transform .5s ease-out;
+  transition: transform .8s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .navigation {
@@ -195,7 +195,7 @@ $animate: all 0.5s ease-in-out;
             p {
                 font-weight: 400;
                 font-size: 10px;
-                margin-bottom: 6px;
+                margin-bottom: 12px;
             }
 
             input {
@@ -289,6 +289,7 @@ $animate: all 0.5s ease-in-out;
             margin-top: 30px;
             font-weight: 700;
             font-size: 10px;
+            line-height: 1;
         }
 
         .secondary-links {
@@ -305,7 +306,7 @@ $animate: all 0.5s ease-in-out;
             }
         }
 
-        @media screen and (min-width: $desktop) {
+        @media screen and (min-width: 767px) {
             width: 420px;
             border-right: 1px rgba(6, 6, 6, 0.33) solid;
 

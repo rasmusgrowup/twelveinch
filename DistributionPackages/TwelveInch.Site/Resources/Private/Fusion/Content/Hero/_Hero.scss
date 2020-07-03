@@ -5,59 +5,67 @@
 .hero-image {
     display: flex;
     margin: 0 auto;
-    height: 50vh;
+    height: 62vh;
 
         @media screen and (min-width: $desktop) {
             width: 100%;
-            height: calc(95vh - 88px);
+            height: calc(100vh - 90px);
             border-bottom: 1px rgba(6, 6, 6, 0.33) solid;
         }
 
     img {
         width: 100%;
         object-fit: cover;
-        object-position: top;
+        object-position: top left;
     }
 }
 
 .hero-cta {
-    display: block;
-    padding: 40px 20px;
-    border-bottom: 1px $black solid;
+    bottom: 24px;
+    border-bottom: none;
+    left: 24px;
+    //transform: translate(-50%, 0);
+    overflow: hidden;
+    position: absolute;
+    width: 80%;
 
     .hero-headline {
         display: block;
-        margin-bottom: 24px;
+        margin-bottom: 12px;
 
         h1 {
-            font-size: 35px;
+            font-size: 3em;
             font-weight: 900;
             line-height: 1;
-            color: $black;
+            color: white;
+            //text-shadow: 0 0 5px rgba(0, 0, 0, 0.2), 0 0 15px rgba(0, 0, 0, 0.15), 0 0 30px rgba(0, 0, 0, 0.1);
         }
     }
 
     .hero-button {
         display: flex;
-        justify-content: center;
+        //justify-content: center;
         align-items: center;
-        background-color: $black;
-        border-radius: 3px;
-        border: 1px $black solid;
-        width: 100%;
-        margin: 0 auto;
-        padding: 12px;
-        font-weight: 500;
-        text-align: center;
+        //background-color: $black;
+        //border-radius: 3px;
+        //border: 1px $black solid;
+        border-bottom: 2px transparent solid;
+        width: -webkit-fit-content;
+        //margin: 0 auto;
+        //padding: 12px 0;
+        font-weight: 700;
+        font-size: 1.5em;
+        //text-align: center;
         color: white;
+        //text-shadow: 0 0 5px rgba(0, 0, 0, 0.2), 0 0 15px rgba(0, 0, 0, 0.15), 0 0 30px rgba(0, 0, 0, 0.1);
 
         &:hover {
-            background-color: #242424;
+            border-bottom: 2px white solid;
         }
 
         img {
-            height: 12px;
-            width: 12px;
+            height: 18px;
+            width: 18px;
             margin-left: 12px;
             transform: rotate(-90deg);
         }
@@ -65,19 +73,23 @@
 
     @media screen and (min-width: $desktop) {
         position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translate(-50%, 0);
+        bottom: 4rem;
+        left: 4rem;
+        //transform: translate(-50%, 0);
         border-bottom: none;
 
         .hero-headline {
+            margin-bottom: 6px;
+
             h1 {
-                font-size: 60px;
+                color: white;
+                font-size: 4em;
+                text-transform: uppercase;
             }
         }
 
         .hero-button {
-            width: 40%;
+            //width: 40%;
         }
     }
 }

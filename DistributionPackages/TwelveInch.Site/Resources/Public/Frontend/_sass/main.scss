@@ -35,7 +35,13 @@
     src: url("../fonts/Heebo-Light.ttf") format("truetype"),;
 }
 
+[data-aos="intro"] {
+  transform: translateY(200%);
 
+  &.aos-animate {
+    transform: translateY(0);
+  }
+}
 
 [data-aos="custom"] {
   transform: translateY(100%);

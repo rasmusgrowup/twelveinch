@@ -9,8 +9,6 @@
         @media screen and (min-width: $desktop) {
             margin: 0 auto;
             width: 100%;
-            max-width: 1500px;
-            padding: 0 calc(40px - .4rem);
         }
 }
 
@@ -22,9 +20,11 @@
     .column {
         &:first-child {
             flex-grow: 1;
+            margin-right: 4px;
         }
         &:last-child {
             flex-grow: 1;
+            margin-left: 4px;
         }
     }
 }
