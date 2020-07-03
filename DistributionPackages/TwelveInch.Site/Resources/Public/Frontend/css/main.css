@@ -8242,6 +8242,9 @@ footer {
       height: 100%;
       width: 100%; } }
 
+.columns:last-child {
+  margin-bottom: 0; }
+
 .visuallyhidden {
   border: 0;
   height: 1px;
@@ -8745,6 +8748,106 @@ footer {
       min-width: 420px !important;
       border-left: 1px rgba(6, 6, 6, 0.33) solid; } }
 
+.add-to-cart {
+  background-color: white;
+  border-top: 1px rgba(6, 6, 6, 0.33) solid;
+  bottom: 0;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1), 5px 0 15px rgba(0, 0, 0, 0.1);
+  left: 0;
+  position: sticky;
+  padding: 12px;
+  width: 100vw;
+  z-index: 97;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1), 5px 0 15px rgba(0, 0, 0, 0.1); }
+  .add-to-cart .shopify-buy__product .shopify-buy__product__price {
+    color: #070707;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center; }
+  .add-to-cart .shopify-buy__product .shopify-buy__btn-and-quantity {
+    display: flex; }
+    .add-to-cart .shopify-buy__product .shopify-buy__btn-and-quantity .shopify-buy__quantity-container input {
+      color: black;
+      width: 72px;
+      height: 40px;
+      font-size: 16px;
+      border: 1px #070707 solid;
+      border-radius: 3px 0 0 3px;
+      text-align: center;
+      -webkit-appearance: none;
+      -moz-appearance: textfield;
+      display: inline-block;
+      padding: 12px; }
+    .add-to-cart .shopify-buy__product .shopify-buy__btn-and-quantity .shopify-buy__btn-wrapper {
+      width: calc(100vw - 96px); }
+      .add-to-cart .shopify-buy__product .shopify-buy__btn-and-quantity .shopify-buy__btn-wrapper button {
+        background-color: #070707;
+        border: 1px #070707 solid;
+        border-radius: 0 3px 3px 0;
+        color: white;
+        font-size: 16px;
+        font-weight: 700;
+        height: 40px;
+        width: 100%; }
+        .add-to-cart .shopify-buy__product .shopify-buy__btn-and-quantity .shopify-buy__btn-wrapper button:hover {
+          cursor: pointer;
+          background-color: #383838;
+          border: 1px #383838 solid; }
+
+@media screen and (min-width: 1024px) {
+  .add-to-cart {
+    position: relative;
+    background-color: none;
+    border-top: none;
+    box-shadow: 0;
+    padding: 0;
+    width: auto;
+    -webkit-box-shadow: none; }
+    .add-to-cart .shopify-buy__product .shopify-buy__product__price {
+      color: #070707;
+      font-weight: 700;
+      font-size: 1.5rem;
+      margin-bottom: 12px;
+      text-align: center; }
+    .add-to-cart .shopify-buy__product .shopify-buy__btn-and-quantity {
+      display: flex; }
+      .add-to-cart .shopify-buy__product .shopify-buy__btn-and-quantity .shopify-buy__quantity-container input {
+        color: black;
+        width: 72px;
+        height: 40px;
+        font-size: 16px;
+        border: 1px #070707 solid;
+        border-radius: 3px 0 0 3px;
+        text-align: center;
+        -webkit-appearance: none;
+        -moz-appearance: textfield;
+        display: inline-block;
+        padding: 12px; }
+      .add-to-cart .shopify-buy__product .shopify-buy__btn-and-quantity .shopify-buy__btn-wrapper {
+        width: 100%; }
+        .add-to-cart .shopify-buy__product .shopify-buy__btn-and-quantity .shopify-buy__btn-wrapper button {
+          background-color: #070707;
+          border: 1px #070707 solid;
+          border-radius: 0 3px 3px 0;
+          color: white;
+          font-size: 16px;
+          font-weight: 700;
+          height: 40px;
+          width: 100%; }
+          .add-to-cart .shopify-buy__product .shopify-buy__btn-and-quantity .shopify-buy__btn-wrapper button:hover {
+            cursor: pointer;
+            background-color: #383838;
+            border: 1px #383838 solid; } }
+
+.backend-add-to-cart {
+  background-color: #070707;
+  border-radius: 3px;
+  color: white;
+  display: block;
+  margin: 0 24px;
+  padding: 6px;
+  text-align: center; }
+
 h1,
 h2,
 h3,
@@ -8762,6 +8865,12 @@ h3 {
 
 h4 {
   font-size: 1.25em; }
+
+main p {
+  font-size: 1em; }
+  @media screen and (min-width: 1024px) {
+    main p {
+      font-size: 1.2em; } }
 
 .has-navbar-fixed-top {
   padding-top: 126px !important; }

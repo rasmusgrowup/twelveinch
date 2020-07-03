@@ -24,7 +24,6 @@ prototype(TwelveInch.Site:Product.Description) < prototype(Neos.Neos:ContentComp
         <span class="product-ratings">AVG. RATINGS: 4.9</span>
         <img src={props.starsUri} alt="Stars" width="80px" height="auto" />
         <div class="product-text">{props.text}</div>
-        <div id='original-add-to-cart' class="add-to-cart" role="button"></div>
     </div>
     `
 }

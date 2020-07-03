@@ -34,12 +34,40 @@ ui.createComponent('cart', {
 	  	}
 });
 
-var element =  document.getElementById('original-add-to-cart');
+var element =  document.getElementById('original');
 if (typeof(element) != 'undefined' && element != null)
 {
 	ui.createComponent('product', {
 		id: '343786815521',
-		node: document.getElementById('original-add-to-cart'),
+		node: document.getElementById('original'),
+		options: {
+			product: {
+				iframe: false,
+				buttonDestination: 'cart',
+				contents: {
+					img: false,
+					button: false,
+					buttonWithQuantity: true,
+					title: false,
+					price: true,
+			    },
+				text: {
+			    	button: 'Add to cart',
+			    }
+			},
+			cart: {
+				startOpen: true,
+			},
+		}
+	});
+}
+
+var element =  document.getElementById('adapter');
+if (typeof(element) != 'undefined' && element != null)
+{
+	ui.createComponent('product', {
+		id: '343873388577',
+		node: document.getElementById('adapter'),
 		options: {
 			product: {
 				iframe: false,

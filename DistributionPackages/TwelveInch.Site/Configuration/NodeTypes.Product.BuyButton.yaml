@@ -4,17 +4,17 @@
   ui:
     label: BuyButton
     icon: money-bill-wave-alt
-    position: 750
+    position: 1000
+    reloadIfChanged: true
     inspector:
       groups:
         product:
           label: 'Choose product'
           icon: product-hunt
   properties:
-    originalid:
-      type: boolean
+    id:
+      type: string
       ui:
-        label: 'Original'
-        reloadIfChanged: true
+        label: 'Enter product name'
         inspector:
-          group: image
+          group: product

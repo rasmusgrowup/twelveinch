@@ -1,9 +1,6 @@
 prototype(TwelveInch.Site:Content.Breadcrumb) < prototype(Neos.Neos:BreadcrumbMenu) {
-    breadcrumbs = Neos.Neos:BreadcrumbMenu {
-        itemCollection = ${q(node).add(q(node).parents('[instanceof Neos.Neos:Document]')).get()}
-    }
+    templatePath = 'resource://Neos.Neos/Private/Templates/FusionObjects/BreadcrumbMenu.html'
+    itemCollection = ${q(node).add(q(node).parents('[instanceof Neos.Neos:Document]')).get()}
 
-    renderer = afx`
-        <div class="breadcrumbs" data-aos="fade-up">{props.breadcrumbs}</div>
-    `
+    attributes.class = 'breadcrumb'
 }

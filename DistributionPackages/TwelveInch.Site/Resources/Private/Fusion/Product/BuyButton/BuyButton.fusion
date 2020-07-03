@@ -4,7 +4,10 @@ prototype(TwelveInch.Site:Product.BuyButton) < prototype(Neos.Neos:ContentCompon
         property = 'id'
     }
 
+    renderAsButton = ${site.context.inBackend ? false : true}
+
     renderer = afx`
-        <div id={props.id} class="add-to-cart" role="button"></div>
+        <div @if.render={props.renderAsButton} id={props.id} class="add-to-cart" role="button"></div>
+        <div @if.render={!props.renderAsButton} class="backend-add-to-cart" role="button">Add to cart (placeholder)</div>
     `
 }
