@@ -1,6 +1,7 @@
 .seo-text {
     color: #1f1f1f;
     margin: 0 auto;
+    padding: $mobile-padding;
 
     p {
         margin-bottom: 30px;
@@ -47,5 +48,6 @@
     @media screen and (min-width: $desktop) {
         margin: 0 auto;
         max-width: 980px;
+        padding: $desktop-padding;
     }
 }

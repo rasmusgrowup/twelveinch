@@ -46,7 +46,7 @@ prototype(TwelveInch.Site:Collection.Section) < prototype(Neos.Fusion:Tag) {
     }
 
     style = Neos.Fusion:DataStructure {
-        bottomPadding = ${q(node).property('bottomPadding') ? 'padding-bottom: 6rem' : 'padding-bottom: 0'}
+        bottomPadding = ${q(node).property('bottomPadding') ? 'padding-bottom: 5em' : 'padding-bottom: 0'}
     }
 
     data-__neos-insertion-anchor = true

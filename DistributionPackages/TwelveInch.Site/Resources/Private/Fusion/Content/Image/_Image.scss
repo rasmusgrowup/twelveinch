@@ -1,0 +1,11 @@
+.main-image {
+    display: block;
+    height: 62vh;
+    object-fit: cover;
+    object-position: left;
+    margin-bottom: 6px;
+
+    @media screen and (min-width: $desktop) {
+        height: auto;
+    }
+}

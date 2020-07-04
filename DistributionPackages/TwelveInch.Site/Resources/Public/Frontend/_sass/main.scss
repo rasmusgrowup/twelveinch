@@ -63,6 +63,8 @@ $green: #1DCC89;
 $family-sans-serif: 'Heebo', "Helvetica", "Arial", sans-serif;
 $primary: $black;
 $primary-invert: $grey;
+$mobile-padding: 0 1.5em;
+$desktop-padding: 0;
 
 
 @import "../node_modules/bulma/bulma";
@@ -79,6 +81,7 @@ $primary-invert: $grey;
 @import "../../../Private/Fusion/Content/ProductGrid/ProductGrid";
 @import "../../../Private/Fusion/Content/Headline/Headline";
 @import "../../../Private/Fusion/Content/FAQ/FAQ";
+@import "../../../Private/Fusion/Content/Image/Image";
 @import "../../../Private/Fusion/Content/ImageBanner/ImageBanner";
 @import "../../../Private/Fusion/Content/Address/Address";
 @import "../../../Private/Fusion/Content/ImageCaption/ImageCaption";

@@ -6,6 +6,12 @@
     label: Resource
     icon: lightbulb
     position: 350
+    reloadIfChanged: true
+    inspector:
+      groups:
+        resource:
+          label: 'Resource'
+          icon: lightbulb
   properties:
     image:
       type: Neos\Media\Domain\Model\ImageInterface
@@ -13,18 +19,33 @@
         label: 'Image'
         reloadIfChanged: true
         inspector:
-          group: image
+          group: resource
     alternativeText:
       type: string
       ui:
         label: 'Alternative Text'
         inspector:
-          group: image
-    caption:
+          group: resource
+    headline:
       ui:
         inline:
           editorOptions:
-            placeholder: '<p>Enter caption here...</p>'
+            placeholder: '<p>Enter headline here...</p>'
             hyphens: true
       options:
         silhouette: text.free
+    label:
+      ui:
+        inline:
+          editorOptions:
+            placeholder: '<h1>Enter link text here...</h1>'
+            hyphens: true
+      options:
+        silhouette: text.free
+    link:
+      type: string
+      ui:
+        label: 'Link target'
+        inspector:
+          group: resource
+          editor: Neos.Neos/Inspector/Editors/LinkEditor

@@ -17,14 +17,16 @@
 }
 
 .columns-50-50 {
-    .column {
-        &:first-child {
-            flex-grow: 1;
-            margin-right: 4px;
-        }
-        &:last-child {
-            flex-grow: 1;
-            margin-left: 4px;
+    @media screen and (min-width: $desktop) {
+        .column {
+            &:first-child {
+                flex-grow: 1;
+                margin-right: 3px;
+            }
+            &:last-child {
+                flex-grow: 1;
+                margin-left: 3px;
+            }
         }
     }
 }

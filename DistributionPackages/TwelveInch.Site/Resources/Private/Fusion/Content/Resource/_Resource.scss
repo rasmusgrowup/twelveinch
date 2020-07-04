@@ -1,7 +1,94 @@
-.resource {
+@keyframes wiggle {
+    0% {transform: translateX(0px)}
+    25% {transform: translateX(2px)}
+    50% {transform: translateX(0px)}
+    75% {transform: translateX(-2px)}
+}
 
-    p {
-        margin-top: 10px;
-        text-transform: uppercase;
+.resource {
+    display: block;
+    position: relative;
+
+    .resource-content {
+        display: block;
+        margin: 24px 0 36px;
+        overflow: hidden;
+        padding: $mobile-padding;
+
+        header {
+            display: block;
+            font-weight: 900;
+            font-size: 1.5em;
+        }
+
+        .resource-link {
+            align-items: center;
+            border-bottom: 2px transparent solid;
+            color: $black;
+            display: inline-flex;
+            font-weight: 500;
+
+            p {
+                margin-right: 6px;
+            }
+
+            img {
+                display: block;
+                height: 12px;
+                transform: rotate(-90deg);
+                width: 12px;
+            }
+
+            .white-arrow {
+                display: none;
+            }
+
+            &:hover {
+                border-bottom: 2px $black solid;
+            }
+        }
+    }
+
+    @media screen and (min-width: $desktop) {
+        .resource-content {
+            top: 40px;
+            left: 40px;
+            line-height: 1.2;
+            margin: 0;
+            padding: $desktop-padding;
+            position: absolute;
+
+            header {
+                color: white;
+                font-size: 3em;
+                text-transform: uppercase;
+            }
+
+            .resource-link {
+                color: white;
+
+                p {
+                    font-size: 1.5em;
+                }
+
+                .black-arrow {
+                    display: none;
+                }
+
+                .white-arrow {
+                    display: block;
+                }
+
+                &:hover {
+                    border-bottom: 2px white solid;
+                }
+            }
+        }
+
+        &:hover {
+            .resource-content {
+                animation: wiggle .1s ease-in-out;
+            }
+        }
     }
 }

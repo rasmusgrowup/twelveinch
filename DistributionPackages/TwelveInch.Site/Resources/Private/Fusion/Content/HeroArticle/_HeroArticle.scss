@@ -1,6 +1,7 @@
 .hero-article {
     display: block;
     color: $black;
+    padding: $mobile-padding;
 
     header {
         display: block;
@@ -30,6 +31,7 @@
         align-items: flex-start;
         max-width: 1600px;
         margin: 0 auto;
+        padding: $desktop-padding;
 
         header {
             max-width: 50%;

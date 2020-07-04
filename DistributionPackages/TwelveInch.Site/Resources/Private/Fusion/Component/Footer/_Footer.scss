@@ -3,18 +3,18 @@ footer {
     color: white;
     font-size: 14px;
     font-weight: 400;
-    padding: 40px  25px !important;
+    padding: 1.5em !important;
 
     .footer-content {
         max-width: 1400px;
-        margin: 40px auto;
+        margin: 0 auto;
 
         .footer-avatar {
             display: flex;
             align-items: center;
 
             img {
-                margin-right: 25px;
+                margin-right: 1.5em;
                 height: 100%;
                 width: 40%;
                 max-width: 160px;
@@ -90,7 +90,7 @@ footer {
                     a{
                         font-weight: 700;
                         color: white;
-                        font-size: 25px;
+                        font-size: 1.5em;
 
                         &:hover {
                             color: $red;
@@ -134,7 +134,7 @@ footer {
             border-radius: 3px;
             border: 1px white solid;
             padding: 6px 12px;
-            margin: 25px 0 25px auto;
+            margin: 1.5em 0 1.5em auto;
             color: white;
 
             &:hover {
@@ -174,12 +174,12 @@ footer {
 
             .footer-avatar, .footer-about, .newsletter-cta {
                 flex-basis: 33%;
-                padding: 0 25px;
+                padding: 0 1.5em;
             }
 
             .footer-avatar {
                 img {
-                    margin-right: 25px;
+                    margin-right: 1.5em;
                 }
             }
 
@@ -193,7 +193,7 @@ footer {
 
             .footer-nav {
                 flex-basis: 80%;
-                padding: 0 25px;
+                padding: 0 1.5em;
                 margin-bottom: 12px;
 
                 span {
@@ -204,13 +204,13 @@ footer {
 
                     li {
                         display: inline-block;
-                        margin-right: 24px;
+                        margin-right: 1.5em;
                     }
                 }
             }
 
             .social-cta {
-                padding: 0 25px;
+                padding: 0 1.5em;
                 margin-bottom: 12px;
             }
 
@@ -218,23 +218,27 @@ footer {
                 display: block;
                 height: 1px;
                 background-color: white;
-                flex-basis: calc(100% - 50px);
+                flex-basis: calc(100% - 2em);
                 margin: 0 auto;
             }
 
             .footer-info {
-                padding: 0 25px;
-                margin: 25px 0;
+                padding: 0 1.5em;
+                margin: 1.5em 0;
 
                 .logo {
-                    margin-right: 24px;
+                    margin-right: 1.5em;
                 }
             }
 
             .language-selector {
                 width: 200px;
-                margin: 25px 25px 25px auto;
+                margin: 1.5em 1.5em 1.5em auto;
             }
         }
+    }
+
+    @media screen and (min-width: $desktop) {
+        padding: 5em 4em !important;
     }
 }

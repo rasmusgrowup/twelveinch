@@ -59,7 +59,7 @@ prototype(TwelveInch.Site:Component.Header) < prototype(Neos.Fusion:Component) {
                     <a class="logo" href={props.homeLink}>
                         <img src={props.logoUri} alt="Twelve Inch" width="120px" height="auto" />
                     </a>
-                    <div class="" style="min-width:27px">
+                    <div class="" style="min-width:18px; height: 18px;">
                         <div class="shoppingbag cart" id="cart" role="button" aria-label="View cart" aria-expanded="false"></div>
                     </div>
                 </div>
