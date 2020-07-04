@@ -1,0 +1,11 @@
+prototype(TwelveInch.Site:Content.Vimeo) < prototype(Neos.Neos:ContentComponent) {
+    id = Neos.Neos:Editable {
+        property = 'id'
+    }
+
+    renderer = afx`
+    <div class="vimeo-video">
+        <iframe src={props.id} style="position:absolute;top:0;left:0;width:100%;height:100%"frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    </div>
+    `
+}

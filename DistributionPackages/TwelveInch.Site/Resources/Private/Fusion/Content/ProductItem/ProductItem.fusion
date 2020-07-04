@@ -20,7 +20,7 @@ prototype(TwelveInch.Site:Content.ProductItem) < prototype(Neos.Neos:ContentComp
         property = 'productLink'
     }
     chevronUri = Neos.Fusion:ResourceUri {
-    path = 'resource://TwelveInch.Site/Public/Frontend/img/Chevron Right.png'
+    path = 'resource://TwelveInch.Site/Public/Frontend/svg/down-arrow.svg'
     }
     newUri = Neos.Fusion:ResourceUri {
     path = 'resource://TwelveInch.Site/Public/Frontend/svg/new_product_green.svg'

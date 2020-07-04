@@ -43,12 +43,11 @@
   }
 }
 
-[data-aos="custom"] {
-  transform: translateY(100%);
-
-  &.aos-animate {
-    transform: translateY(0);
-  }
+[data-aos] {
+    body[data-aos-easing="ease-expo-out"] &,
+        &[data-aos][data-aos-easing="ease-expo-out"] {
+        transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+        }
 }
 
 @import "../node_modules/bulma/sass/utilities/initial-variables";
@@ -82,6 +81,7 @@ $desktop-padding: 0;
 @import "../../../Private/Fusion/Content/Headline/Headline";
 @import "../../../Private/Fusion/Content/FAQ/FAQ";
 @import "../../../Private/Fusion/Content/Image/Image";
+@import "../../../Private/Fusion/Content/Vimeo/Vimeo";
 @import "../../../Private/Fusion/Content/ImageBanner/ImageBanner";
 @import "../../../Private/Fusion/Content/Address/Address";
 @import "../../../Private/Fusion/Content/ImageCaption/ImageCaption";

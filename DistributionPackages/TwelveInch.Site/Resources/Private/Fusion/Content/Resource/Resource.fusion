@@ -23,8 +23,8 @@ prototype(TwelveInch.Site:Content.Resource) < prototype(Neos.Neos:ContentCompone
         <div class="resource">
             <Carbon.Link:Link link={props.link} role="link"><img src={props.src} alt={props.alternativeText} /></Carbon.Link:Link>
             <div class="resource-content">
-                <header data-aos="intro" data-aos-duration="400" data-aos-once="true">{props.headline}</header>
-                <div class="" data-aos="intro" data-aos-delay="100" data-aos-duration="400" data-aos-once="true">
+                <header data-aos="intro">{props.headline}</header>
+                <div class="" data-aos="intro" data-aos-delay="100">
                     <Carbon.Link:Link link={props.link} additionalClass="resource-link" role="link">{props.label}<img class="white-arrow" src={props.arrowWhiteUri} alt=""/><img class="black-arrow" src={props.arrowUri} alt=""/></Carbon.Link:Link>
                 </div>
             </div>

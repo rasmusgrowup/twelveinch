@@ -18,8 +18,9 @@ $link-hover-color: $red;
 
 .productItem {
     display: block;
-    margin: 20px auto;
+    margin: 1em auto 2em;
     position: relative;
+    padding: $mobile-padding;
 
     .productImage, .productImageHover {
         width: 100%;
@@ -39,7 +40,7 @@ $link-hover-color: $red;
         position: absolute;
         top: 0;
         left: 0;
-        z-index: 99;
+        z-index: 90;
 
             &:hover {
                 opacity: 1;
@@ -58,14 +59,13 @@ $link-hover-color: $red;
 
     .productItemName {
         font-size: 1em;
-        font-weight: 600;
-        margin-bottom: 0.5rem;
+        font-weight: 500;
+        //margin-bottom: 0.5rem;
     }
 
     .productItemText {
-        text-transform: capitalize;
-        font-size: 0.8em;
-        margin-bottom: 0.25rem;
+        font-size: .8em;
+        margin-bottom: 0.8em;
     }
 
     .productItemLink {
@@ -74,19 +74,25 @@ $link-hover-color: $red;
         align-items: baseline;
 
         a {
-            font-size: 0.8em;
-            font-weight: 300;
-        }
+            color: $black;
+            font-weight: 700;
+            border-bottom: 2px transparent solid;
 
-        &:hover {
-            color: $link-hover-color;
-            cursor: pointer;
+            &:hover {
+                border-bottom: 2px $black solid;
+                cursor: pointer;
+            }
         }
 
         img {
-            width: auto;
             height: 9px;
             margin-left: 5px;
+            transform: rotate(-90deg);
+            width: auto;
         }
+    }
+
+    @media screen and (min-width: $desktop) {
+        padding: $desktop-padding;
     }
 }

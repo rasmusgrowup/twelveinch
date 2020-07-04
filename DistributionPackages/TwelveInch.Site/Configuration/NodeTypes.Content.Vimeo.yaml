@@ -1,0 +1,21 @@
+'TwelveInch.Site:Content.Vimeo':
+  superTypes:
+    'Neos.Neos:Content': true
+  ui:
+    label: Vimeo Video
+    icon: video
+    position: 1500
+    reloadIfChanged: true
+    inspector:
+      groups:
+        product:
+          label: 'Vimeo Video'
+          icon: id-card
+  properties:
+    id:
+      type: string
+      ui:
+        label: 'Insert vimeo video url'
+        inspector:
+          group: product
+          
