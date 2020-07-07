@@ -1,0 +1,10 @@
+prototype(TwelveInch.Site:Content.Tags) < prototype(Neos.Neos:Menu) {
+
+    attributes = Neos.Fusion:Attributes {
+        class = 'sorting'
+    }
+
+    items = Neos.Neos:MenuItems {
+        entryLevel = 2
+	}
+}

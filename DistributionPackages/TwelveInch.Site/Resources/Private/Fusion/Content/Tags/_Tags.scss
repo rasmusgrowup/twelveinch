@@ -1,0 +1,35 @@
+.sorting {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    li {
+        border: 1px $black solid;
+        border-radius: 3px;
+        margin: 6px;
+        padding: 6px 24px;
+
+        a {
+            color: $black;
+            font-size: .8em;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+
+        &:hover {
+            background-color: $grey;
+        }
+    }
+
+    .current {
+        background-color: $black;
+
+        a {
+            color: white;
+        }
+
+        &:hover {
+            background-color: $dark-grey;
+        }
+    }
+}

@@ -1,0 +1,8 @@
+
+'TwelveInch.Site:Content.Tags':
+  superTypes:
+    'Neos.Neos:Content': true
+  ui:
+    label: Tags
+    icon: tags
+    position: 1600
