@@ -1,12 +1,12 @@
 .ImageCaption {
     margin: 40px auto;
-    padding: 0 25px;
+    padding: $mobile-padding;
     color: #1f1f1f;
 
     @media screen and (min-width: $desktop) {
         margin: 40px auto;
-        max-width: 840px;
-        padding: 0 40px;
+        max-width: 720px;
+        padding: $desktop-padding;
 
         img {
             width: 100%;

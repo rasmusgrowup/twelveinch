@@ -36,10 +36,10 @@
 }
 
 [data-aos="intro"] {
-  transform: translateY(200%);
+  transform: translateY(250%) skewY(-5deg);
 
   &.aos-animate {
-    transform: translateY(0);
+    transform: translateY(0) skewY(0);
   }
 }
 
@@ -73,6 +73,7 @@ $desktop-padding: 0;
 @import "../../../Private/Fusion/Content/Text/Text";
 @import "../../../Private/Fusion/Content/StatementText/StatementText";
 @import "../../../Private/Fusion/Content/SeoText/SeoText";
+@import "../../../Private/Fusion/Content/ShortReview/ShortReview";
 @import "../../../Private/Fusion/Content/HeroArticle/HeroArticle";
 @import "../../../Private/Fusion/Component/Header/TiHeader";
 @import "../../../Private/Fusion/Content/Hero/Hero";
@@ -98,11 +99,12 @@ $desktop-padding: 0;
 @import "../../../Private/Fusion/scss/Dropdown";
 @import "../../../Private/Fusion/scss/Shop";
 @import "../../../Private/Fusion/scss/Fonts";
+@import "../../../Private/Fusion/scss/Ratios";
 
 .has-navbar-fixed-top {
-    padding-top: 126px !important;
+    padding-top: 125px !important;
     @media screen and (min-width: 767px) {
-        padding-top: 90px !important;
+        padding-top: 89px !important;
     }
 }
 

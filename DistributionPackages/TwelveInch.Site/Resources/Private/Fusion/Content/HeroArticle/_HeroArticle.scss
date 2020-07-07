@@ -6,6 +6,7 @@
     header {
         display: block;
         line-height: 1.2;
+        overflow: hidden;
 
         .hero-headline {
             margin-bottom: 20px;
@@ -15,6 +16,7 @@
                 font-weight: 900;
             }
         }
+        
         .hero-subheadline {
             margin-bottom: 20px;
 

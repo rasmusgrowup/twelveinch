@@ -1,0 +1,19 @@
+prototype(TwelveInch.Site:Content.Rating) < prototype(Neos.Neos:ContentComponent) {
+
+    rating = Neos.Neos:Editable {
+        property = 'rating'
+    }
+
+    stars = Neos.Fusion:ResourceUri {
+    path = 'resource://TwelveInch.Site/Public/Frontend/svg/stars.svg'
+    }
+
+    renderer = afx`
+    <div class="overflow">
+        <div class="rating" data-aos="intro">
+            {props.rating}
+            <img src={props.stars} alt=""/>
+        </div>
+    </div>
+    `
+}

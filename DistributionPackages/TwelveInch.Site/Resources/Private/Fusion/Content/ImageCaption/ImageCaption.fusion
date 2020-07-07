@@ -10,7 +10,7 @@ prototype(TwelveInch.Site:Content.ImageCaption) < prototype(Neos.Neos:ContentCom
 
     renderer = afx`
 
-        <div class="ImageCaption" data-aos="fade-up">
+        <div class="ImageCaption">
             <img src={props.src} alt={props.alternativeText} />
             <p>{props.caption}</p>
         </div>

@@ -1,0 +1,17 @@
+
+'TwelveInch.Site:Content.Rating':
+  superTypes:
+    'Neos.Neos:Content': true
+  ui:
+    label: Rating
+    icon: star
+    position: 1120
+    inlineEditable: true
+  properties:
+    rating:
+      ui:
+        inline:
+          editorOptions:
+            placeholder: '<p>5.0</p>'
+      options:
+        silhouette: text.free

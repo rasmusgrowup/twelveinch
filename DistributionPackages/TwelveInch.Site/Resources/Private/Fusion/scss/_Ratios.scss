@@ -1,0 +1,37 @@
+// fix for jumping content
+
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+  padding-bottom: ($height / $width) * 100%;
+  img,
+  video,
+  iframe,
+  object,
+  embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.ratio-sixteen-nine {
+  @include aspect-ratio(1600, 900);
+}
+
+.ratio-seven-five {
+  @include aspect-ratio(1400, 1000);
+}
+
+.ratio-five-seven {
+  @include aspect-ratio(1000, 1400);
+}
+
+.ratio-five-four {
+  @include aspect-ratio(1000, 800);
+}
+
+.ratio-four-five {
+  @include aspect-ratio(800, 1000);
+}

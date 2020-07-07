@@ -1,39 +1,50 @@
+.headline-div {
+    overflow: hidden;
+}
+
 .headline {
-    margin: 0 auto 12px;
-    padding: 0 25px;
+    margin: 24px auto 12px;
+    padding: $mobile-padding;
     color: #1f1f1f;
     //text-transform: uppercase;
 
     h1 {
-        font-size: 2rem;
+        font-size: 2em;
         font-weight: 900;
-        text-align: left;
+        text-align: center;
     }
 
     h2 {
-        font-size: 1.5rem;
+        font-size: 1.5em;
         font-weight: 900;
-        text-align: left;
+        text-align: center;
     }
 
     h3 {
-        font-size: 1.25rem;
+        font-size: 1.25em;
         font-weight: 900;
-        text-align: left;
+        text-align: center;
     }
 
     h4 {
-        font-size: 6rem;
+        font-size: 6em;
         font-weight: 900;
         text-align: left;
     }
 
-    @media screen and (min-width: $desktop) {
-        margin: 0 auto 12px;
-        max-width: 840px;
-        padding: 0 40px;
+    h5 {
+        font-size: 1.25em;
+        font-weight: 900;
+        text-align: left;
+    }
 
-        h1, h2 {
+
+    @media screen and (min-width: $desktop) {
+        margin: 24px auto 12px;
+        max-width: 840px;
+        padding: $desktop-padding;
+
+        h1, h2, h3 {
             text-align: center;
         }
     }

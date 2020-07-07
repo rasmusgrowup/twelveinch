@@ -11,7 +11,7 @@ prototype(TwelveInch.Site:Component.Footer) < prototype(Neos.Neos:ContentCompone
     }
 
     logoUri = Neos.Fusion:ResourceUri {
-    path = 'resource://TwelveInch.Site/Public/Frontend/img/twelve_inch_hvid_400.png'
+    path = 'resource://TwelveInch.Site/Public/Frontend/svg/twelve_inch_white.svg'
     }
 
     avatarUri = Neos.Fusion:ResourceUri {
@@ -89,7 +89,7 @@ prototype(TwelveInch.Site:Component.Footer) < prototype(Neos.Neos:ContentCompone
                 <div class="footer-legal">
                     <div class="copyright" id="copyright">&copy; {props.year} Twelve Inch ApS - All rights reserved</div>
                     <div class="secondary-links">
-                        <a href="/privacy">Privacy</a>
+                        <a href="/legal">Privacy</a>
                         <a href="/B2B">B2B</a>
                         <a href="/press">Press</a>
                         <a href="javascript:window.Metomic('ConsentManager:show')">Manage Cookies</a>

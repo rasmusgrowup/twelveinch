@@ -1,0 +1,31 @@
+
+'TwelveInch.Site:Content.ShortReview':
+  superTypes:
+    'Neos.Neos:Content': true
+  ui:
+    label: Short Review
+    icon: star
+    position: 1100
+    inlineEditable: true
+  properties:
+    name:
+      ui:
+        inline:
+          editorOptions:
+            placeholder: '<p>Jane Doe</p>'
+      options:
+        silhouette: text.free
+    headline:
+      ui:
+        inline:
+          editorOptions:
+            placeholder: '<p>Enter headline</p>'
+      options:
+        silhouette: text.free
+    text:
+      ui:
+        inline:
+          editorOptions:
+            placeholder: '<p>Lorum ipsum ...</p>'
+      options:
+        silhouette: text.free

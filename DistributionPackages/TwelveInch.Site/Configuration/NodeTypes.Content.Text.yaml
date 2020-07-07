@@ -7,6 +7,11 @@
     icon: icon-file-text
     position: 200
     inlineEditable: true
+    inspector:
+      groups:
+        text:
+          label: 'Text options'
+          icon: info-circle
   properties:
     text:
       ui:
@@ -47,3 +52,10 @@
               a: true
       options:
         silhouette: text.free
+    textPadding:
+      type: boolean
+      ui:
+        label: 'Add padding'
+        reloadIfChanged: true
+        inspector:
+          group: text
