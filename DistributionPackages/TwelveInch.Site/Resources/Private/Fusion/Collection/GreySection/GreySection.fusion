@@ -52,6 +52,10 @@ prototype(TwelveInch.Site:Collection.GreySection) < prototype(Neos.Fusion:Tag) {
       }
     }
 
+    style = Neos.Fusion:DataStructure {
+        bottomPadding = ${q(node).property('bottomPadding') ? 'padding-bottom: 5em' : 'padding-bottom: 0'}
+    }
+
     data-__neos-insertion-anchor = true
     data-__neos-insertion-anchor.@if.onlyRenderInBackend = ${node.context.inBackend && node.context.currentRenderingMode.edit}
   }

@@ -18,7 +18,9 @@
     padding-bottom: 24px;
 
     @media screen and (min-width: $desktop) {
+        margin-left: 0;
         padding-right: 5em;
         padding-bottom: 24px;
+        max-width: 500px;
     }
 }

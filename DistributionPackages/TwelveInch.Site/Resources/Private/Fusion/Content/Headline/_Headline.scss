@@ -3,7 +3,6 @@
 }
 
 .headline {
-    margin: 24px auto 12px;
     padding: $mobile-padding;
     color: #1f1f1f;
     //text-transform: uppercase;
@@ -12,36 +11,41 @@
         font-size: 2em;
         font-weight: 900;
         text-align: center;
+        margin: 0 auto 12px;
     }
 
     h2 {
         font-size: 1.5em;
         font-weight: 900;
         text-align: center;
+        margin: 0 auto 12px;
     }
 
     h3 {
         font-size: 1.25em;
         font-weight: 900;
         text-align: center;
+        margin: 0 auto 12px;
     }
 
     h4 {
         font-size: 6em;
         font-weight: 900;
         text-align: left;
+        margin: 0 auto 12px 0;
     }
 
     h5 {
         font-size: 1.25em;
         font-weight: 900;
         text-align: left;
+        margin: 0 auto 12px 0;
     }
 
 
     @media screen and (min-width: $desktop) {
-        margin: 24px auto 12px;
-        max-width: 840px;
+        //margin: 0 auto 12px;
+        //max-width: 840px;
         padding: $desktop-padding;
 
         h1, h2, h3 {

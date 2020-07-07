@@ -8,6 +8,7 @@
 
         @media screen and (min-width: $desktop) {
             margin: 0 auto;
+            height: auto;
             width: 100%;
         }
 }
@@ -25,11 +26,11 @@
         .column {
             &:first-child {
                 flex-grow: 1;
-                margin-right: 3px;
+                margin-right: 1em;
             }
             &:last-child {
                 flex-grow: 1;
-                margin-left: 3px;
+                margin-left: 1em;
             }
         }
     }
@@ -37,29 +38,46 @@
 
 .columns-33-66 {
     .column {
-        &:first-child {
-            flex-grow: 1;
-        }
-        &:last-child {
-            flex-grow: 2;
-        }
-    }
-}
+        @media screen and (min-width: $desktop) {
+            &:first-child {
+                flex-grow: 2;
+                margin-right: 2em;
+            }
 
-.columns-66-33 {
-    .column {
-        &:first-child {
-            flex-grow: 5;
-        }
-        &:last-child {
-            flex-grow: 3;
+            &:last-child {
+                flex-grow: 3;
+            }
         }
 
         img {
             object-fit: cover;
             object-position: top;
             @media screen and (min-width: $desktop){
-                height: 100%;
+                height: auto;
+                width: 100%;
+            }
+        }
+    }
+}
+
+.columns-66-33 {
+    .column {
+        @media screen and (min-width: $desktop) {
+            &:first-child {
+                flex-grow: 3;
+                margin-right: 2em;
+            }
+
+            &:last-child {
+                flex-grow: 2;
+            }
+        }
+
+        img {
+            object-fit: cover;
+            object-position: top;
+            @media screen and (min-width: $desktop){
+                height: auto;
                 width: 100%;
             }
         }
@@ -71,12 +89,12 @@
         .column {
             &:first-child {
                 flex-grow: 1;
-                margin-right: 6px;
+                margin-right: 2em;
             }
 
             &:nth-child(2) {
                 flex-grow: 1;
-                margin-right: 6px;
+                margin-right: 2em;
             }
 
             &:last-child {
@@ -91,12 +109,12 @@
         .column {
             &:first-child {
                 flex-grow: 1;
-                margin-right: 6px;
+                margin-right: 2em;
             }
 
             &:nth-child(2) {
                 flex-grow: 2;
-                margin-right: 6px;
+                margin-right: 2em;
             }
 
             &:last-child {
@@ -111,15 +129,15 @@
         .column {
             &:first-child {
                 flex-grow: 1;
-                margin-right: 6px;
+                margin-right: 2em;
             }
             &:nth-child(2) {
                 flex-grow: 1;
-                margin-right: 6px;
+                margin-right: 2em;
             }
             &:nth-child(3) {
                 flex-grow: 1;
-                margin-right: 6px;
+                margin-right: 2em;
             }
             &:last-child {
                 flex-grow: 1;

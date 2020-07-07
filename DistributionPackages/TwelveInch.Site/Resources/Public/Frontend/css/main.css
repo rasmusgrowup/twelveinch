@@ -7313,8 +7313,10 @@ footer {
   padding-bottom: 24px; }
   @media screen and (min-width: 1024px) {
     .text-padding {
+      margin-left: 0;
       padding-right: 5em;
-      padding-bottom: 24px; } }
+      padding-bottom: 24px;
+      max-width: 500px; } }
 
 .statementBox {
   display: block;
@@ -7831,33 +7833,35 @@ footer {
   overflow: hidden; }
 
 .headline {
-  margin: 24px auto 12px;
   padding: 0 1.5em;
   color: #1f1f1f; }
   .headline h1 {
     font-size: 2em;
     font-weight: 900;
-    text-align: center; }
+    text-align: center;
+    margin: 0 auto 12px; }
   .headline h2 {
     font-size: 1.5em;
     font-weight: 900;
-    text-align: center; }
+    text-align: center;
+    margin: 0 auto 12px; }
   .headline h3 {
     font-size: 1.25em;
     font-weight: 900;
-    text-align: center; }
+    text-align: center;
+    margin: 0 auto 12px; }
   .headline h4 {
     font-size: 6em;
     font-weight: 900;
-    text-align: left; }
+    text-align: left;
+    margin: 0 auto 12px 0; }
   .headline h5 {
     font-size: 1.25em;
     font-weight: 900;
-    text-align: left; }
+    text-align: left;
+    margin: 0 auto 12px 0; }
   @media screen and (min-width: 1024px) {
     .headline {
-      margin: 24px auto 12px;
-      max-width: 840px;
       padding: 0; }
       .headline h1, .headline h2, .headline h3 {
         text-align: center; } }
@@ -7917,10 +7921,9 @@ footer {
 
 .main-image {
   display: block;
-  height: 62vh;
   object-fit: cover;
   object-position: left;
-  margin-bottom: 6px; }
+  margin-bottom: 2em; }
   @media screen and (min-width: 1024px) {
     .main-image {
       height: auto; } }
@@ -8186,10 +8189,11 @@ footer {
 
 .resource {
   display: block;
-  position: relative; }
+  position: relative;
+  margin-bottom: 2em; }
   .resource .resource-content {
     display: block;
-    margin: 24px 0 36px;
+    margin: 2em 0 2.5em;
     overflow: hidden;
     padding: 0 1.5em; }
     .resource .resource-content header {
@@ -8374,6 +8378,7 @@ footer {
   @media screen and (min-width: 1024px) {
     .columns {
       margin: 0 auto;
+      height: auto;
       width: 100%; } }
 
 .columns:not(:last-child) {
@@ -8385,61 +8390,71 @@ footer {
 @media screen and (min-width: 1024px) {
   .columns-50-50 .column:first-child {
     flex-grow: 1;
-    margin-right: 3px; }
+    margin-right: 1em; }
   .columns-50-50 .column:last-child {
     flex-grow: 1;
-    margin-left: 3px; } }
+    margin-left: 1em; } }
 
-.columns-33-66 .column:first-child {
-  flex-grow: 1; }
+@media screen and (min-width: 1024px) {
+  .columns-33-66 .column:first-child {
+    flex-grow: 2;
+    margin-right: 2em; }
+  .columns-33-66 .column:last-child {
+    flex-grow: 3; } }
 
-.columns-33-66 .column:last-child {
-  flex-grow: 2; }
+.columns-33-66 .column img {
+  object-fit: cover;
+  object-position: top; }
+  @media screen and (min-width: 1024px) {
+    .columns-33-66 .column img {
+      height: auto;
+      width: 100%; } }
 
-.columns-66-33 .column:first-child {
-  flex-grow: 5; }
-
-.columns-66-33 .column:last-child {
-  flex-grow: 3; }
+@media screen and (min-width: 1024px) {
+  .columns-66-33 .column:first-child {
+    flex-grow: 3;
+    margin-right: 2em; }
+  .columns-66-33 .column:last-child {
+    flex-grow: 2; } }
 
 .columns-66-33 .column img {
   object-fit: cover;
   object-position: top; }
   @media screen and (min-width: 1024px) {
     .columns-66-33 .column img {
-      height: 100%;
+      height: auto;
       width: 100%; } }
 
 @media screen and (min-width: 1024px) {
   .columns-33-33-33 .column:first-child {
     flex-grow: 1;
-    margin-right: 6px; }
+    margin-right: 2em; }
   .columns-33-33-33 .column:nth-child(2) {
     flex-grow: 1;
-    margin-right: 6px; }
+    margin-right: 2em; }
   .columns-33-33-33 .column:last-child {
     flex-grow: 1; } }
 
 @media screen and (min-width: 1024px) {
   .columns-25-50-25 .column:first-child {
     flex-grow: 1;
-    margin-right: 6px; }
+    margin-right: 2em; }
   .columns-25-50-25 .column:nth-child(2) {
     flex-grow: 2;
-    margin-right: 6px; }
+    margin-right: 2em; }
   .columns-25-50-25 .column:last-child {
     flex-grow: 1; } }
 
 @media screen and (min-width: 1024px) {
   .columns-25-25-25-25 .column:first-child {
     flex-grow: 1;
-    margin-right: 6px; }
+    margin-right: 2em; }
   .columns-25-25-25-25 .column:nth-child(2) {
     flex-grow: 1;
-    margin-right: 6px; }
+    margin-right: 2em; }
   .columns-25-25-25-25 .column:nth-child(3) {
     flex-grow: 1;
-    margin-right: 6px; }
+    margin-right: 2em; }
   .columns-25-25-25-25 .column:last-child {
     flex-grow: 1; } }
 
