@@ -64,7 +64,7 @@ prototype(TwelveInch.Site:Component.Footer) < prototype(Neos.Neos:ContentCompone
             <div class="newsletter-cta" id="newsletter-cta">
                 <header>Sig up for our newsletters</header>
                 <p>Carefully curated news about music, reviews of new albums and occasional offers now and then. That’s what you get, if you sign up for our newsletter.</p>
-                <div class="klaviyo-form-QNL9ZQ"></div>
+                <div class="klaviyo-form-QNL9ZQ" style="min-height: 32px;"></div>
             </div>
             <div class="footer-nav">
                 <span>Quick Menu</span>

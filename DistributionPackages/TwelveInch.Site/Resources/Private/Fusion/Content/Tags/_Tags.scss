@@ -2,34 +2,34 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 2em;
 
     li {
-        border: 1px $black solid;
-        border-radius: 3px;
-        margin: 6px;
-        padding: 6px 24px;
-
         a {
+            border: 1px $black solid;
+            border-radius: 3px;
             color: $black;
             font-size: .8em;
             font-weight: 500;
+            margin: 6px;
+            padding: 6px 24px;
             text-transform: uppercase;
-        }
 
-        &:hover {
-            background-color: $grey;
+            &:hover {
+                background-color: $grey-lightest;
+                cursor: pointer;
+            }
         }
     }
 
     .current {
-        background-color: $black;
-
         a {
+            background-color: $black;
             color: white;
-        }
 
-        &:hover {
-            background-color: $dark-grey;
+            &:hover {
+                background-color: $dark-grey;
+            }
         }
     }
 }

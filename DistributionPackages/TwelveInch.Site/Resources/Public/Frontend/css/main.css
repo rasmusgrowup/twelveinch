@@ -7541,7 +7541,7 @@ footer {
   width: 100vw;
   padding: 32px;
   transition: transform 0.25s 0.5s cubic-bezier(0.16, 1, 0.3, 1);
-  animation-fill-mode: backwards; }
+  animation-fill-mode: both; }
   .navigation .navigation-menu.is-active {
     -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1), 5px 0 15px rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1), 5px 0 15px rgba(0, 0, 0, 0.1); }
@@ -7853,8 +7853,8 @@ footer {
   .headline h4 {
     font-size: 6em;
     font-weight: 900;
-    text-align: left;
-    margin: 0 auto 12px 0; }
+    text-align: center;
+    margin: 0 auto 12px; }
   .headline h5 {
     font-size: 1.25em;
     font-weight: 900;
@@ -7931,24 +7931,24 @@ footer {
 .sorting {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; }
-  .sorting li {
+  justify-content: center;
+  margin-top: 2em; }
+  .sorting li a {
     border: 1px #070707 solid;
     border-radius: 3px;
+    color: #070707;
+    font-size: .8em;
+    font-weight: 500;
     margin: 6px;
-    padding: 6px 24px; }
-    .sorting li a {
-      color: #070707;
-      font-size: .8em;
-      font-weight: 500;
-      text-transform: uppercase; }
-    .sorting li:hover {
-      background-color: #f8f8f8; }
-  .sorting .current {
-    background-color: #070707; }
-    .sorting .current a {
-      color: white; }
-    .sorting .current:hover {
+    padding: 6px 24px;
+    text-transform: uppercase; }
+    .sorting li a:hover {
+      background-color: #ededed;
+      cursor: pointer; }
+  .sorting .current a {
+    background-color: #070707;
+    color: white; }
+    .sorting .current a:hover {
       background-color: #4f4f4f; }
 
 .vimeo-video {
