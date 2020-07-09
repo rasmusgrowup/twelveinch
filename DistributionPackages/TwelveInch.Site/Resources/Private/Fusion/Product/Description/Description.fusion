@@ -12,18 +12,30 @@ prototype(TwelveInch.Site:Product.Description) < prototype(Neos.Neos:ContentComp
         property = 'label'
     }
     starsUri = Neos.Fusion:ResourceUri {
-    path = 'resource://TwelveInch.Site/Public/Frontend/img/stars.png'
+    path = 'resource://TwelveInch.Site/Public/Frontend/svg/stars.svg'
     }
-    link = ${q(node).property('link')}
-    linkTarget = ${q(node).property('linkTarget') ? '_blank' : '_self'}
-    renderAsLink = ${site.context.inBackend ? false : true}
+    chevronUri = Neos.Fusion:ResourceUri {
+    path = 'resource://TwelveInch.Site/Public/Frontend/svg/down-arrow.svg'
+    }
+
+    id = Neos.Neos:Editable {
+        property = 'id'
+    }
+
+    renderAsButton = ${site.context.inBackend ? false : true}
 
     renderer = afx`
     <div class="product-description">
+        <Carbon.Link:Link link="/products" additionalClass="back-button">
+            <img src={props.chevronUri} alt="" style="min-width: 9px;"/>
+            <p>Go back to products</p>
+        </Carbon.Link:Link>
         <div class="product-headline">{props.title}</div>
         <span class="product-ratings">AVG. RATINGS: 4.9</span>
-        <img src={props.starsUri} alt="Stars" width="80px" height="auto" />
+        <img class="description-stars" src={props.starsUri} alt="Stars" width="80px" height="auto" />
         <div class="product-text">{props.text}</div>
+        <div @if.render={props.renderAsButton} id={props.id} class="add-to-cart" role="button"></div>
+        <div @if.render={!props.renderAsButton} class="backend-add-to-cart" role="button">Add to cart (placeholder)</div>
     </div>
     `
 }

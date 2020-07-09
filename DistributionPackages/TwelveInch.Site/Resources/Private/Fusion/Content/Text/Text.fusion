@@ -3,7 +3,7 @@ prototype(TwelveInch.Site:Content.Text) < prototype(Neos.Neos:ContentComponent) 
         property = 'text'
     }
 
-    textPadding = ${q(node).property('textPadding') ? 'twelveinch-text container text-padding' : 'twelveinch-text container'}
+    textPadding = ${q(node).property('textPadding') ? 'twelveinch-text text-padding' : 'twelveinch-text'}
 
     renderer = afx`
         <div class={props.textPadding}>{props.text}</div>

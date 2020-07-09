@@ -3,12 +3,16 @@
     'Neos.Neos:Content': true
     'TwelveInch.Site:Content.Headline': true
     'TwelveInch.Site:Content.Text': true
-    'TwelveInch.Site:Content.Button': true
   ui:
     label: Product Description
     icon: align-center
     position: 720
     inlineEditable: true
+    inspector:
+      groups:
+        product:
+          label: 'Choose product'
+          icon: product-hunt
   properties:
     price:
       ui:
@@ -18,3 +22,9 @@
             hyphens: true
       options:
         silhouette: text.free
+    id:
+      type: string
+      ui:
+        label: 'Enter product name'
+        inspector:
+          group: product

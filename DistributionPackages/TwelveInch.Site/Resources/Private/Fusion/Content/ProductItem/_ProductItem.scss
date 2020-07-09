@@ -1,26 +1,12 @@
 $link-color: $black;
 $link-hover-color: $red;
 
-.column {
-    padding: 0 0.4rem;
-
-    @media screen and (min-width: $desktop) {
-        padding: 0.75rem;
-    }
-
-    @media screen and (max-width: 414px) {
-        &.is-half-mobile {
-            width: 100%;
-        }
-    }
-}
-
 
 .productItem {
     display: block;
     margin: 1em auto 2em;
     position: relative;
-    padding: $mobile-padding;
+    //padding: $mobile-padding;
 
     .productImage, .productImageHover {
         width: 100%;
@@ -75,7 +61,8 @@ $link-hover-color: $red;
 
         a {
             color: $black;
-            font-weight: 700;
+            font-size: .8em;
+            font-weight: 500;
             border-bottom: 2px transparent solid;
 
             &:hover {

@@ -25,7 +25,6 @@
         "sitegeist/silhouettes": "~1.0",
 
         "neos/nodetypes-contentreferences": "*",
-        "unikka/neos-slick": "^3.3",
         "jonnitto/iframe": "^4.1"
     },
     "extra": {

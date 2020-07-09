@@ -1,16 +1,6 @@
-.columns {
-    margin: 0;
-        flex-wrap: wrap;
-
-        @media screen and (min-width: 415px)  {
-            display: flex;
-        }
-
-        @media screen and (min-width: $desktop) {
-            margin: 0 auto;
-            height: auto;
-            width: 100%;
-        }
+.container {
+    width: auto;
+    max-width: 100%;
 }
 
 .columns:not(:last-child) {
@@ -21,131 +11,142 @@
     padding: 0;
 }
 
-.columns-50-50 {
-    @media screen and (min-width: $desktop) {
-        .column {
-            &:first-child {
-                flex-grow: 1;
-                margin-right: 1em;
-            }
-            &:last-child {
-                flex-grow: 1;
-                margin-left: 1em;
-            }
-        }
-    }
-}
-
-.columns-33-66 {
-    .column {
-        @media screen and (min-width: $desktop) {
-            &:first-child {
-                flex-grow: 2;
-                margin-right: 2em;
-            }
-
-            &:last-child {
-                flex-grow: 3;
-            }
-        }
-
-        img {
-            object-fit: cover;
-            object-position: top;
-            @media screen and (min-width: $desktop){
-                height: auto;
-                width: 100%;
-            }
-        }
-    }
-}
-
-.columns-66-33 {
-    .column {
-        @media screen and (min-width: $desktop) {
-            &:first-child {
-                flex-grow: 3;
-                margin-right: 2em;
-            }
-
-            &:last-child {
-                flex-grow: 2;
-            }
-        }
-
-        img {
-            object-fit: cover;
-            object-position: top;
-            @media screen and (min-width: $desktop){
-                height: auto;
-                width: 100%;
-            }
-        }
-    }
-}
-
-.columns-33-33-33 {
-    @media screen and (min-width: $desktop) {
-        .column {
-            &:first-child {
-                flex-grow: 1;
-                margin-right: 2em;
-            }
-
-            &:nth-child(2) {
-                flex-grow: 1;
-                margin-right: 2em;
-            }
-
-            &:last-child {
-                flex-grow: 1;
-            }
-        }
-    }
-}
-
-.columns-25-50-25 {
-    @media screen and (min-width: $desktop) {
-        .column {
-            &:first-child {
-                flex-grow: 1;
-                margin-right: 2em;
-            }
-
-            &:nth-child(2) {
-                flex-grow: 2;
-                margin-right: 2em;
-            }
-
-            &:last-child {
-                flex-grow: 1;
-            }
-        }
-    }
-}
-
 .columns-25-25-25-25 {
-    @media screen and (min-width: $desktop) {
+    .column {
+        margin: 0 1em;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .columns-25-25-25-25 {
+        display: flex;
+        flex-wrap: wrap;
+
         .column {
-            &:first-child {
-                flex-grow: 1;
-                margin-right: 2em;
+            &:first-child, &:nth-child(2), &:nth-child(3), &:last-child {
+                flex-basis: calc(50% - 1.5em);
             }
-            &:nth-child(2) {
-                flex-grow: 1;
-                margin-right: 2em;
+            &:first-child, &:nth-child(3) {
+                margin-right: .5em;
             }
-            &:nth-child(3) {
-                flex-grow: 1;
-                margin-right: 2em;
-            }
-            &:last-child {
-                flex-grow: 1;
+            &:nth-child(2), &:last-child {
+                margin-left: .5em;
             }
         }
     }
 }
 
-.columns:last-child {
-    margin-bottom: 0;
+@media screen and (min-width: $desktop) {
+
+    .columns-66-33 {
+        display: flex;
+
+        .column {
+            &:first-child {
+                flex-grow:3;
+            }
+
+            &:last-child {
+                flex-grow:2;
+            }
+        }
+    }
+
+    .columns-33-66 {
+        display: flex;
+
+        .column {
+            &:first-child {
+                flex-grow:2;
+            }
+
+            &:last-child {
+                flex-grow:3;
+            }
+        }
+    }
+
+    .columns-50-50 {
+        display: flex;
+
+        .column {
+            &:first-child {
+                flex-grow:1;
+            }
+
+            &:last-child {
+                flex-grow:1;
+            }
+        }
+    }
+
+    .columns-33-33-33 {
+        display: flex;
+
+        .column {
+            &:first-child {
+                flex-grow: 1;
+            }
+
+            &:nth-child(2) {
+                flex-grow: 1;
+            }
+
+            &:last-child {
+                flex-grow: 1;
+            }
+        }
+    }
+
+    .columns-25-25-25-25 {
+        display: flex;
+        flex-wrap: nowrap;
+
+        .column {
+            margin: 0;
+
+            &:first-child, &:nth-child(2), &:nth-child(3), &:last-child {
+                flex-grow:1;
+                flex-basis: 25%;
+            }
+
+            &:first-child, &:nth-child(2), &:nth-child(3) {
+                margin-right: .5em;
+            }
+
+            &:nth-child(2), &:last-child {
+                margin-left: 0;
+            }
+        }
+    }
+
+    section {
+        .columns-50-50 {
+            .column {
+                &:first-child {
+                    margin-right: .25em;
+                }
+
+                &:last-child {
+                    margin-left: .25em;
+                }
+            }
+        }
+
+        .columns-33-33-33 {
+            .column {
+                &:first-child, &:nth-child(2) {
+                    margin-right: 2em;
+                }
+            }
+        }
+
+        .columns-25-25-25-25 {
+            .column {
+                &:first-child, &:nth-child(2),&:nth-child(3) {
+                    margin-right: .5em;
+                }
+            }
+        }
+    }
 }
