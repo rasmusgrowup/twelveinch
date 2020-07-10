@@ -1,0 +1,12 @@
+'TwelveInch.Site:Product.Slider':
+  superTypes:
+    'Neos.Neos:Content': true
+    'Neos.Neos:ContentCollection': true
+  ui:
+    label: Product Slider
+    icon: images
+    position: 1600
+    inlineEditable: true
+  childNodes:
+    'slider':
+      type: 'Neos.Neos:ContentCollection'

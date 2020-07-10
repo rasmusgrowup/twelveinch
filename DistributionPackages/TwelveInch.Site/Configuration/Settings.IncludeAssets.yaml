@@ -15,7 +15,9 @@ Carbon:
           Head:
             - main.css
             - aos.css
+            - flickity.css
           Body:
             - main.js
             - shop.js
             - aos.js
+            - flickity.js

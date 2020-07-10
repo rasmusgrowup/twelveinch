@@ -5,9 +5,11 @@ prototype(TwelveInch.Site:Product.Image) < prototype(Neos.Neos:ContentComponent)
         @context.maximumWidth = 900
     }
 
+    classes = ${q(node).property('classes') ? 'carousel-cell carousel-cell-wide' : 'carousel-cell'}
+
     renderer = afx`
-    <div class="productImage">
-        <img src={props.src} alt={props.alternativeText}/>
+    <div class={props.classes}>
+        <img class="carousel-image" src={props.src} alt={props.alternativeText}/>
     </div>
     `
 }

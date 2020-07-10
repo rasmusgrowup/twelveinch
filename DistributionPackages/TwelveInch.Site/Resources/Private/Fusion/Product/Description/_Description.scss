@@ -25,9 +25,8 @@
 
 .product-description {
     margin: 1em auto 3em;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 3em;
+    position: relative;
+    padding: $mobile-padding;
 
     .product-headline {
         color: $black;
@@ -52,15 +51,14 @@
 
     .add-to-cart {
         background-color: white;
-        border-top: 1px rgba(6, 6, 6, 0.33) solid;
-        bottom: 0;
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1), 5px 0 15px rgba(0, 0, 0, 0.1);
-        left: 0;
-        position: sticky;
-        padding: 12px;
-        width: 100vw;
+        //border-top: 1px rgba(6, 6, 6, 0.33) solid;
+        display: inline-block;
+        margin-bottom: 2em;
+        //box-shadow: 0 0 5px rgba(0, 0, 0, 0.1), 5px 0 15px rgba(0, 0, 0, 0.1);
+        //padding: 12px;
+        width: 100%;
         z-index: 97;
-        -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1), 5px 0 15px rgba(0, 0, 0, 0.1);
+        //-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1), 5px 0 15px rgba(0, 0, 0, 0.1);
 
         .shopify-buy__product {
             .shopify-buy__product__price {
@@ -115,13 +113,17 @@
 
     @media screen and (min-width: $desktop) {
         padding: 0 3em;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 6em;
         /*background-color: white;*/
         .add-to-cart {
-            position: relative;
             background-color: none;
             border-top: none;
             box-shadow: 0;
+            display: block;
             padding: 0;
+            position: relative;
             width: auto;
             -webkit-box-shadow: none;
 

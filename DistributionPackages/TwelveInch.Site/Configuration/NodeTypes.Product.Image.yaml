@@ -6,3 +6,16 @@
     label: Product Image
     icon: icon-picture
     position: 700
+    inspector:
+      groups:
+        image:
+          label: 'Image options'
+          icon: info
+  properties:
+    classes:
+      type: boolean
+      ui:
+        label: 'Wide cell'
+        reloadIfChanged: true
+        inspector:
+          group: image

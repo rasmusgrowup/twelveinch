@@ -1,0 +1,16 @@
+prototype(TwelveInch.Site:Product.Slider) < prototype(Neos.Neos:ContentCollection) {
+    sliderContent = TYPO3.Neos:ContentCollection
+    @process.contentElementWrapping >
+        sliderContent {
+                nodePath = 'slider'
+        }
+        attributes = Neos.Fusion:DataStructure {
+            class = 'product-carousel'
+        }
+
+    renderer = afx`
+    <div>
+        <ts:render path="sliderContent" />
+    </div>
+    `
+}

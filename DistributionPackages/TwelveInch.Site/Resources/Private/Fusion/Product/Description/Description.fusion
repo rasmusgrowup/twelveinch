@@ -34,7 +34,7 @@ prototype(TwelveInch.Site:Product.Description) < prototype(Neos.Neos:ContentComp
         <span class="product-ratings">AVG. RATINGS: 4.9</span>
         <img class="description-stars" src={props.starsUri} alt="Stars" width="80px" height="auto" />
         <div class="product-text">{props.text}</div>
-        <div @if.render={props.renderAsButton} id={props.id} class="add-to-cart" role="button"></div>
+        <div @if.render={props.renderAsButton} id={props.id} style="min-height: 76px;" class="add-to-cart" role="button"></div>
         <div @if.render={!props.renderAsButton} class="backend-add-to-cart" role="button">Add to cart (placeholder)</div>
     </div>
     `
