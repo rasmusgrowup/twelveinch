@@ -7,6 +7,3 @@
     icon: images
     position: 1600
     inlineEditable: true
-  childNodes:
-    'slider':
-      type: 'Neos.Neos:ContentCollection'

@@ -34,12 +34,12 @@ ui.createComponent('cart', {
 	  	}
 });
 
-var element =  document.getElementById('original');
+var element =  document.getElementById('SE-N15R-1LH2');
 if (typeof(element) != 'undefined' && element != null)
 {
 	ui.createComponent('product', {
 		id: '343786815521',
-		node: document.getElementById('original'),
+		node: document.getElementById('SE-N15R-1LH2'),
 		options: {
 			product: {
 				iframe: false,
@@ -62,12 +62,40 @@ if (typeof(element) != 'undefined' && element != null)
 	});
 }
 
-var element =  document.getElementById('adapter');
+var element =  document.getElementById('JN-OEK5-P9XW');
 if (typeof(element) != 'undefined' && element != null)
 {
 	ui.createComponent('product', {
 		id: '343873388577',
-		node: document.getElementById('adapter'),
+		node: document.getElementById('JN-OEK5-P9XW'),
+		options: {
+			product: {
+				iframe: false,
+				buttonDestination: 'cart',
+				contents: {
+					img: false,
+					button: false,
+					buttonWithQuantity: true,
+					title: false,
+					price: true,
+			    },
+				text: {
+			    	button: 'Add to cart',
+			    }
+			},
+			cart: {
+				startOpen: true,
+			},
+		}
+	});
+}
+
+var element =  document.getElementById('GWRCW');
+if (typeof(element) != 'undefined' && element != null)
+{
+	ui.createComponent('product', {
+		id: '4682056400943',
+		node: document.getElementById('GWRCW'),
 		options: {
 			product: {
 				iframe: false,

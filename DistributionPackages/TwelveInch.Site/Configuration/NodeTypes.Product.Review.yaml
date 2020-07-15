@@ -1,0 +1,45 @@
+
+'TwelveInch.Site:Product.Review':
+  superTypes:
+    'Neos.Neos:Content': true
+  ui:
+    label: Product Review
+    icon: star
+    position: 1150
+    inlineEditable: true
+  properties:
+    name:
+      ui:
+        inline:
+          editorOptions:
+            placeholder: '<p>Jane Doe</p>'
+      options:
+        silhouette: text.free
+    headline:
+      ui:
+        inline:
+          editorOptions:
+            placeholder: '<p>Enter headline</p>'
+      options:
+        silhouette: text.free
+    date:
+      ui:
+        inline:
+          editorOptions:
+            placeholder: '<p>Date</p>'
+      options:
+        silhouette: text.free
+    where:
+      ui:
+        inline:
+          editorOptions:
+            placeholder: '<p>Review reference</p>'
+      options:
+        silhouette: text.free
+    text:
+      ui:
+        inline:
+          editorOptions:
+            placeholder: '<p>Lorum ipsum ...</p>'
+      options:
+        silhouette: text.free

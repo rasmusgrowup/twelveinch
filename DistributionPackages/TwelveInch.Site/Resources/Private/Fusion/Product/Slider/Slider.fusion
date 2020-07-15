@@ -1,11 +1,10 @@
 prototype(TwelveInch.Site:Product.Slider) < prototype(Neos.Neos:ContentCollection) {
-    sliderContent = TYPO3.Neos:ContentCollection
+    sliderContent = Neos.Neos:ContentCollection
     @process.contentElementWrapping >
-        sliderContent {
-                nodePath = 'slider'
-        }
+
         attributes = Neos.Fusion:DataStructure {
             class = 'product-carousel'
+            data-flickity = '{ "cellAlign": "left", "contain": true, "pageDots": false, "selectedAttraction": 0.08, "friction": 0.9 }'
         }
 
     renderer = afx`

@@ -58,7 +58,7 @@ for (i = 0; i < acc.length; i++) {
 // See https://github.com/michalsnik/aos/tree/v2 for docs
 document.addEventListener('DOMContentLoaded', function () {
   AOS.init({
-    offset: 100,
+    offset: 20,
     duration: 1200,
     easing: 'ease-expo-out'
   });

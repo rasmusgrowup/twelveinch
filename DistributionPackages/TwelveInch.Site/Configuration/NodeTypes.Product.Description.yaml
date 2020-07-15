@@ -25,6 +25,6 @@
     id:
       type: string
       ui:
-        label: 'Enter product name'
+        label: 'Enter product SKU'
         inspector:
           group: product

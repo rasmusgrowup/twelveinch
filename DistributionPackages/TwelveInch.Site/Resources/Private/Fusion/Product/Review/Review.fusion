@@ -1,0 +1,54 @@
+prototype(TwelveInch.Site:Product.Review) < prototype(Neos.Neos:ContentComponent) {
+
+    name = Neos.Neos:Editable {
+        property = 'name'
+    }
+
+    stars = Neos.Fusion:ResourceUri {
+    path = 'resource://TwelveInch.Site/Public/Frontend/svg/stars.svg'
+    }
+
+    headline = Neos.Neos:Editable {
+        property = 'headline'
+    }
+
+    date = Neos.Neos:Editable {
+        property = 'date'
+    }
+
+    where = Neos.Neos:Editable {
+        property = 'where'
+    }
+
+    text = Neos.Neos:Editable {
+        property = 'text'
+    }
+
+    verified = Neos.Fusion:ResourceUri {
+    path = 'resource://TwelveInch.Site/Public/Frontend/svg/confirm.svg'
+    }
+
+    renderer = afx`
+        <div class="product-review">
+            <div class="review-header">
+                <header>
+                    {props.name}
+                </header>
+                <span>{props.date}</span>
+                <p>{props.where}</p>
+                <div class="review-verified">
+                    <img src={props.verified} alt="stars"/><span>Verified Buyer</span>
+                </div>
+            </div>
+            <div class="review-content">
+                <img src={props.stars} alt=""/>
+                <div class="review-headline">
+                    {props.headline}
+                </div>
+                <div class="review-text">
+                    {props.text}
+                </div>
+            </div>
+        </div>
+    `
+}

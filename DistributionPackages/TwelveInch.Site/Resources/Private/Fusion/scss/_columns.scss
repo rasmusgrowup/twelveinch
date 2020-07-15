@@ -44,10 +44,19 @@
         .column {
             &:first-child {
                 flex-grow:3;
+                border-bottom: 1px $line-color solid;
             }
 
             &:last-child {
                 flex-grow:2;
+                border-left: 1px $line-color solid;
+                border-bottom: 1px $line-color solid;
+            }
+        }
+
+        .main-image {
+            &:last-child {
+                margin-bottom: 0;
             }
         }
     }
@@ -122,26 +131,85 @@
 
     section {
         .columns-50-50 {
+            display: flex;
+
             .column {
                 &:first-child {
+                    flex-grow:1;
                     margin-right: .25em;
                 }
 
                 &:last-child {
+                    flex-grow:1;
+                    margin-left: .25em;
+                }
+            }
+        }
+
+        .columns-33-66 {
+            display: flex;
+
+            .column {
+                &:first-child {
+                    flex-grow: 2;
+                    margin-right: .25em;
+                }
+
+                &:last-child {
+                    flex-grow: 3;
+                    margin-left: .25em;
+                }
+            }
+        }
+
+        .columns-66-33 {
+            display: flex;
+
+            .column {
+                &:first-child {
+                    flex-grow: 3;
+                    border-bottom: none;
+                    margin-right: .25em;
+                }
+
+                &:last-child {
+                    flex-grow: 2;
+                    border-left: none;
+                    border-bottom: none;
                     margin-left: .25em;
                 }
             }
         }
 
         .columns-33-33-33 {
+            display: flex;
+
             .column {
                 &:first-child, &:nth-child(2) {
-                    margin-right: 2em;
+                    margin-right: .5em;
+                }
+            }
+        }
+
+        .columns-25-50-25 {
+            display: flex;
+
+            .column {
+                &:first-child {
+                    flex-grow: 1;
+                }
+                &:nth-child(2) {
+                    flex-grow: 2;
+                }
+                &:last-child {
+                    flex-grow: 1;
                 }
             }
         }
 
         .columns-25-25-25-25 {
+            display: flex;
+            
             .column {
                 &:first-child, &:nth-child(2),&:nth-child(3) {
                     margin-right: .5em;
