@@ -25,7 +25,8 @@
         "sitegeist/silhouettes": "~1.0",
 
         "neos/nodetypes-contentreferences": "*",
-        "jonnitto/iframe": "^4.1"
+        "jonnitto/iframe": "^4.1",
+        "jonnitto/googlemaps": "^3.3"
     },
     "extra": {
         "neos": {
