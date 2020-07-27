@@ -6,7 +6,9 @@ window.addEventListener('load', function (e) {
 document.getElementById('closeBanner').addEventListener('click', function (e) {
   e.preventDefault();
   this.parentNode.style.display = 'none';
-  document.cookie = "banner_removed=1";
+  var expiration = new Date();
+  expiration.setDate(expiration.getDate() + 1);
+  document.cookie = "banner_removed=1;expires=";+expiration.toGMTString() + ';path=/';
 }, false);
 
 // Open & Close of responsive menu javascript code
