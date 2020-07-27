@@ -28,3 +28,16 @@
         label: 'Enter product SKU'
         inspector:
           group: product
+    addBundle:
+      type: boolean
+      ui:
+        label: 'Enable a bundle pack of this product'
+        reloadIfChanged: true
+        inspector:
+          group: product
+    bundleId:
+      type: string
+      ui:
+        label: 'Enter SKU of bundle pack'
+        inspector:
+          group: product

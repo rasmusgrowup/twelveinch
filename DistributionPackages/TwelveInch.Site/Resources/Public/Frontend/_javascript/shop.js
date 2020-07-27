@@ -121,3 +121,33 @@ if (typeof(element) != 'undefined' && element != null)
 		}
 	});
 }
+
+var element =  document.getElementById('AO-NLPI-WIXK');
+if (typeof(element) != 'undefined' && element != null)
+{
+	ui.createComponent('product', {
+		id: '4694764748847',
+		node: document.getElementById('AO-NLPI-WIXK'),
+		moneyFormat: '€{{amount}}',
+		options: {
+			product: {
+				iframe: false,
+				buttonDestination: 'cart',
+				contents: {
+					img: false,
+					button: true,
+					priceWithDiscounts: true,
+					title: true,
+					description: true,
+					price: true,
+			    },
+				text: {
+			    	button: 'Add bundle',
+			    }
+			},
+			cart: {
+				startOpen: true,
+			},
+		}
+	});
+}

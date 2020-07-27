@@ -17,10 +17,19 @@ prototype(TwelveInch.Site:Product.Description) < prototype(Neos.Neos:ContentComp
     chevronUri = Neos.Fusion:ResourceUri {
     path = 'resource://TwelveInch.Site/Public/Frontend/svg/down-arrow.svg'
     }
+    saveUri = Neos.Fusion:ResourceUri {
+    path = 'resource://TwelveInch.Site/Public/Frontend/svg/save-tag.svg'
+    }
 
     id = Neos.Neos:Editable {
         property = 'id'
     }
+
+    bundleId = Neos.Neos:Editable {
+        property = 'bundleId'
+    }
+
+    addBundle = ${q(node).property('addBundle') ? 'display:block;' : 'display:none;'}
 
     renderAsButton = ${site.context.inBackend ? false : true}
 
@@ -36,6 +45,15 @@ prototype(TwelveInch.Site:Product.Description) < prototype(Neos.Neos:ContentComp
         <div class="product-text">{props.text}</div>
         <div @if.render={props.renderAsButton} id={props.id} style="min-height: 76px;" class="add-to-cart" role="button"></div>
         <div @if.render={!props.renderAsButton} class="backend-add-to-cart" role="button">Add to cart (placeholder)</div>
+        <div class="bundle" style={props.addBundle}>
+            <header class="bundle-header">
+                <img src={props.saveUri} alt=""/>
+                <p>Save on our bundles</p>
+                <span>- and save on packaging materials</span>
+            </header>
+            <div @if.render={props.renderAsButton} id={props.bundleId} style="min-height: 76px;" class="" role="button"></div>
+            <div @if.render={!props.renderAsButton} class="" role="button">Bundle placeholder</div>
+        </div>
     </div>
     `
 }
