@@ -37,6 +37,7 @@ $animate: all 0.5s ease-in-out;
             display: block;
             background-color: $black;
             padding: 5px 30px;
+            position: relative;
 
             .banner-content {
                 display: block;
@@ -46,6 +47,44 @@ $animate: all 0.5s ease-in-out;
                 p {
                     font-weight: 500;
                     font-size: 12px;
+                }
+            }
+
+            .closeBanner {
+                display: block;
+                height: 18px;
+                right: 18px;
+                top: 50%;
+                transform: translate(0,-50%);
+                position: absolute;
+                width: 18px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                @media screen and (min-width: 767px) {
+                    right: 24px;
+                }
+
+                span {
+                    background-color: white;
+                    content: "";
+                    display: block;
+                    height: 2px;
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    transform: translate(-50%,-50%);
+                    width: 18px;
+
+                    &:first-child {
+                        transform: rotate(-45deg);
+                    }
+
+                    &:last-child {
+                        transform: rotate(45deg);
+                    }
                 }
             }
         }

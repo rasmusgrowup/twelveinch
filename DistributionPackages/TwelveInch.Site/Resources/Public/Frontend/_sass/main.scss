@@ -4,35 +4,35 @@
     font-family: 'Heebo';
     font-weight: 900;
     font-style: normal;
-    src: url("../fonts/Heebo-Black.ttf") format("truetype"),;
+    src: url("../Fonts/Heebo-Black.ttf") format("truetype"),;
 }
 
 @font-face {
     font-family: 'Heebo';
     font-weight: 700;
     font-style: normal;
-    src: url("../fonts/Heebo-Bold.ttf") format("truetype"),;
+    src: url("../Fonts/Heebo-Bold.ttf") format("truetype"),;
 }
 
 @font-face {
     font-family: 'Heebo';
     font-weight: 500;
     font-style: normal;
-    src: url("../fonts/Heebo-Medium.ttf") format("truetype"),;
+    src: url("../Fonts/Heebo-Medium.ttf") format("truetype"),;
 }
 
 @font-face {
     font-family: 'Heebo';
     font-weight: 400;
     font-style: normal;
-    src: url("../fonts/Heebo-Regular.ttf") format("truetype"),;
+    src: url("../Fonts/Heebo-Regular.ttf") format("truetype"),;
 }
 
 @font-face {
     font-family: 'Heebo';
     font-weight: 300;
     font-style: normal;
-    src: url("../fonts/Heebo-Light.ttf") format("truetype"),;
+    src: url("../Fonts/Heebo-Light.ttf") format("truetype"),;
 }
 
 [data-aos="intro"] {
@@ -106,10 +106,7 @@ $line-color: rgba(6, 6, 6, 0.33);
 @import "../../../Private/Fusion/Product/Review/Review";
 
 .has-navbar-fixed-top {
-    padding-top: 125px !important;
-    @media screen and (min-width: 767px) {
-        padding-top: 89px !important;
-    }
+    padding-top: 61px !important;
 }
 
 html {
