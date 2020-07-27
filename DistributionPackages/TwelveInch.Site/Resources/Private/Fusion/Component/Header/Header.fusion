@@ -97,7 +97,7 @@ prototype(TwelveInch.Site:Component.Header) < prototype(Neos.Fusion:Component) {
                         <span>Find a store near you</span>
                         <img src={props.pinUri} alt="Marker" width="18" height="18" />
                 </a>
-                <div class="language-selector" id="language-selector" role="button" aria-label="Select language">{props.languageMenu}<img src={props.arrowUri} alt="Marker" width="12" height="12" /></div>
+                <!-- <div class="language-selector" id="language-selector" role="button" aria-label="Select language">{props.languageMenu}<img src={props.arrowUri} alt="Marker" width="12" height="12" /></div> -->
                 <div class="copyright" id="copyright">&copy; {props.year} Twelve Inch ApS - All rights reserved</div>
                 <div class="secondary-links">
                     <a href="/legal">Privacy</a>
