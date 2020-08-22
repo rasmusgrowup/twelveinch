@@ -16,7 +16,7 @@
 
         "carbon/compression": "~2.0",
         "carbon/link": "~1.4",
-        "carbon/includeassets": "~3.5",
+        "carbon/includeassets": "~3.5 || ~4.0",
         "flowpack/cachebuster": "~1.0",
         "flowpack/nodetemplates": "~1.1",
         "moc/notfound": "~3.1",
