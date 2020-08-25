@@ -23,5 +23,6 @@ prototype(TwelveInch.Site:Document.AbstractPage) < prototype(Neos.Neos:Page) {
     }
     body = TwelveInch.Site:Component.DefaultLayout {
         content = ''
+        @process.normalize = CodeQ.UnicodeNormalizer:Normalizer
     }
 }

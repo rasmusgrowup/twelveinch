@@ -5,5 +5,5 @@
   ui:
     label: Breadcrumb
     icon: bread-slice
-    position: 40
+    position: 50
     reloadIfChanged: true

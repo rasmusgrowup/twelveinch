@@ -5,5 +5,5 @@
   ui:
     label: 'Product Grid'
     icon: columns
-    position: 180
+    position: 500
     inlineEditable: true

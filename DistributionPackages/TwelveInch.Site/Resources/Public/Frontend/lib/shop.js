@@ -38,6 +38,7 @@ ui.createComponent('cart', {
 	}
 });
 
+// Twelve Inch Original
 var element = document.getElementById('SE-N15R-1LH2');
 if (typeof element != 'undefined' && element != null) {
 	ui.createComponent('product', {
@@ -66,6 +67,7 @@ if (typeof element != 'undefined' && element != null) {
 	});
 }
 
+// Twelve Inch Adapter
 var element = document.getElementById('JN-OEK5-P9XW');
 if (typeof element != 'undefined' && element != null) {
 	ui.createComponent('product', {
@@ -94,6 +96,7 @@ if (typeof element != 'undefined' && element != null) {
 	});
 }
 
+//GrooveWasher Walnut Record Cleaning Kit
 var element = document.getElementById('GWRCW');
 if (typeof element != 'undefined' && element != null) {
 	ui.createComponent('product', {
@@ -122,6 +125,36 @@ if (typeof element != 'undefined' && element != null) {
 	});
 }
 
+// GrooveWasher SC1 Stylus Cleaning Kit
+var element = document.getElementById('GW-COM-1');
+if (typeof element != 'undefined' && element != null) {
+	ui.createComponent('product', {
+		id: '4719311388719',
+		node: document.getElementById('GW-COM-1'),
+		moneyFormat: '€{{amount}}',
+		options: {
+			product: {
+				iframe: false,
+				buttonDestination: 'cart',
+				contents: {
+					img: false,
+					button: false,
+					buttonWithQuantity: true,
+					title: false,
+					price: true
+				},
+				text: {
+					button: 'Add to cart'
+				}
+			},
+			cart: {
+				startOpen: true
+			}
+		}
+	});
+}
+
+// Twelve Inch 4ECO Bundle
 var element = document.getElementById('AO-NLPI-WIXK');
 if (typeof element != 'undefined' && element != null) {
 	ui.createComponent('product', {

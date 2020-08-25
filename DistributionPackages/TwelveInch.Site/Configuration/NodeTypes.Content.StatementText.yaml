@@ -5,7 +5,7 @@
   ui:
     label: Statement Text
     icon: icon-file-text
-    position: 220
+    position: 700
     inlineEditable: true
   properties:
     statementText:

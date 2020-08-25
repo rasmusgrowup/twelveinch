@@ -5,7 +5,7 @@
   ui:
     label: 'Resource Grid'
     icon: th-large
-    position: 180
+    position: 600
     inlineEditable: true
   properties:
     link:

@@ -5,7 +5,7 @@
   ui:
     label: SEO Text
     icon: icon-file-text
-    position: 2000
+    position: 700
     inlineEditable: true
   properties:
     text:

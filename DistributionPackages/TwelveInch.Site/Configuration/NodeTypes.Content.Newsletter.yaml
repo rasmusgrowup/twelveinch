@@ -6,7 +6,7 @@
   ui:
     label: Newsletter Element
     icon: envelope
-    position: 1000
+    position: 400
     inlineEditable: true
     reloadIfChanged: true
   properties:

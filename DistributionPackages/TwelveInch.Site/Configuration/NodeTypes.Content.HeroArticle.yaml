@@ -5,7 +5,7 @@
   ui:
     label: Hero Article
     icon: icon-file-text
-    position: 100
+    position: 251
     inlineEditable: true
   properties:
     text:

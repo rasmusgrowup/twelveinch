@@ -3,7 +3,7 @@
     'Neos.Neos:Content': true
   ui:
     label: 'Slider'
-    position: 5
+    position: 700
     icon: images
   properties:
     slide1:

@@ -5,7 +5,7 @@
   ui:
     label: Address
     icon: map-marker-alt
-    position: 250
+    position: 25
     inlineEditable: true
   properties:
     address:

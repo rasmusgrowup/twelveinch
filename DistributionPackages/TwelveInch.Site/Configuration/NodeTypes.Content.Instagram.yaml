@@ -5,7 +5,7 @@
   ui:
     label: Instagram Module
     icon: instagram
-    position: 850
+    position: 350
     inlineEditable: true
   properties:
     text:

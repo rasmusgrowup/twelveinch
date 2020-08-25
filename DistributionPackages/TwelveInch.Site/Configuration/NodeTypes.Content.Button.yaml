@@ -5,7 +5,7 @@
   ui:
     label: Button
     icon: external-link-alt
-    position: 400
+    position: 55
     inlineEditable: true
     reloadIfChanged: true
     inspector:

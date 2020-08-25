@@ -4,7 +4,7 @@
   ui:
     label: Vimeo Video
     icon: video
-    position: 1500
+    position: 900
     reloadIfChanged: true
     inspector:
       groups:
@@ -18,4 +18,3 @@
         label: 'Insert vimeo video url'
         inspector:
           group: product
-          
