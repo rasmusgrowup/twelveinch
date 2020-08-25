@@ -14,6 +14,7 @@ ui.createComponent('cart', {
 	options: {
 		cart: {
 			iframe: false,
+			popup: false,
 			contents: {
 				button: true
 			},

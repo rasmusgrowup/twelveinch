@@ -45,7 +45,7 @@ prototype(TwelveInch.Site:Component.Header) < prototype(Neos.Fusion:Component) {
 
         <nav class="navigation" id="navigation" role="navigation" aria-label="main navigation">
             <div class="navigation-bar" id="navigation-bar">
-                <div class="banner">
+                <!-- <div class="banner">
                     <div class="banner-content">
                         <p>Hello! Welcome to our new website ✌️ Enjoy fast world wide shipping, 30 days return, secure payments and products with excellent ratings</p>
                     </div>
@@ -53,7 +53,7 @@ prototype(TwelveInch.Site:Component.Header) < prototype(Neos.Fusion:Component) {
                         <span></span>
                         <span></span>
                     </div>
-                </div>
+                </div> -->
                 <div class="bar">
                     <a class="open-navigation" role="button" aria-label="Open" aria-expanded="false" data-target="navigation-menu">
                         <span aria-hidden="true"></span>

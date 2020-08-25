@@ -52,6 +52,7 @@
 
 @import "../node_modules/bulma/sass/utilities/initial-variables";
 
+// 2. Set your own initial variables
 $black: #070707;
 $black-hover: #383838;
 $dark-grey: #4f4f4f;
@@ -66,44 +67,44 @@ $mobile-padding: 0 1.5em;
 $desktop-padding: 0;
 $line-color: rgba(6, 6, 6, 0.33);
 
-
+// 4. Import the rest of Bulma
 @import "../node_modules/bulma/bulma";
 
-// Components
-@import "../../../Private/Fusion/Component/Footer/Footer";
-@import "../../../Private/Fusion/Content/Text/Text";
-@import "../../../Private/Fusion/Content/StatementText/StatementText";
-@import "../../../Private/Fusion/Content/SeoText/SeoText";
-@import "../../../Private/Fusion/Content/ShortReview/ShortReview";
-@import "../../../Private/Fusion/Content/HeroArticle/HeroArticle";
-@import "../../../Private/Fusion/Component/Header/TiHeader";
-@import "../../../Private/Fusion/Content/Hero/Hero";
-@import "../../../Private/Fusion/Content/ProductItem/ProductItem";
-@import "../../../Private/Fusion/Content/ProductGrid/ProductGrid";
-@import "../../../Private/Fusion/Content/Headline/Headline";
-@import "../../../Private/Fusion/Content/FAQ/FAQ";
-@import "../../../Private/Fusion/Content/Image/Image";
-@import "../../../Private/Fusion/Content/Tags/Tags";
-@import "../../../Private/Fusion/Content/Vimeo/Vimeo";
-@import "../../../Private/Fusion/Content/ImageBanner/ImageBanner";
-@import "../../../Private/Fusion/Content/Address/Address";
-@import "../../../Private/Fusion/Content/ImageCaption/ImageCaption";
-@import "../../../Private/Fusion/Content/Button/Buttons";
-@import "../../../Private/Fusion/Content/Slider/Slider";
-@import "../../../Private/Fusion/Content/Newsletter/Newsletter";
-@import "../../../Private/Fusion/Collection/Section/Section";
-@import "../../../Private/Fusion/Content/Breadcrumb/Breadcrumb";
-@import "../../../Private/Fusion/Content/Resource/Resource";
-@import "../../../Private/Fusion/Product/Image/Image";
-@import "../../../Private/Fusion/Product/Info/Info";
-@import "../../../Private/Fusion/scss/Columns";
-@import "../../../Private/Fusion/scss/Dropdown";
-@import "../../../Private/Fusion/scss/Shop";
-@import "../../../Private/Fusion/scss/Fonts";
-@import "../../../Private/Fusion/scss/Ratios";
-@import "../../../Private/Fusion/Product/Description/Description";
-@import "../../../Private/Fusion/Product/Slider/Slider";
-@import "../../../Private/Fusion/Product/Review/Review";
+// 5. Add own stylesheets
+@import "../../../Private/Styles/scss/Footer";
+@import "../../../Private/Styles/scss/Text";
+@import "../../../Private/Styles/scss/StatementText";
+@import "../../../Private/Styles/scss/SeoText";
+@import "../../../Private/Styles/scss/ShortReview";
+@import "../../../Private/Styles/scss/HeroArticle";
+@import "../../../Private/Styles/scss/Header";
+@import "../../../Private/Styles/scss/Hero";
+@import "../../../Private/Styles/scss/ProductItem";
+@import "../../../Private/Styles/scss/ProductGrid";
+@import "../../../Private/Styles/scss/Headline";
+@import "../../../Private/Styles/scss/FAQ";
+@import "../../../Private/Styles/scss/Image";
+@import "../../../Private/Styles/scss/Tags";
+@import "../../../Private/Styles/scss/Vimeo";
+@import "../../../Private/Styles/scss/ImageBanner";
+@import "../../../Private/Styles/scss/Address";
+@import "../../../Private/Styles/scss/ImageCaption";
+@import "../../../Private/Styles/scss/Buttons";
+@import "../../../Private/Styles/scss/Slider";
+@import "../../../Private/Styles/scss/Newsletter";
+@import "../../../Private/Styles/scss/Section";
+@import "../../../Private/Styles/scss/Breadcrumb";
+@import "../../../Private/Styles/scss/Resource";
+@import "../../../Private/Styles/scss/Image";
+@import "../../../Private/Styles/scss/Info";
+@import "../../../Private/Styles/scss/Columns";
+@import "../../../Private/Styles/scss/Dropdown";
+@import "../../../Private/Styles/scss/Shop";
+@import "../../../Private/Styles/scss/Fonts";
+@import "../../../Private/Styles/scss/Ratios";
+@import "../../../Private/Styles/scss/Description";
+@import "../../../Private/Styles/scss/Slider";
+@import "../../../Private/Styles/scss/Review";
 
 .has-navbar-fixed-top {
     padding-top: 61px !important;

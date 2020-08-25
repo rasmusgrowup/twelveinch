@@ -1,16 +1,5 @@
 'use strict';
 
-window.addEventListener('load', function (e) {
-  if (document.cookie.indexOf('banner_removed=1') !== -1) document.getElementById('closeBanner').parentNode.style.display = 'none';
-});
-document.getElementById('closeBanner').addEventListener('click', function (e) {
-  e.preventDefault();
-  this.parentNode.style.display = 'none';
-  var expiration = new Date();
-  expiration.setDate(expiration.getDate() + 1);
-  document.cookie = "banner_removed=1;expires=";+expiration.toGMTString() + ';path=/';
-}, false);
-
 // Open & Close of responsive menu javascript code
 // See https://bulma.io/documentation/components/navbar/ for docs
 document.addEventListener('DOMContentLoaded', function () {
