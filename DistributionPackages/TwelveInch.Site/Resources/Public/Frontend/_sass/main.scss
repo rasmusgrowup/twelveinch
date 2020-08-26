@@ -4,56 +4,47 @@
     font-family: 'Heebo';
     font-weight: 900;
     font-style: normal;
-    src: url("../Fonts/Heebo-Black.ttf") format("truetype"),;
+    src: url("../Fonts/Heebo-Black.ttf") format("truetype");
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Heebo';
     font-weight: 700;
     font-style: normal;
-    src: url("../Fonts/Heebo-Bold.ttf") format("truetype"),;
+    src: url("../Fonts/Heebo-Bold.ttf") format("truetype");
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Heebo';
     font-weight: 500;
     font-style: normal;
-    src: url("../Fonts/Heebo-Medium.ttf") format("truetype"),;
+    src: url("../Fonts/Heebo-Medium.ttf") format("truetype");
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Heebo';
     font-weight: 400;
     font-style: normal;
-    src: url("../Fonts/Heebo-Regular.ttf") format("truetype"),;
+    src: url("../Fonts/Heebo-Regular.ttf") format("truetype");
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Heebo';
     font-weight: 300;
     font-style: normal;
-    src: url("../Fonts/Heebo-Light.ttf") format("truetype"),;
-}
-
-[data-aos="intro"] {
-  transform: translateY(250%) skewY(-5deg);
-
-  &.aos-animate {
-    transform: translateY(0) skewY(0);
-  }
-}
-
-[data-aos] {
-    body[data-aos-easing="ease-expo-out"] &,
-        &[data-aos][data-aos-easing="ease-expo-out"] {
-        transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
-        }
+    src: url("../Fonts/Heebo-Light.ttf") format("truetype");
+    font-display: swap;
 }
 
 @import "../node_modules/bulma/sass/utilities/initial-variables";
 
 // 2. Set your own initial variables
 $black: #070707;
+$black-lighter: #2d2d2d;
 $black-hover: #383838;
 $dark-grey: #4f4f4f;
 $grey: #f8f8f8;
@@ -71,14 +62,15 @@ $line-color: rgba(6, 6, 6, 0.33);
 @import "../node_modules/bulma/bulma";
 
 // 5. Add own stylesheets
+@import "../../../Private/Styles/scss/Fonts";
 @import "../../../Private/Styles/scss/Footer";
 @import "../../../Private/Styles/scss/Text";
 @import "../../../Private/Styles/scss/StatementText";
 @import "../../../Private/Styles/scss/SeoText";
 @import "../../../Private/Styles/scss/ShortReview";
-@import "../../../Private/Styles/scss/HeroArticle";
-@import "../../../Private/Styles/scss/Header";
-@import "../../../Private/Styles/scss/Hero";
+//@import "../../../Private/Styles/scss/HeroArticle";
+//@import "../../../Private/Styles/scss/Header";
+//@import "../../../Private/Styles/scss/Hero";
 @import "../../../Private/Styles/scss/ProductItem";
 @import "../../../Private/Styles/scss/ProductGrid";
 @import "../../../Private/Styles/scss/Headline";
@@ -100,7 +92,6 @@ $line-color: rgba(6, 6, 6, 0.33);
 @import "../../../Private/Styles/scss/Columns";
 @import "../../../Private/Styles/scss/Dropdown";
 @import "../../../Private/Styles/scss/Shop";
-@import "../../../Private/Styles/scss/Fonts";
 @import "../../../Private/Styles/scss/Ratios";
 @import "../../../Private/Styles/scss/Description";
 @import "../../../Private/Styles/scss/Slider";

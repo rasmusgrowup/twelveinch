@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+@import "../node_modules/bulma/sass/utilities/initial-variables";
+
+//  Variables
+$black: #070707;
+$black-hover: #383838;
+$black-lighter: #2d2d2d;
+$dark-grey: #4f4f4f;
+$grey: #f8f8f8;
+$darker-grey: #f2f2f2;
+$red: #FF6666;
+$green: #1DCC89;
+$family-sans-serif: 'Heebo', "Helvetica", "Arial", sans-serif;
+$primary: $black;
+$primary-invert: $grey;
+$mobile-padding: 0 1.5em;
+$desktop-padding: 0;
+$line-color: rgba(6, 6, 6, 0.33);
+
+@import "../../../Private/Styles/scss/HeroArticle";
+@import "../../../Private/Styles/scss/Header";
+@import "../../../Private/Styles/scss/Hero";
+
+[data-aos="intro"] {
+  transform: translateY(250%) skewY(-5deg);
+
+  &.aos-animate {
+    transform: translateY(0) skewY(0);
+  }
+}
+
+[data-aos] {
+    body[data-aos-easing="ease-expo-out"] &,
+        &[data-aos][data-aos-easing="ease-expo-out"] {
+        transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+        }
+}

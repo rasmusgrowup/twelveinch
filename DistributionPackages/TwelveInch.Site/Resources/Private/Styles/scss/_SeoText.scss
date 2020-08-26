@@ -1,5 +1,4 @@
 .seo-text {
-    color: #1f1f1f;
     margin: 0 auto;
     padding: $mobile-padding;
 
@@ -13,6 +12,7 @@
         text-transform: uppercase;
 
         p {
+            color: $black;
             margin-bottom: 15px;
             @media screen and (min-width: $desktop) {
                 margin-bottom: 20px;

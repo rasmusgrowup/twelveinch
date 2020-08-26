@@ -26,14 +26,13 @@ $animate: all 0.5s ease-in-out;
 }
 
 .navigation {
-
     .navigation-bar {
         position: fixed;
         width: 100vw;
         background-color: white;
         z-index: 99;
 
-        .banner {
+        /*.banner {
             display: block;
             background-color: $black;
             padding: 5px 30px;
@@ -87,7 +86,7 @@ $animate: all 0.5s ease-in-out;
                     }
                 }
             }
-        }
+        }*/
 
         .bar {
             display: flex;
@@ -113,8 +112,6 @@ $animate: all 0.5s ease-in-out;
                 }
 
                 &:hover {
-                    animation: wiggle .1s ease-in-out;
-
                     span {
                         background-color: $red;
                     }
@@ -130,6 +127,7 @@ $animate: all 0.5s ease-in-out;
     }
 
     .navigation-menu {
+        color: $black;
         display: block;
         position: fixed;
         top: 0;
