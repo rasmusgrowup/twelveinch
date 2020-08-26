@@ -1,9 +1,22 @@
 prototype(TwelveInch.Site:Content.Resource) < prototype(Neos.Neos:ContentComponent) {
-    alternativeText = ${node.properties.alternativeText}
-    src = TwelveInch.Site:Component.ImageUri {
-        @context.asset = ${q(node).property('image')}
-        @context.maximumWidth = 800
+    # if the current node has previous siblings it is not the
+    # first content and should be loaded lazy otherwise not
+    lazy = ${q(node).prev().is()}
+
+    src = Neos.Fusion:Case {
+        image {
+            condition = ${q(node).property('image') ? true : false}
+            renderer = Sitegeist.Kaleidoscope:AssetImageSource {
+                asset = ${q(node).property('image')}
+            }
+        }
+        dummyImage {
+            condition = ${site.context.inBackend}
+            renderer = Sitegeist.Kaleidoscope:DummyImageSource
+        }
     }
+    alternativeText = ${q(node).property('alternativeText')}
+
     headline = Neos.Neos:Editable {
         property = 'headline'
     }
@@ -21,7 +34,17 @@ prototype(TwelveInch.Site:Content.Resource) < prototype(Neos.Neos:ContentCompone
 
     renderer = afx`
         <div class="resource">
-            <Carbon.Link:Link link={props.link} role="link"><img src={props.src} alt={props.alternativeText} /></Carbon.Link:Link>
+            <Carbon.Link:Link link={props.link} role="link">
+            <Sitegeist.Lazybones:Image
+                class="lazy-image"
+                lazy={true}
+                lazyWidth={200}
+                imageSource={props.src}
+                srcset="320w, 400w, 480w, 600w, 640w, 720w, 768w, 800w, 960w, 1024px, 1280w, 1440w, 1600w, 1680w, 1920w, 2560w"
+                sizes={props.sizes}
+                alt={props.alternativeText}
+                />
+            </Carbon.Link:Link>
             <div class="resource-content">
                 <header data-aos="intro">{props.headline}</header>
                 <div class="" data-aos="intro" data-aos-delay="100">

@@ -1,8 +1,22 @@
 prototype(TwelveInch.Site:Content.Hero) < prototype(Neos.Neos:ContentComponent) {
-    alternativeText = ${node.properties.alternativeText}
-    src = TwelveInch.Site:Component.ImageUri {
-        @context.asset = ${q(node).property('image')}
+    # if the current node has previous siblings it is not the
+	# first content and should be loaded lazy otherwise not
+	lazy = ${q(node).prev().is()}
+
+    src = Neos.Fusion:Case {
+        image {
+            condition = ${q(node).property('image') ? true : false}
+            renderer = Sitegeist.Kaleidoscope:AssetImageSource {
+                asset = ${q(node).property('image')}
+            }
+        }
+        dummyImage {
+            condition = ${site.context.inBackend}
+            renderer = Sitegeist.Kaleidoscope:DummyImageSource
+        }
     }
+    alternativeText = ${q(node).property('alternativeText')}
+
     text = Neos.Neos:Editable {
         property = 'text'
     }
@@ -23,7 +37,15 @@ prototype(TwelveInch.Site:Content.Hero) < prototype(Neos.Neos:ContentComponent) 
     renderer = afx`
     <div class="hero-content">
         <div class="hero-image">
-            <img class="" src={props.src} alt={props.alternativeText} />
+            <Sitegeist.Lazybones:Image
+                class="lazy-hero"
+                lazy={true}
+                lazyWidth={200}
+                imageSource={props.src}
+                srcset="320w, 400w, 480w, 600w, 640w, 720w, 768w, 800w, 960w, 1024px, 1280w, 1440w, 1600w, 1680w, 1920w, 2560w"
+                sizes={props.sizes}
+                alt={props.alternativeText}
+                />
         </div>
         <div class="hero-cta">
             <div class="hero-headline" data-aos="intro" data-aos-delay="400">{props.text}</div>
