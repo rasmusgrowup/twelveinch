@@ -3003,6 +3003,60 @@
        <lastPublicationDateTime __type="object" __classname="DateTime">2018-06-26T23:23:05+02:00</lastPublicationDateTime>
        <properties/>
       </variant>
+      <node identifier="e7b715f2-029c-426d-99c4-e1d5eb78a48b" nodeName="node-ighhaxsufxuhg">
+       <variant sortingIndex="100" workspace="live" nodeType="TwelveInch.Site:Collection.Section" version="3" removed="" hidden="" hiddenInIndex="">
+        <dimensions>
+         <language>en</language>
+        </dimensions>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2020-08-26T11:12:15+02:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2020-08-26T11:14:55+02:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2020-08-26T11:14:55+02:00</lastPublicationDateTime>
+        <properties>
+         <bottomPadding __type="boolean">1</bottomPadding>
+        </properties>
+       </variant>
+       <node identifier="73883a47-18ee-7478-00ec-7d3c3d21a7b2" nodeName="column0">
+        <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+         <dimensions>
+          <language>en</language>
+         </dimensions>
+         <accessRoles __type="array"/>
+         <creationDateTime __type="object" __classname="DateTime">2020-08-26T11:12:15+02:00</creationDateTime>
+         <lastModificationDateTime __type="object" __classname="DateTime">2020-08-26T11:14:55+02:00</lastModificationDateTime>
+         <lastPublicationDateTime __type="object" __classname="DateTime">2020-08-26T11:14:55+02:00</lastPublicationDateTime>
+         <properties/>
+        </variant>
+        <node identifier="ec87e4d9-2442-4c8e-9869-19bcacfbea28" nodeName="node-l234d1j4nf28q">
+         <variant sortingIndex="300" workspace="live" nodeType="TwelveInch.Site:Content.Headline" version="37" removed="" hidden="" hiddenInIndex="">
+          <dimensions>
+           <language>en</language>
+          </dimensions>
+          <accessRoles __type="array"/>
+          <creationDateTime __type="object" __classname="DateTime">2020-08-26T11:13:14+02:00</creationDateTime>
+          <lastModificationDateTime __type="object" __classname="DateTime">2020-08-26T11:17:17+02:00</lastModificationDateTime>
+          <lastPublicationDateTime __type="object" __classname="DateTime">2020-08-26T11:17:17+02:00</lastPublicationDateTime>
+          <properties>
+           <title __type="string">&lt;h5 style=&quot;text-align:center;&quot;&gt;The page you're trying to reach doesn't exist. Maybe you are trying to reach a page, which is not there or the internal link to the page needs to be updated. If you've found an error on our website, you are more than welcome to let us know at &lt;a href=&quot;mailto:info@twelve-inch.com&quot;&gt;info@twelve-inch.com&lt;/a&gt;&lt;/h5&gt;</title>
+          </properties>
+         </variant>
+        </node>
+        <node identifier="693febcd-0b19-4327-b781-c4ac6aa25667" nodeName="node-vgfocoaqo9r7w">
+         <variant sortingIndex="250" workspace="live" nodeType="TwelveInch.Site:Content.Headline" version="22" removed="" hidden="" hiddenInIndex="">
+          <dimensions>
+           <language>en</language>
+          </dimensions>
+          <accessRoles __type="array"/>
+          <creationDateTime __type="object" __classname="DateTime">2020-08-26T11:12:35+02:00</creationDateTime>
+          <lastModificationDateTime __type="object" __classname="DateTime">2020-08-26T11:17:53+02:00</lastModificationDateTime>
+          <lastPublicationDateTime __type="object" __classname="DateTime">2020-08-26T11:17:53+02:00</lastPublicationDateTime>
+          <properties>
+           <title __type="string">&lt;h4 style=&quot;text-align:center;&quot;&gt;404. Sorry buddy!&lt;/h4&gt;</title>
+          </properties>
+         </variant>
+        </node>
+       </node>
+      </node>
      </node>
     </node>
     <node identifier="e7f7eab4-2c05-4d0d-8caf-41677100a254" nodeName="node-u9n230k8fdjn7">
@@ -3078,15 +3132,15 @@
            <lastPublicationDateTime __type="object" __classname="DateTime">2020-05-14T07:04:51+02:00</lastPublicationDateTime>
            <properties/>
           </variant>
-          <node identifier="ded75d49-14f9-423c-9e28-7cf69e23b556" nodeName="node-qpexewgox3wa4">
-           <variant sortingIndex="100" workspace="live" nodeType="TwelveInch.Site:Content.Image" version="4" removed="" hidden="" hiddenInIndex="">
+          <node identifier="0481dd3f-ce5b-4373-a8c0-7c5d84ce2a43" nodeName="node-nc57cg988tvqa">
+           <variant sortingIndex="150" workspace="live" nodeType="TwelveInch.Site:Content.ImageLazy" version="5" removed="" hidden="" hiddenInIndex="">
             <dimensions>
              <language>en</language>
             </dimensions>
             <accessRoles __type="array"/>
-            <creationDateTime __type="object" __classname="DateTime">2020-04-28T08:26:25+02:00</creationDateTime>
-            <lastModificationDateTime __type="object" __classname="DateTime">2020-05-14T07:04:51+02:00</lastModificationDateTime>
-            <lastPublicationDateTime __type="object" __classname="DateTime">2020-05-14T07:04:51+02:00</lastPublicationDateTime>
+            <creationDateTime __type="object" __classname="DateTime">2020-08-26T11:36:20+02:00</creationDateTime>
+            <lastModificationDateTime __type="object" __classname="DateTime">2020-08-26T12:33:27+02:00</lastModificationDateTime>
+            <lastPublicationDateTime __type="object" __classname="DateTime">2020-08-26T12:33:27+02:00</lastPublicationDateTime>
             <properties>
              <image __type="object" __identifier="ad8a54e1-9c38-4edf-8b29-fe750c54a316" __classname="Neos\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;ad8a54e1-9c38-4edf-8b29-fe750c54a316&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;copyrightNotice&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;EmptyName-62.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;b86bf3175cb0bba18ec1d14457edf3773269fde4&quot;,&quot;hash&quot;:&quot;b86bf3175cb0bba18ec1d14457edf3773269fde4&quot;,&quot;__identity&quot;:&quot;547ab27a-e0b1-4c62-bf1a-69b223d3d009&quot;},&quot;tags&quot;:[],&quot;assetCollections&quot;:[]}</image>
             </properties>
@@ -3104,15 +3158,15 @@
            <lastPublicationDateTime __type="object" __classname="DateTime">2020-05-14T07:04:51+02:00</lastPublicationDateTime>
            <properties/>
           </variant>
-          <node identifier="9cdb9ec9-8dec-434a-aab0-4f57c25859f1" nodeName="node-pfwew6473swhr">
-           <variant sortingIndex="100" workspace="live" nodeType="TwelveInch.Site:Content.Image" version="4" removed="" hidden="" hiddenInIndex="">
+          <node identifier="d5bb1cfd-2ae0-4b0c-8da9-aaf026431e26" nodeName="node-14qw8ljck4x2w">
+           <variant sortingIndex="150" workspace="live" nodeType="TwelveInch.Site:Content.ImageLazy" version="4" removed="" hidden="" hiddenInIndex="">
             <dimensions>
              <language>en</language>
             </dimensions>
             <accessRoles __type="array"/>
-            <creationDateTime __type="object" __classname="DateTime">2020-04-28T08:27:51+02:00</creationDateTime>
-            <lastModificationDateTime __type="object" __classname="DateTime">2020-05-14T07:04:51+02:00</lastModificationDateTime>
-            <lastPublicationDateTime __type="object" __classname="DateTime">2020-05-14T07:04:51+02:00</lastPublicationDateTime>
+            <creationDateTime __type="object" __classname="DateTime">2020-08-26T12:33:49+02:00</creationDateTime>
+            <lastModificationDateTime __type="object" __classname="DateTime">2020-08-26T12:34:24+02:00</lastModificationDateTime>
+            <lastPublicationDateTime __type="object" __classname="DateTime">2020-08-26T12:34:24+02:00</lastPublicationDateTime>
             <properties>
              <image __type="object" __identifier="ac0b84df-59fa-4f38-9ee0-c2649c703619" __classname="Neos\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;ac0b84df-59fa-4f38-9ee0-c2649c703619&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;copyrightNotice&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;EmptyName-84.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;a696dc9f2c547e50123b48d3d1198309d204d322&quot;,&quot;hash&quot;:&quot;a696dc9f2c547e50123b48d3d1198309d204d322&quot;,&quot;__identity&quot;:&quot;971c8bd2-4ff9-45d0-bcee-21ac4fde767b&quot;},&quot;tags&quot;:[],&quot;assetCollections&quot;:[]}</image>
             </properties>
@@ -3396,17 +3450,17 @@
      </node>
     </node>
     <node identifier="2785d6b8-852e-4c61-a61a-68cf32a9b467" nodeName="node-unv4ya304e5qw">
-     <variant sortingIndex="300" workspace="live" nodeType="TwelveInch.Site:Document.Page" version="2" removed="" hidden="" hiddenInIndex="">
+     <variant sortingIndex="300" workspace="live" nodeType="TwelveInch.Site:Document.Page" version="3" removed="" hidden="" hiddenInIndex="">
       <dimensions>
        <language>en</language>
       </dimensions>
       <accessRoles __type="array"/>
       <creationDateTime __type="object" __classname="DateTime">2020-04-21T12:07:56+02:00</creationDateTime>
-      <lastModificationDateTime __type="object" __classname="DateTime">2020-04-21T12:22:26+02:00</lastModificationDateTime>
-      <lastPublicationDateTime __type="object" __classname="DateTime">2020-04-21T12:22:26+02:00</lastPublicationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2020-08-26T10:32:47+02:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2020-08-26T10:32:46+02:00</lastPublicationDateTime>
       <properties>
-       <title __type="string">Products</title>
-       <uriPathSegment __type="string">products</uriPathSegment>
+       <title __type="string">Shop</title>
+       <uriPathSegment __type="string">shop</uriPathSegment>
       </properties>
      </variant>
      <node identifier="220e8c4d-9117-b9f3-3e56-65b7698e89d9" nodeName="main">
@@ -3475,16 +3529,16 @@
          </variant>
         </node>
         <node identifier="6f795a32-8fad-4fb5-bd5f-309d52e4243c" nodeName="node-zdlq5q34hfvvo">
-         <variant sortingIndex="400" workspace="live" nodeType="TwelveInch.Site:Content.SeoText" version="6" removed="" hidden="" hiddenInIndex="">
+         <variant sortingIndex="400" workspace="live" nodeType="TwelveInch.Site:Content.SeoText" version="7" removed="" hidden="" hiddenInIndex="">
           <dimensions>
            <language>en</language>
           </dimensions>
           <accessRoles __type="array"/>
           <creationDateTime __type="object" __classname="DateTime">2020-04-30T08:08:17+02:00</creationDateTime>
-          <lastModificationDateTime __type="object" __classname="DateTime">2020-05-14T07:36:39+02:00</lastModificationDateTime>
-          <lastPublicationDateTime __type="object" __classname="DateTime">2020-05-14T07:36:38+02:00</lastPublicationDateTime>
+          <lastModificationDateTime __type="object" __classname="DateTime">2020-08-26T10:34:32+02:00</lastModificationDateTime>
+          <lastPublicationDateTime __type="object" __classname="DateTime">2020-08-26T10:34:32+02:00</lastPublicationDateTime>
           <properties>
-           <text __type="string">&lt;p&gt;We ship world wide with priority shipping. The shipping rates are calculated daily, reflecting the cheapest market prices. Shipping fees will be added to your order at checkout.&lt;/p&gt;</text>
+           <text __type="string">&lt;p&gt;We ship to Europe and US, and offer competitive shipping fees. Shipping fees will be added to your order at checkout.&lt;/p&gt;</text>
            <headline __type="string">&lt;p&gt;Shipping &amp;amp; HANDLING&lt;/p&gt;</headline>
           </properties>
          </variant>
