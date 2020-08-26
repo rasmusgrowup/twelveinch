@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c5a3a67d2e6b7aa6006dc8291789c0f9",
+    "content-hash": "ad781e266be1fdf32cdb276d403efde1",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -7254,6 +7254,81 @@
             "time": "2019-09-17T06:45:36+00:00"
         },
         {
+            "name": "sitegeist/kaleidoscope",
+            "version": "v5.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sitegeist/Sitegeist.Kaleidoscope.git",
+                "reference": "948e4573fa3959c2065e7d67b830339ca7acb8a4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sitegeist/Sitegeist.Kaleidoscope/zipball/948e4573fa3959c2065e7d67b830339ca7acb8a4",
+                "reference": "948e4573fa3959c2065e7d67b830339ca7acb8a4",
+                "shasum": ""
+            },
+            "require": {
+                "neos/fusion-afx": "^1.2 || dev-master",
+                "neos/imagine": "*",
+                "neos/media": "*",
+                "neos/neos": "^4.3 || ^5.0 || dev-master"
+            },
+            "type": "neos-package",
+            "extra": {
+                "neos": {
+                    "package-key": "Sitegeist.Kaleidoscope"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Sitegeist\\Kaleidoscope\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "description": "Responsive-images for Neos",
+            "time": "2020-08-15T14:52:38+00:00"
+        },
+        {
+            "name": "sitegeist/lazybones",
+            "version": "v2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sitegeist/Sitegeist.Lazybones.git",
+                "reference": "b4b9302423ed1979b2107e5cf598fa4087d26609"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sitegeist/Sitegeist.Lazybones/zipball/b4b9302423ed1979b2107e5cf598fa4087d26609",
+                "reference": "b4b9302423ed1979b2107e5cf598fa4087d26609",
+                "shasum": ""
+            },
+            "require": {
+                "neos/fusion-afx": "^1.2",
+                "neos/neos": "^4.3 || ^5.0 || dev-master",
+                "sitegeist/kaleidoscope": "^4.0 || ^5.0 || dev-master"
+            },
+            "type": "neos-package",
+            "extra": {
+                "neos": {
+                    "package-key": "Sitegeist.Lazybones"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Sitegeist\\Lazybones\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "description": "Lazy loading for sitegeist/kaleidoscope",
+            "time": "2019-10-29T14:02:39+00:00"
+        },
+        {
             "name": "sitegeist/silhouettes",
             "version": "v1.1.0",
             "source": {
@@ -8493,30 +8568,31 @@
             "dist": {
                 "type": "path",
                 "url": "./DistributionPackages/TwelveInch.Site",
-                "reference": "724b0306433b0dc540aaf05431fc75e90fc94965"
+                "reference": "1bf7d428b03a08a1d03281508415d5b18e2fdb81"
             },
             "require": {
                 "carbon/compression": "~2.0",
-                "carbon/includeassets": "~3.5",
+                "carbon/includeassets": "~3.6 || ~4.0",
                 "carbon/link": "~1.4",
                 "codeq/unicodenormalizer": "~2.2",
                 "flowpack/cachebuster": "~1.0",
-                "flowpack/nodetemplates": "~1.1",
+                "flowpack/nodetemplates": "~1.2",
                 "jonnitto/googlemaps": "^3.3",
                 "jonnitto/iframe": "^4.1",
                 "moc/notfound": "~3.1",
                 "neos/fusion-afx": "~1.2",
-                "neos/googleanalytics": "^3.1",
-                "neos/neos": "^5.0",
+                "neos/googleanalytics": "^3.2",
+                "neos/neos": "^5.2",
                 "neos/neos-setup": "*",
-                "neos/neos-ui": "^5.0",
+                "neos/neos-ui": "^5.2",
                 "neos/nodetypes-contentreferences": "*",
                 "neos/redirecthandler": "^4.0",
                 "neos/redirecthandler-databasestorage": "^4.0",
                 "neos/redirecthandler-neosadapter": "^4.0",
-                "neos/redirecthandler-ui": "^2.0",
-                "neos/seo": "^3.0",
+                "neos/redirecthandler-ui": "^2.3",
+                "neos/seo": "^3.1",
                 "shel/neos-hyphens": "~1.0",
+                "sitegeist/lazybones": "~2.1",
                 "sitegeist/silhouettes": "~1.0"
             },
             "type": "neos-site",
@@ -8596,7 +8672,7 @@
                     "Neos.Neos.Ui-20190319094900"
                 ]
             },
-            "description": "A Neos website",
+            "description": "Twelve Inch Website",
             "transport-options": {
                 "relative": true
             }

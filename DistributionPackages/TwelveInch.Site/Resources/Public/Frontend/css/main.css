@@ -7942,13 +7942,13 @@ footer {
   display: block;
   margin: 0 auto; }
 
-.main-image {
+.main-image, .lazy-image {
   display: block;
   object-fit: cover;
   object-position: left;
   margin-bottom: .5em; }
   @media screen and (min-width: 1024px) {
-    .main-image {
+    .main-image, .lazy-image {
       height: auto;
       width: 100%; } }
 
@@ -8341,13 +8341,13 @@ footer {
   display: block;
   margin: 0 auto; }
 
-.main-image {
+.main-image, .lazy-image {
   display: block;
   object-fit: cover;
   object-position: left;
   margin-bottom: .5em; }
   @media screen and (min-width: 1024px) {
-    .main-image {
+    .main-image, .lazy-image {
       height: auto;
       width: 100%; } }
 

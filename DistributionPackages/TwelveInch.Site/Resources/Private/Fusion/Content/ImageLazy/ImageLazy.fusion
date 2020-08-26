@@ -1,9 +1,3 @@
-/**
- * This code is feasable for production, and renders an image with LazyBones.
- *
- * To better learn Neos take a look at CodeQ.Site:Content.BasicImage,
- * which renders our images as an img tag.
- */
 prototype(TwelveInch.Site:Content.ImageLazy) < prototype(Neos.Neos:ContentComponent) {
 
     # if the current node has previous siblings it is not the
@@ -26,7 +20,7 @@ prototype(TwelveInch.Site:Content.ImageLazy) < prototype(Neos.Neos:ContentCompon
 
     renderer = afx`
         <Sitegeist.Lazybones:Image
-            class="container-image"
+            class="lazy-image"
             lazy={true}
             lazyWidth={200}
             imageSource={props.src}

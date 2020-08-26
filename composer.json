@@ -16,7 +16,8 @@
         "neos/behat": "^6.0",
         "codeq/instagram": "^1.2",
         "neos/kickstarter": "^6.2",
-        "neos/site-kickstarter": "^5.2"
+        "neos/site-kickstarter": "^5.2",
+        "sitegeist/lazybones": "^2.1"
     },
     "repositories": {
         "distribution": {

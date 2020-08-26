@@ -21,3 +21,4 @@ Carbon:
             - shop.js
             - aos.js
             - flickity.js
+            - lazysizes.min.js
