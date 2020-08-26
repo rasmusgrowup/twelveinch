@@ -7945,7 +7945,7 @@ footer {
 .main-image, .lazy-image {
   display: block;
   object-fit: cover;
-  object-position: left;
+  object-position: center;
   margin-bottom: .5em; }
   @media screen and (min-width: 1024px) {
     .main-image, .lazy-image {
@@ -8344,7 +8344,7 @@ footer {
 .main-image, .lazy-image {
   display: block;
   object-fit: cover;
-  object-position: left;
+  object-position: center;
   margin-bottom: .5em; }
   @media screen and (min-width: 1024px) {
     .main-image, .lazy-image {
