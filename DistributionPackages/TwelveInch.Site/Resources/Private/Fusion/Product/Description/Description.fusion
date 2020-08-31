@@ -35,7 +35,7 @@ prototype(TwelveInch.Site:Product.Description) < prototype(Neos.Neos:ContentComp
 
     renderer = afx`
     <div class="product-description">
-        <Carbon.Link:Link link="/products" additionalClass="back-button">
+        <Carbon.Link:Link link="/shop" additionalClass="back-button">
             <img src={props.chevronUri} alt="" style="min-width: 9px;"/>
             <p>Go back to products</p>
         </Carbon.Link:Link>
