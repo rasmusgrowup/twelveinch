@@ -2,12 +2,6 @@ prototype(TwelveInch.Site:Document.AbstractPage) < prototype(Neos.Neos:Page) {
     head {
         headTags = Neos.Fusion:Component {
             renderer = afx`
-                <script src="https://config.metomic.io/config.js?id=prj:168bcc55-4606-42ac-b1eb-3b6f7c356ae2" crossorigin charset="utf-8"></script>
-                <script src="https://consent-manager.metomic.io/embed.js" crossorigin charset="utf-8"></script>
-                <script src="https://sdks.shopifycdn.com/buy-button/2.1.3/buybutton.js"></script>
-                <script defer type="text/javascript" src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=SJidH3"></script>
-                <script defer src="https://player.vimeo.com/api/player.js"></script>
-                <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
                 <meta http-equiv="x-ua-compatible" content="ie=edge" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <link rel="apple-touch-icon" sizes="180x180" href="_Resources/Static/Packages/TwelveInch.Site/Frontend/Favicons/apple-touch-icon.png" />

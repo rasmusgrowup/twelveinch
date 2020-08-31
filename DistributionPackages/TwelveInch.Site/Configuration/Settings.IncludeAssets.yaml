@@ -1,6 +1,14 @@
 
 Carbon:
   IncludeAssets:
+    LoadJSforCSSAsynchron: true
+    GoogleFonts: "Heebo:300,400,500,900&display=swap[async]"
+    ResourceHints:
+      # Preconnect to these domains
+      Preconnect:
+        - "https://use.typekit.net"
+        - "https://www.google-analytics.com"
+        - "https://www.googletagmanager.com"
     Packages:
       aa_Theme:
         Path:
@@ -14,12 +22,17 @@ Carbon:
         General:
           Head:
             - head.css[inline]
-            - main.css[async]
-            - aos.css[defer]
-            - flickity.css[defer]
+            - aos.css[inline rel="preload"]
+            - main.css[async rel="preload"]
+            - flickity.css[async]
+            - https://config.metomic.io/config.js?id=prj:168bcc55-4606-42ac-b1eb-3b6f7c356ae2
+            - https://consent-manager.metomic.io/embed.js
+            - https://sdks.shopifycdn.com/buy-button/2.1.3/buybutton.js
+            - https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=SJidH3
+#            - https://player.vimeo.com/api/player.js
           Body:
             - main.js[inline]
-            - shop.js
+            - shop.js[defer]
             - aos.js
-            - flickity.js
+            - flickity.min.js
             - lazysizes.min.js
