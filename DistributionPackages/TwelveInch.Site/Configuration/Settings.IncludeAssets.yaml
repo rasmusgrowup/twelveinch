@@ -22,17 +22,17 @@ Carbon:
         General:
           Head:
             - head.css[inline]
-            - aos.css[inline rel="preload"]
+            - aos.css[async rel="preload"]
             - main.css[async rel="preload"]
-            - flickity.css[async]
+            - flickity.css[async rel="preload"]
             - https://config.metomic.io/config.js?id=prj:168bcc55-4606-42ac-b1eb-3b6f7c356ae2
-            - https://consent-manager.metomic.io/embed.js
+            - https://consent-manager.metomic.io/embed.js[async rel="preload"]
             - https://sdks.shopifycdn.com/buy-button/2.1.3/buybutton.js
-            - https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=SJidH3
+            - https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=SJidH3[defer]
 #            - https://player.vimeo.com/api/player.js
           Body:
             - main.js[inline]
-            - shop.js[defer]
+            - shop.js
             - aos.js
             - flickity.min.js
             - lazysizes.min.js
