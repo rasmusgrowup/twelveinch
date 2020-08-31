@@ -156,6 +156,96 @@ if (typeof(element) != 'undefined' && element != null)
 	});
 }
 
+// GrooveWasher Walnut Display Block
+var element =  document.getElementById('GWDB001');
+if (typeof(element) != 'undefined' && element != null)
+{
+	ui.createComponent('product', {
+		id: '4720233938991',
+		node: document.getElementById('GWDB001'),
+		moneyFormat: '€{{amount}}',
+		options: {
+			product: {
+				iframe: false,
+				buttonDestination: 'cart',
+				contents: {
+					img: false,
+					button: false,
+					buttonWithQuantity: true,
+					title: false,
+					price: true,
+			    },
+				text: {
+			    	button: 'Add to cart',
+			    }
+			},
+			cart: {
+				startOpen: true,
+			},
+		}
+	});
+}
+
+// GrooveWasher G2 Fluid Kit
+var element =  document.getElementById('GWG2KIT');
+if (typeof(element) != 'undefined' && element != null)
+{
+	ui.createComponent('product', {
+		id: '4720239935535',
+		node: document.getElementById('GWG2KIT'),
+		moneyFormat: '€{{amount}}',
+		options: {
+			product: {
+				iframe: false,
+				buttonDestination: 'cart',
+				contents: {
+					img: false,
+					button: false,
+					buttonWithQuantity: true,
+					title: false,
+					price: true,
+			    },
+				text: {
+			    	button: 'Add to cart',
+			    }
+			},
+			cart: {
+				startOpen: true,
+			},
+		}
+	});
+}
+
+// GrooveWasher Commando Record Cleaning Kit
+var element =  document.getElementById('GW-COM');
+if (typeof(element) != 'undefined' && element != null)
+{
+	ui.createComponent('product', {
+		id: '4720173547567',
+		node: document.getElementById('GW-COM'),
+		moneyFormat: '€{{amount}}',
+		options: {
+			product: {
+				iframe: false,
+				buttonDestination: 'cart',
+				contents: {
+					img: false,
+					button: false,
+					buttonWithQuantity: true,
+					title: false,
+					price: true,
+			    },
+				text: {
+			    	button: 'Add to cart',
+			    }
+			},
+			cart: {
+				startOpen: true,
+			},
+		}
+	});
+}
+
 // Twelve Inch 4ECO Bundle
 var element =  document.getElementById('AO-NLPI-WIXK');
 if (typeof(element) != 'undefined' && element != null)

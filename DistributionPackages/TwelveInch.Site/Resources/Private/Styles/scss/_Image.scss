@@ -11,9 +11,6 @@
     object-fit: cover;
     object-position: center;
     margin-bottom: .5em;
-
-    @media screen and (min-width: $desktop) {
-        height: auto;
-        width: 100%;
-    }
+    height: auto;
+    width: 100%;
 }
