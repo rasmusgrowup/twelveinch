@@ -1,12 +1,32 @@
 prototype(TwelveInch.Site:Content.ProductItem) < prototype(Neos.Neos:ContentComponent) {
-    alternativeText = ${node.properties.alternativeText}
-    src = TwelveInch.Site:Component.ImageUri {
-        @context.asset = ${q(node).property('image')}
-    }
-    srchover = TwelveInch.Site:Component.ImageUri {
-        @context.asset = ${q(node).property('hoverimage')}
-    }
+    lazy = ${q(node).prev().is()}
 
+    src = Neos.Fusion:Case {
+        image {
+            condition = ${q(node).property('image') ? true : false}
+            renderer = Sitegeist.Kaleidoscope:AssetImageSource {
+                asset = ${q(node).property('image')}
+            }
+        }
+        dummyImage {
+            condition = ${site.context.inBackend}
+            renderer = Sitegeist.Kaleidoscope:DummyImageSource
+        }
+    }
+    srchover = Neos.Fusion:Case {
+        image {
+            condition = ${q(node).property('hoverimage') ? true : false}
+            renderer = Sitegeist.Kaleidoscope:AssetImageSource {
+                asset = ${q(node).property('hoverimage')}
+            }
+        }
+        dummyImage {
+            condition = ${site.context.inBackend}
+            renderer = Sitegeist.Kaleidoscope:DummyImageSource
+        }
+    }
+    alternativeText = ${q(node).property('alternativeText')}
+    
     headline = Neos.Neos:Editable {
         property = 'headline'
     }
@@ -39,8 +59,24 @@ prototype(TwelveInch.Site:Content.ProductItem) < prototype(Neos.Neos:ContentComp
     renderer = afx`
         <div class="productItem">
             <Carbon.Link:Link link={props.link}>
-                <img class="productImageHover" src={props.srchover} alt={props.alternativeText}/>
-                <img class="productImage" src={props.src} alt={props.alternativeText}/>
+                <Sitegeist.Lazybones:Image
+                    class="productImageHover"
+                    lazy={true}
+                    lazyWidth={200}
+                    imageSource={props.srchover}
+                    srcset="320w, 400w, 480w, 600w, 640w, 720w, 768w, 800w, 960w, 1024px, 1280w, 1440w, 1600w, 1680w, 1920w, 2560w"
+                    sizes={props.sizes}
+                    alt={props.alternativeText}
+                    />
+                <Sitegeist.Lazybones:Image
+                    class="productImage"
+                    lazy={true}
+                    lazyWidth={200}
+                    imageSource={props.src}
+                    srcset="320w, 400w, 480w, 600w, 640w, 720w, 768w, 800w, 960w, 1024px, 1280w, 1440w, 1600w, 1680w, 1920w, 2560w"
+                    sizes={props.sizes}
+                    alt={props.alternativeText}
+                    />
             </Carbon.Link:Link>
             <div class="ProductTag" style={props.addTag}><img src={props.newUri} alt="new product icon" width="40" height="auto"/></div>
             <div class="ProductTag" style={props.addSaleTag}><img src={props.saleUri} alt="product on sale icon" width="40" height="auto"/></div>
