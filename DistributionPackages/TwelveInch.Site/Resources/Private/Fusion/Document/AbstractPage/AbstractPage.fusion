@@ -9,7 +9,7 @@ prototype(TwelveInch.Site:Document.AbstractPage) < prototype(Neos.Neos:Page) {
                 <link rel="icon" type="image/png" sizes="16x16" href="_Resources/Static/Packages/TwelveInch.Site/Frontend/Favicons/favicon-16x16.png" />
                 <link rel="mask-icon" href="_Resources/Static/Packages/TwelveInch.Site/Frontend/Favicons/safari-pinned-tab.svg" color="#5bbad5" />
                 <link rel="shortcut icon" href="_Resources/Static/Packages/TwelveInch.Site/Frontend/Favicons/favicon.ico" />
-                <meta name="msapplication-TileColor" content="#f2f2f2" />
+                <meta name="msapplication-TileColor" content="#f2f2f2"/>
                 <meta name="msapplication-config" content="_Resources/Static/Packages/TwelveInch.Site/Frontend/Favicons/browserconfig.xml" />
                 <meta name="theme-color" content="#f2f2f2"/>
             `

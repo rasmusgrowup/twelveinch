@@ -1,7 +1,6 @@
-#Neos:
-#  GoogleAnalytics:
-#    sites:
-#      twelve-inch.com:
-#        tagManager:
-#          id: 'GTM-TDKN78S'
-#        profileId: 117945802
+Neos:
+  GoogleAnalytics:
+    sites:
+      twelve-inch.com:
+        tagManager:
+          id: 'GTM-TDKN78S'
