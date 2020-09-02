@@ -25,7 +25,7 @@ Carbon:
             - aos.css[async rel="preload"]
             - main.css[async rel="preload"]
             - flickity.css[async rel="preload"]
-            - https://config.metomic.io/config.js?id=prj:58f5786e-1fdb-44dc-8c9c-4a9d36793e85
+            - https://config.metomic.io/config.js?id=prj:0a427cb6-47a9-4f43-92f4-5ea7378e8e97
             - https://consent-manager.metomic.io/embed.js
             - https://sdks.shopifycdn.com/buy-button/2.1.3/buybutton.js
             - https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=SJidH3[defer]
