@@ -35,9 +35,9 @@ Neos:
       frontendConfiguration:
         defaultInlineEditor: 'ckeditor5'
         hotkeys: ~
-    GoogleAnalytics:
-      sites:
-        neossitename:
-          analytics:
-            id: 'UA-XXXXX-YY'
-          profileId: 166402743
+#    GoogleAnalytics:
+#      sites:
+#        neossitename:
+#          analytics:
+#            id: 'UA-XXXXX-YY'
+#          profileId: 166402743
