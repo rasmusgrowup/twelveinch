@@ -1,5 +1,10 @@
 .product-carousel {
     margin: 0 0 .5em 0;
+    height: 450px;
+
+    @media screen and (min-width: 768px) {
+          height: 600px;
+      }
 
     .carousel-cell {
         align-items: center;
@@ -15,18 +20,19 @@
         }
 
       @media screen and (min-width: 768px) {
-            width: 540px;
+            width: 70%;
+            min-width: 540px;
             height: 600px;
         }
     }
 
     .carousel-cell-wide {
-        width: 540px;
+        width: 100%;
     }
 
     @media screen and (min-width: 768px) {
         .carousel-cell-wide {
-            width: 900px;
+            width: 100%;
         }
     }
 

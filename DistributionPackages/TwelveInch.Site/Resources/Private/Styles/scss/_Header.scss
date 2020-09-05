@@ -92,8 +92,12 @@ $animate: all 0.5s ease-in-out;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 18px 1.5em;
+            padding: 12px 1.2em;
             border-bottom: 1px rgba(6, 6, 6, 0.33) solid;
+
+            @media screen and (min-width: 767px) {
+                padding: 18px 1.5em;
+            }
 
             .open-navigation {
                 span {
@@ -121,6 +125,11 @@ $animate: all 0.5s ease-in-out;
             .logo {
                 img {
                     display: block;
+                    width: 110px;
+
+                    @media screen and (min-width: 767px) {
+                        width: 120px;
+                    }
                 }
             }
         }
@@ -209,7 +218,7 @@ $animate: all 0.5s ease-in-out;
                         display: block;
                         transform: translateY(100%) skewY(-15deg);
                         transition: transform 0.9s 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-                        font-size: 10vw;
+                        font-size: 15vw;
                         font-weight: 900;
                         color: $black;
 
@@ -226,7 +235,7 @@ $animate: all 0.5s ease-in-out;
 
             header {
                 font-weight: 700;
-                font-size: 12px;
+                font-size: 18px;
                 margin-bottom: 6px;
             }
 
@@ -326,14 +335,14 @@ $animate: all 0.5s ease-in-out;
         .copyright {
             margin-top: 30px;
             font-weight: 700;
-            font-size: 10px;
+            font-size: 12px;
             line-height: 1;
         }
 
         .secondary-links {
             a {
                 color: $dark-grey;
-                font-size: 10px;
+                font-size: 12px;
                 font-weight: 400;
                 text-decoration: underline;
                 margin-right: 12px;

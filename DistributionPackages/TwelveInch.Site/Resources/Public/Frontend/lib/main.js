@@ -64,6 +64,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+// Show & Hide menu on scroll down / up
 var new_scroll_position = 0;
 var last_scroll_position;
 var header = document.getElementById("navigation-bar");
