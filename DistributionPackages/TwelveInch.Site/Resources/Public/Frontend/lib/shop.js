@@ -96,6 +96,35 @@ if (typeof element != 'undefined' && element != null) {
 	});
 }
 
+// Twelve Inch 4ECO
+var element = document.getElementById('AO-NLPI-WIXK');
+if (typeof element != 'undefined' && element != null) {
+	ui.createComponent('product', {
+		id: '4694764748847',
+		node: document.getElementById('AO-NLPI-WIXK'),
+		moneyFormat: '€{{amount}}',
+		options: {
+			product: {
+				iframe: false,
+				buttonDestination: 'cart',
+				contents: {
+					img: false,
+					button: false,
+					buttonWithQuantity: true,
+					title: false,
+					price: true
+				},
+				text: {
+					button: 'Add to cart'
+				}
+			},
+			cart: {
+				startOpen: true
+			}
+		}
+	});
+}
+
 //GrooveWasher Walnut Record Cleaning Kit
 var element = document.getElementById('GWRCW');
 if (typeof element != 'undefined' && element != null) {
@@ -241,12 +270,43 @@ if (typeof element != 'undefined' && element != null) {
 	});
 }
 
+// GrooveWasher Big Bundle
+var element = document.getElementById('GWBIGB');
+if (typeof element != 'undefined' && element != null) {
+	ui.createComponent('product', {
+		id: '4729121701935',
+		node: document.getElementById('GWBIGB'),
+		moneyFormat: '€{{amount}}',
+		options: {
+			product: {
+				iframe: false,
+				buttonDestination: 'cart',
+				contents: {
+					img: false,
+					button: false,
+					buttonWithQuantity: true,
+					title: false,
+					price: true
+				},
+				text: {
+					button: 'Add to cart'
+				}
+			},
+			cart: {
+				startOpen: true
+			}
+		}
+	});
+}
+
+// Bundles //
+
 // Twelve Inch 4ECO Bundle
-var element = document.getElementById('AO-NLPI-WIXK');
+var element = document.getElementById('AO-NLPI-WIXK-B');
 if (typeof element != 'undefined' && element != null) {
 	ui.createComponent('product', {
 		id: '4694764748847',
-		node: document.getElementById('AO-NLPI-WIXK'),
+		node: document.getElementById('AO-NLPI-WIXK-B'),
 		moneyFormat: '€{{amount}}',
 		options: {
 			product: {
@@ -261,7 +321,37 @@ if (typeof element != 'undefined' && element != null) {
 					price: true
 				},
 				text: {
-					button: 'Add bundle'
+					button: 'Add to cart'
+				}
+			},
+			cart: {
+				startOpen: true
+			}
+		}
+	});
+}
+
+// GrooveWasher Big Bundle
+var element = document.getElementById('GWBIGB-B');
+if (typeof element != 'undefined' && element != null) {
+	ui.createComponent('product', {
+		id: '4729121701935',
+		node: document.getElementById('GWBIGB-B'),
+		moneyFormat: '€{{amount}}',
+		options: {
+			product: {
+				iframe: false,
+				buttonDestination: 'cart',
+				contents: {
+					img: false,
+					button: true,
+					priceWithDiscounts: true,
+					title: true,
+					description: true,
+					price: true
+				},
+				text: {
+					button: 'Add to cart'
 				}
 			},
 			cart: {

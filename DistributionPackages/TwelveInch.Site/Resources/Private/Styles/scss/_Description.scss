@@ -68,6 +68,13 @@
                 text-align: center;
             }
 
+            .shopify-buy__product__compare-price {
+                color: #f66;
+                font-weight: 400;
+                text-decoration: line-through;
+                margin-left: 12px;
+            }
+
             .shopify-buy__btn-and-quantity {
                 display: flex;
 
