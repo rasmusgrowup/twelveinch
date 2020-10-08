@@ -306,6 +306,37 @@ if (typeof(element) != 'undefined' && element != null)
 	});
 }
 
+// GrooveWasher Cleaning Pad-Black Terry
+var element =  document.getElementById('GWAPP');
+if (typeof(element) != 'undefined' && element != null)
+{
+	ui.createComponent('product', {
+		id: '4766561370159',
+		node: document.getElementById('GWAPP'),
+		moneyFormat: '€{{amount}}',
+		options: {
+			product: {
+				iframe: false,
+				buttonDestination: 'cart',
+				contents: {
+					img: false,
+					button: false,
+					buttonWithQuantity: true,
+					title: false,
+					price: true,
+			    },
+				text: {
+			    	button: 'Add to cart',
+			    }
+			},
+			cart: {
+				startOpen: true,
+			},
+		}
+	});
+}
+
+
 // Bundles //
 
 // Twelve Inch 4ECO Bundle
