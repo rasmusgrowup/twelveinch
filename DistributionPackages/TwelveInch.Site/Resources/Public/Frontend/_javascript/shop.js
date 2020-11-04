@@ -246,6 +246,36 @@ if (typeof(element) != 'undefined' && element != null)
 	});
 }
 
+// GrooveWasher G2 Refill Bottle
+var element =  document.getElementById('GW-FLUID-8');
+if (typeof(element) != 'undefined' && element != null)
+{
+	ui.createComponent('product', {
+		id: '4807964983343',
+		node: document.getElementById('GW-FLUID-8'),
+		moneyFormat: '€{{amount}}',
+		options: {
+			product: {
+				iframe: false,
+				buttonDestination: 'cart',
+				contents: {
+					img: false,
+					button: false,
+					buttonWithQuantity: true,
+					title: false,
+					price: true,
+			    },
+				text: {
+			    	button: 'Add to cart',
+			    }
+			},
+			cart: {
+				startOpen: true,
+			},
+		}
+	});
+}
+
 // GrooveWasher Commando Record Cleaning Kit
 var element =  document.getElementById('GW-COM');
 if (typeof(element) != 'undefined' && element != null)
