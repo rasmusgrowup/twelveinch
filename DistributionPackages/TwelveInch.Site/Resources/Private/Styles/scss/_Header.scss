@@ -32,10 +32,10 @@ $animate: all 0.5s ease-in-out;
         background-color: white;
         z-index: 99;
 
-        /*.banner {
+        .banner {
             display: block;
             background-color: $black;
-            padding: 5px 30px;
+            padding: .5em 1em;
             position: relative;
 
             .banner-content {
@@ -44,6 +44,7 @@ $animate: all 0.5s ease-in-out;
                 text-align: center;
 
                 p {
+                    display: inline-block;
                     font-weight: 500;
                     font-size: 12px;
                 }
@@ -86,7 +87,7 @@ $animate: all 0.5s ease-in-out;
                     }
                 }
             }
-        }*/
+        }
 
         .bar {
             display: flex;
