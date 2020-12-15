@@ -127,6 +127,36 @@ if (typeof(element) != 'undefined' && element != null)
 }
 
 //GrooveWasher Walnut Record Cleaning Kit
+var element =  document.getElementById('GWMONDO');
+if (typeof(element) != 'undefined' && element != null)
+{
+	ui.createComponent('product', {
+		id: '4862249336879',
+		node: document.getElementById('GWMONDO'),
+		moneyFormat: '€{{amount}}',
+		options: {
+			product: {
+				iframe: false,
+				buttonDestination: 'cart',
+				contents: {
+					img: false,
+					button: false,
+					buttonWithQuantity: true,
+					title: false,
+					price: true,
+			    },
+				text: {
+			    	button: 'Add to cart',
+			    }
+			},
+			cart: {
+				startOpen: true,
+			},
+		}
+	});
+}
+
+//GrooveWasher Walnut Record Cleaning Kit
 var element =  document.getElementById('GWRCW');
 if (typeof(element) != 'undefined' && element != null)
 {
