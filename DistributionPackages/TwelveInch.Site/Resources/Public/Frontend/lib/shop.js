@@ -125,7 +125,7 @@ if (typeof element != 'undefined' && element != null) {
 	});
 }
 
-//GrooveWasher Walnut Record Cleaning Kit
+//GrooveWasher Mondo Kit
 var element = document.getElementById('GWMONDO');
 if (typeof element != 'undefined' && element != null) {
 	ui.createComponent('product', {
