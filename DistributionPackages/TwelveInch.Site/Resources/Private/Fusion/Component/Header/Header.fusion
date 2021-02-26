@@ -2,6 +2,17 @@ prototype(TwelveInch.Site:Component.Header) < prototype(Neos.Fusion:Component) {
     @context.node = ${site}
     year = ${Date.format(Date.now(), 'Y')}
 
+    menu = TwelveInch.Site:Component.Navigation {
+        startingPoint=${site}
+        entryLevel = 1
+        maximumLevels = 0
+    }
+
+    menuItems = Neos.Neos:MenuItems {
+        startingPoint = ${site}
+        maximumLevels = 0
+    }
+
     homeLink = Neos.Neos:NodeUri {
         node = ${site}
     }
@@ -79,7 +90,7 @@ prototype(TwelveInch.Site:Component.Header) < prototype(Neos.Fusion:Component) {
                             <a class="home-link" href={props.homeLink}>Home</a>
                         </li>
                     </ul>
-                    <TwelveInch.Site:Component.Navigation startingPoint={site} />
+                    <TwelveInch.Site:Component.Header.MenuItemsRenderer items={props.menuItems} />
                 </div>
                 <!-- <div class="newsletter-cta" id="newsletter-cta">
                     <header>Sig up for our newsletters</header>

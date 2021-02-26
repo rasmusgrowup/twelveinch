@@ -1,0 +1,8 @@
+'TwelveInch.Site:Document.Blog':
+  abstract: true
+  superTypes:
+    'TwelveInch.Site:Document.AbstractPage': true
+  ui:
+    label: Blog page
+    icon: icon-file-o
+    position: 100

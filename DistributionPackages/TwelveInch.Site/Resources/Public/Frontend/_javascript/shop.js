@@ -246,6 +246,36 @@ if (typeof(element) != 'undefined' && element != null)
 	});
 }
 
+// GrooveWasher Splash Towel
+var element =  document.getElementById('GWLPTOWELSM');
+if (typeof(element) != 'undefined' && element != null)
+{
+	ui.createComponent('product', {
+		id: '4892070707247',
+		node: document.getElementById('GWLPTOWELSM'),
+		moneyFormat: '€{{amount}}',
+		options: {
+			product: {
+				iframe: false,
+				buttonDestination: 'cart',
+				contents: {
+					img: false,
+					button: false,
+					buttonWithQuantity: true,
+					title: false,
+					price: true,
+			    },
+				text: {
+			    	button: 'Add to cart',
+			    }
+			},
+			cart: {
+				startOpen: true,
+			},
+		}
+	});
+}
+
 // GrooveWasher G2 Fluid Kit
 var element =  document.getElementById('GWG2KIT');
 if (typeof(element) != 'undefined' && element != null)

@@ -10,6 +10,17 @@ prototype(TwelveInch.Site:Component.Footer) < prototype(Neos.Neos:ContentCompone
     dimension = 'language'
     }
 
+    menu = TwelveInch.Site:Component.Navigation {
+        startingPoint=${site}
+        entryLevel = 1
+        maximumLevels = 0
+    }
+
+    menuItems = Neos.Neos:MenuItems {
+        startingPoint = ${site}
+        maximumLevels = 0
+    }
+
     logoUri = Neos.Fusion:ResourceUri {
     path = 'resource://TwelveInch.Site/Public/Frontend/svg/twelve_inch_white.svg'
     }
@@ -73,7 +84,7 @@ prototype(TwelveInch.Site:Component.Footer) < prototype(Neos.Neos:ContentCompone
                         <a class="home-link" href={props.homeLink}>Home</a>
                     </li>
                 </ul>
-                <TwelveInch.Site:Component.Navigation startingPoint={site} />
+                <TwelveInch.Site:Component.Header.MenuItemsRenderer items={props.menuItems} />
             </div>
             <div class="social-cta" id="social-cta">
                 <header>We're on social media</header>

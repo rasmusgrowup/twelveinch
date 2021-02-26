@@ -1,0 +1,15 @@
+'TwelveInch.Site:Collection.Column':
+  superTypes:
+    'Neos.Neos:Content': true
+    'Neos.Neos:ContentCollection': true
+    'Shel.Blog:Constraint.Article': true
+  ui:
+    group: 'structure'
+    label: One Column
+    icon: 'square'
+    inlineEditable: true
+    inspector:
+      groups:
+        section:
+          label: 'Section'
+          icon: square

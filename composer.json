@@ -5,7 +5,7 @@
         "vendor-dir": "Packages/Libraries",
         "bin-dir": "bin",
         "platform": {
-            "php": "7.2"
+            "php": "7.4"
         }
     },
     "require": {
@@ -14,10 +14,11 @@
         "neos/nodetypes-basemixins": "^5.1",
         "symfony/css-selector": "^4.4",
         "neos/behat": "^6.0",
-        "codeq/instagram": "^1.2",
-        "neos/kickstarter": "^6.2",
-        "neos/site-kickstarter": "^5.2",
-        "sitegeist/lazybones": "^2.1"
+        "neos/kickstarter": "^7.0",
+        "neos/site-kickstarter": "^7.0",
+        "sitegeist/lazybones": "^3.0",
+        "neos/neos": "~7.0.0",
+        "neos/neos-ui": "~7.0.0"
     },
     "repositories": {
         "distribution": {

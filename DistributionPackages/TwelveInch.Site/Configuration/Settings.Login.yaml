@@ -1,0 +1,7 @@
+Neos:
+  Neos:
+    userInterface:
+      backendLoginForm:
+        backgroundImage: 'resource://TwelveInch.Site/Public/Frontend/img/Login/Login_background.jpg'
+#        stylesheets:
+#          		'TwelveInch.Site:LoginStyles': 'resource://TwelveInch.Site/Public/Frontend/css/Login.css'

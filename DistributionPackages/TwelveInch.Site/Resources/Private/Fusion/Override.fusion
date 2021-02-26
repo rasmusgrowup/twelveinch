@@ -1,3 +1,29 @@
 ###
 ## Add your overrides to 3rd party fusion code here
 ###
+prototype(Shel.Blog:Document.GenericBlogPage) < prototype(TwelveInch.Site:Document.Blog)
+
+prototype(Shel.Blog:Component.Teaser) < prototype(Shel.Blog:Component.Article) {
+    thumbnailWidth = 600
+    thumbnailHeight = 600
+    thumbnailAllowCropping = true
+    thumbnailAllowUpScaling = true
+
+    renderer {
+        attributes.class = 'blog-teaser'
+
+        content {
+            footer = afx`
+                <footer class="blog-teaser__footer">
+                    <a href={props.articleUri} class="blog-teaser__more" title={props.title}>
+                        Read story
+                    </a>
+                </footer>
+            `
+        }
+    }
+}
+
+prototype(Shel.Blog:Component.Article) < prototype(Neos.Neos:ContentComponent) {
+    thumbnailHeight = 980
+}

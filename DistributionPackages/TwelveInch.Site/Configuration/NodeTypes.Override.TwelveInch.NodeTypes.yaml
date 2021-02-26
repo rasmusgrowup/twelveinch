@@ -1,0 +1,3 @@
+'TwelveInch.Site.Collection:Column':
+  superTypes:
+    'Shel.Blog:Constraint.Article': true

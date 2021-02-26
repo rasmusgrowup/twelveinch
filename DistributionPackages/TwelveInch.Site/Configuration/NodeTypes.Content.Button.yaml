@@ -18,7 +18,7 @@
       ui:
         inline:
           editorOptions:
-            placeholder: '<p>Enter link...</p>'
+            placeholder: 'Enter link...'
             hyphens: true
       options:
         silhouette: text.free
