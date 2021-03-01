@@ -270,7 +270,7 @@ if (typeof element != 'undefined' && element != null) {
 	});
 }
 
-// GrooveWasher Splash Towel
+// GrooveWasher G2 32 onz bottle
 var element = document.getElementById('GW-FLUID-32');
 if (typeof element != 'undefined' && element != null) {
 	ui.createComponent('product', {
