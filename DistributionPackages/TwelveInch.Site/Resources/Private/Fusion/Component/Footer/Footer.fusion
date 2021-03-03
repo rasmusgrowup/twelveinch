@@ -26,7 +26,7 @@ prototype(TwelveInch.Site:Component.Footer) < prototype(Neos.Neos:ContentCompone
     }
 
     avatarUri = Neos.Fusion:ResourceUri {
-    path = 'resource://TwelveInch.Site/Public/Frontend/img/footer-img.png'
+    path = 'resource://TwelveInch.Site/Public/Frontend/img/footer-img-alt.jpg'
     }
 
     paymentUri = Neos.Fusion:ResourceUri {
@@ -70,7 +70,7 @@ prototype(TwelveInch.Site:Component.Footer) < prototype(Neos.Neos:ContentCompone
             </div>
             <div class="footer-about" id="footer-about">
                 <header>Elevator Pitch</header>
-                <p>Hello there! We are Twelve Inch; a small innovative family owned company with offices and production situated in the heart of Denmark. We design and produce what we think is the worlds greatest products for displaying records in the home like you do with art and paintings. Our products allow you to display your records on the wall without any frames or visible parts - unbelievable, but true! So are you interested?</p>
+                <p>Hello there! We are Twelve Inch; a small innovative family owned company with offices and production situated in the heart of Denmark. We design and produce what we think is the worlds greatest products for displaying records in the home like you do with art and paintings. Our products allow you to display your records on the wall without any frames or visible parts - unbelievable, but true!?</p>
             </div>
             <div class="newsletter-cta" id="newsletter-cta">
                 <header>Sig up for our newsletters</header>
@@ -107,7 +107,6 @@ prototype(TwelveInch.Site:Component.Footer) < prototype(Neos.Neos:ContentCompone
                     </div>
                 </div>
             </div>
-            <!-- <div class="language-selector" id="language-selector" role="button" aria-label="Select language">{props.languageMenu}<img src={props.arrowUri} alt="Marker" width="12" height="12" /></div> -->
         </div>
     </footer>
     `
