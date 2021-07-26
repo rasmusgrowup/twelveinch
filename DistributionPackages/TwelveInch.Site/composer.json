@@ -3,8 +3,8 @@
     "description": "Twelve Inch Website",
     "type": "neos-site",
     "require": {
-        "neos/neos": "~7.0.0",
-        "neos/neos-ui": "~7.0.0",
+        "neos/neos": "~7.1.0",
+        "neos/neos-ui": "~7.1.0",
         "neos/neos-setup": "*",
         "neos/fusion-afx": "^7.0",
         "neos/googleanalytics": "^3.3",
@@ -28,7 +28,9 @@
         "jonnitto/iframe": "^4.1",
         "jonnitto/googlemaps": "^3.3",
         "sitegeist/silhouettes": "^2.0",
-        "shel/blog": "^5.4"
+        "shel/blog": "^5.4",
+        "neos/site-kickstarter": "~7.1.0",
+        "flowpack/neos-frontendlogin": "^4.2"
     },
     "extra": {
         "neos": {

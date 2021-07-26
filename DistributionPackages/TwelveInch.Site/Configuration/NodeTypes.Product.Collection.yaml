@@ -1,0 +1,20 @@
+'TwelveInch.Site:Product.Collection':
+  superTypes:
+    'Neos.Neos:Content': true
+  ui:
+    label: B2B Collection
+    icon: money-bill-wave-alt
+    position: 1000
+    reloadIfChanged: true
+    inspector:
+      groups:
+        product:
+          label: 'Choose collection'
+          icon: product-hunt
+  properties:
+    id:
+      type: string
+      ui:
+        label: 'Enter collection id'
+        inspector:
+          group: product

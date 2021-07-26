@@ -15,10 +15,10 @@
         "symfony/css-selector": "^4.4",
         "neos/behat": "^6.0",
         "neos/kickstarter": "^7.0",
-        "neos/site-kickstarter": "^7.0",
+        "neos/site-kickstarter": "~7.1.0",
         "sitegeist/lazybones": "^3.0",
-        "neos/neos": "~7.0.0",
-        "neos/neos-ui": "~7.0.0"
+        "neos/neos": "~7.1.0",
+        "neos/neos-ui": "~7.1.0"
     },
     "repositories": {
         "distribution": {

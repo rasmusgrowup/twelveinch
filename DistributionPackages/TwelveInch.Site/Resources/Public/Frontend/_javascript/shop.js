@@ -1,6 +1,6 @@
 var client = ShopifyBuy.buildClient({
   domain: 'twelve-inch.myshopify.com',
-  storefrontAccessToken: '77a08eb26ac8701f5d9989b7a9eb3039', // previously apiKey, now deprecated
+  storefrontAccessToken: '77a08eb26ac8701f5d9989b7a9eb3039',
 });
 
 var ui = ShopifyBuy.UI.init(client);
@@ -456,7 +456,6 @@ if (typeof(element) != 'undefined' && element != null)
 	});
 }
 
-
 // Bundles //
 
 // Twelve Inch 4ECO Bundle
@@ -508,6 +507,45 @@ if (typeof(element) != 'undefined' && element != null)
 					priceWithDiscounts: true,
 					title: true,
 					description: true,
+					price: true,
+			    },
+				text: {
+			    	button: 'Add to cart',
+			    }
+			},
+			cart: {
+				startOpen: true,
+			},
+		}
+	});
+}
+
+// collections //
+
+// test-collection //
+var element =  document.getElementById('collection-component-1627305073927');
+if (typeof(element) != 'undefined' && element != null)
+{
+	ui.createComponent('collection', {
+		id: '267432394799',
+		node: document.getElementById('collection-component-1627305073927'),
+		moneyFormat: '€{{amount}}',
+		options: {
+			product: {
+				iframe: false,
+				buttonDestination: 'cart',
+				styles: {
+					button: {
+						"background-color": "black",
+						"color": "white",
+					}
+				},
+				contents: {
+					img: true,
+					button: false,
+					description: true,
+					buttonWithQuantity: true,
+					title: true,
 					price: true,
 			    },
 				text: {

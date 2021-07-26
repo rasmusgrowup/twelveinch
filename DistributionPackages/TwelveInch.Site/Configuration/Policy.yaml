@@ -1,0 +1,26 @@
+privilegeTargets:
+
+  'Neos\ContentRepository\Security\Authorization\Privilege\Node\ReadNodePrivilege':
+
+    'TwelveInch.Site:MembersArea':
+        # Replace <NodeIdentifier> with the node's identifier to be targeted (you can see the identifier in the "Additional info"
+        # group in the Property Inspector of the Neos Backend)
+      matcher: 'isDescendantNodeOf("08fb7185-6083-441b-a65c-6261e754b5e2")'
+
+
+roles:
+
+  'Flowpack.Neos.FrontendLogin:User':
+    privileges:
+      -
+          # Grant "frontend users" access to the "Member area"
+        privilegeTarget: 'TwelveInch.Site:MembersArea'
+        permission: GRANT
+
+
+  'Neos.Neos:Editor':
+    privileges:
+      -
+          # Grant "backend users" to access the "Member area" - Otherwise those pages would be hidden in the backend, too!
+        privilegeTarget: 'TwelveInch.Site:MembersArea'
+        permission: GRANT

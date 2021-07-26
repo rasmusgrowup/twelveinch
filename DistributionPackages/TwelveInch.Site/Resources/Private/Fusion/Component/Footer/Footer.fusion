@@ -101,7 +101,7 @@ prototype(TwelveInch.Site:Component.Footer) < prototype(Neos.Neos:ContentCompone
                     <div class="copyright" id="copyright">&copy; {props.year} Twelve Inch ApS - All rights reserved</div>
                     <div class="secondary-links">
                         <a href="/legal">Privacy</a>
-                        <!-- <a href="/B2B">B2B</a> -->
+                        <a href="/b2b">B2B</a>
                         <a href="https://drive.google.com/drive/folders/0B3EC7YEUb2MnM0oxZjBGdzI0SXM?usp=sharing" target="_blank">Press Kit</a>
                         <a href="javascript:window.Metomic('ConsentManager:show')">Manage Cookies</a>
                     </div>
