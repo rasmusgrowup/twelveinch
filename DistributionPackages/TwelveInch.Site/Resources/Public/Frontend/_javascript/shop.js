@@ -536,6 +536,9 @@ if (typeof(element) != 'undefined' && element != null)
 				buttonDestination: 'cart',
 				styles: {
 					button: {
+						":hover": {
+				          "background-color": "#ff6666"
+				        },
 						"background-color": "black",
 						"color": "white",
 					}
@@ -550,6 +553,7 @@ if (typeof(element) != 'undefined' && element != null)
 			    },
 				text: {
 			    	button: 'Add to cart',
+					outOfStock: 'Stock coming soon',
 			    }
 			},
 			cart: {
