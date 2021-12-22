@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "731a0566e2afff232a5b6a6360b17115",
+    "content-hash": "efbca4bbce217b1ab54a35f388fd4591",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -102,6 +102,59 @@
                 "helper"
             ],
             "time": "2019-09-24T08:02:17+00:00"
+        },
+        {
+            "name": "carbon/condition",
+            "version": "1.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/CarbonPackages/Carbon.Condition.git",
+                "reference": "fc91da8da5561d191f57137b779b06da5a84026b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/CarbonPackages/Carbon.Condition/zipball/fc91da8da5561d191f57137b779b06da5a84026b",
+                "reference": "fc91da8da5561d191f57137b779b06da5a84026b",
+                "shasum": ""
+            },
+            "require": {
+                "neos/neos": "~3.0 || ~4.0 || ~5.0"
+            },
+            "type": "neos-carbon",
+            "extra": {
+                "marketplace-account": "me@jonnitto.ch",
+                "installer-name": "Carbon.Condition",
+                "neos": {
+                    "package-key": "Carbon.Condition"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Carbon\\Condition\\": "Classes"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jon Uhlmann",
+                    "email": "me@jonnitto.ch",
+                    "homepage": "https://jonnitto.ch",
+                    "role": "Developer"
+                }
+            ],
+            "description": "This package provides some fusion helper for making writing conditions (`@if`) easier.",
+            "keywords": [
+                "FUSION",
+                "Neos",
+                "carbon",
+                "condition",
+                "flow",
+                "helper"
+            ],
+            "time": "2019-09-23T07:56:44+00:00"
         },
         {
             "name": "carbon/eel",
@@ -263,6 +316,68 @@
                 "link"
             ],
             "time": "2019-09-23T06:19:17+00:00"
+        },
+        {
+            "name": "carbon/notification",
+            "version": "2.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/CarbonPackages/Carbon.Notification.git",
+                "reference": "498e4c9368a6251c0a6d0032c8da022c024823dc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/CarbonPackages/Carbon.Notification/zipball/498e4c9368a6251c0a6d0032c8da022c024823dc",
+                "reference": "498e4c9368a6251c0a6d0032c8da022c024823dc",
+                "shasum": ""
+            },
+            "require": {
+                "neos/fusion": "^4.2 || ^5.0"
+            },
+            "type": "neos-carbon",
+            "extra": {
+                "marketplace-account": "me@jonnitto.ch",
+                "installer-name": "Carbon.Notification",
+                "neos": {
+                    "package-key": "Carbon.Notification"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Carbon\\Notification\\": "Classes"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Jon Uhlmann",
+                    "email": "me@jonnitto.ch",
+                    "homepage": "https://jonnitto.ch",
+                    "role": "Developer"
+                }
+            ],
+            "description": "This package provides a tiny fusion helper for notifications.",
+            "keywords": [
+                "FUSION",
+                "Neos",
+                "carbon",
+                "flow",
+                "helper"
+            ],
+            "funding": [
+                {
+                    "url": "https://www.paypal.me/Jonnitto/20eur",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/jonnitto",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-04-22T18:45:38+00:00"
         },
         {
             "name": "codeq/unicodenormalizer",
@@ -1760,6 +1875,7 @@
                 "reflection",
                 "static"
             ],
+            "abandoned": "roave/better-reflection",
             "time": "2020-03-27T11:06:43+00:00"
         },
         {
@@ -2393,6 +2509,209 @@
                 "image processing"
             ],
             "time": "2019-12-04T09:55:33+00:00"
+        },
+        {
+            "name": "jonnitto/googlemaps",
+            "version": "3.3.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jonnitto/Jonnitto.GoogleMaps.git",
+                "reference": "f2bc591b791b24e9ee536a65abcfe12dc15da9e0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jonnitto/Jonnitto.GoogleMaps/zipball/f2bc591b791b24e9ee536a65abcfe12dc15da9e0",
+                "reference": "f2bc591b791b24e9ee536a65abcfe12dc15da9e0",
+                "shasum": ""
+            },
+            "require": {
+                "carbon/condition": "^1.1",
+                "carbon/notification": "^1.2 || ^2.0",
+                "neos/neos": "^4.1 || ^5.0"
+            },
+            "type": "neos-plugin",
+            "extra": {
+                "marketplace-account": "me@jonnitto.ch",
+                "installer-name": "Jonnitto.GoogleMaps",
+                "neos": {
+                    "package-key": "Jonnitto.GoogleMaps"
+                },
+                "applied-flow-migrations": [
+                    "TYPO3.FLOW3-201201261636",
+                    "TYPO3.Fluid-201205031303",
+                    "TYPO3.FLOW3-201205292145",
+                    "TYPO3.FLOW3-201206271128",
+                    "TYPO3.FLOW3-201209201112",
+                    "TYPO3.Flow-201209251426",
+                    "TYPO3.Flow-201211151101",
+                    "TYPO3.Flow-201212051340",
+                    "TYPO3.TypoScript-130516234520",
+                    "TYPO3.TypoScript-130516235550",
+                    "TYPO3.TYPO3CR-130523180140",
+                    "TYPO3.Neos.NodeTypes-201309111655",
+                    "TYPO3.Flow-201310031523",
+                    "TYPO3.Flow-201405111147",
+                    "TYPO3.Neos-201407061038",
+                    "TYPO3.Neos-201409071922",
+                    "TYPO3.TYPO3CR-140911160326",
+                    "TYPO3.Neos-201410010000",
+                    "TYPO3.TYPO3CR-141101082142",
+                    "TYPO3.Neos-20141113115300",
+                    "TYPO3.Fluid-20141113120800",
+                    "TYPO3.Flow-20141113121400",
+                    "TYPO3.Fluid-20141121091700",
+                    "TYPO3.Neos-20141218134700",
+                    "TYPO3.Fluid-20150214130800",
+                    "TYPO3.Neos-20150303231600",
+                    "TYPO3.TYPO3CR-20150510103823",
+                    "TYPO3.Flow-20151113161300",
+                    "TYPO3.Form-20160601101500",
+                    "TYPO3.Flow-20161115140400",
+                    "TYPO3.Flow-20161115140430",
+                    "Neos.Flow-20161124204700",
+                    "Neos.Flow-20161124204701",
+                    "Neos.Twitter.Bootstrap-20161124204912",
+                    "Neos.Form-20161124205254",
+                    "Neos.Flow-20161124224015",
+                    "Neos.Party-20161124225257",
+                    "Neos.Eel-20161124230101",
+                    "Neos.Kickstart-20161124230102",
+                    "Neos.Setup-20161124230842",
+                    "Neos.Imagine-20161124231742",
+                    "Neos.Media-20161124233100",
+                    "Neos.NodeTypes-20161125002300",
+                    "Neos.SiteKickstarter-20161125002311",
+                    "Neos.Neos-20161125002322",
+                    "Neos.ContentRepository-20161125012000",
+                    "Neos.Fusion-20161125013710",
+                    "Neos.Setup-20161125014759",
+                    "Neos.SiteKickstarter-20161125095901",
+                    "Neos.Fusion-20161125104701",
+                    "Neos.NodeTypes-20161125104800",
+                    "Neos.Neos-20161125104802",
+                    "Neos.Kickstarter-20161125110814",
+                    "Neos.Neos-20161125122412",
+                    "Neos.Flow-20161125124112",
+                    "TYPO3.FluidAdaptor-20161130112935",
+                    "Neos.Fusion-20161201202543",
+                    "Neos.Neos-20161201222211",
+                    "Neos.Fusion-20161202215034",
+                    "Neos.Fusion-20161219092345",
+                    "Neos.ContentRepository-20161219093512",
+                    "Neos.Media-20161219094126",
+                    "Neos.Neos-20161219094403",
+                    "Neos.Neos-20161219122512",
+                    "Neos.Fusion-20161219130100",
+                    "Neos.Neos-20161220163741",
+                    "Neos.Neos-20170115114620",
+                    "Neos.Fusion-20170120013047",
+                    "Neos.Flow-20170125103800",
+                    "Neos.Seo-20170127154600",
+                    "Neos.Flow-20170127183102"
+                ]
+            },
+            "autoload": {
+                "psr-4": {
+                    "Jonnitto\\GoogleMaps\\": "Classes"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jon Uhlmann",
+                    "email": "me@jonnitto.ch",
+                    "homepage": "https://twitter.com/jonnitto",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Google Maps as Content Element",
+            "homepage": "https://github.com/jonnitto/Jonnitto.GoogleMaps",
+            "keywords": [
+                "Neos",
+                "contentelement",
+                "flow",
+                "googlemaps",
+                "map"
+            ],
+            "funding": [
+                {
+                    "url": "https://www.paypal.me/Jonnitto/20eur",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/jonnitto",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-08-21T23:12:56+00:00"
+        },
+        {
+            "name": "jonnitto/iframe",
+            "version": "4.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jonnitto/Jonnitto.iFrame.git",
+                "reference": "353f680258705805f0c73a3a0a05cdb1dd419bda"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jonnitto/Jonnitto.iFrame/zipball/353f680258705805f0c73a3a0a05cdb1dd419bda",
+                "reference": "353f680258705805f0c73a3a0a05cdb1dd419bda",
+                "shasum": ""
+            },
+            "require": {
+                "carbon/eel": "^1.7",
+                "carbon/includeassets": "^3.5 || ^4.0",
+                "carbon/notification": "^1.2 || ^2.0",
+                "neos/fusion-afx": "^1.2",
+                "neos/neos": "~4.2 || ~5.0"
+            },
+            "type": "neos-plugin",
+            "extra": {
+                "marketplace-account": "me@jonnitto.ch",
+                "installer-name": "Jonnitto.iFrame",
+                "neos": {
+                    "package-key": "Jonnitto.iFrame"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Jonnitto\\iFrame\\": "Classes"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Jon Uhlmann",
+                    "email": "me@jonnitto.ch",
+                    "homepage": "https://twitter.com/jonnitto",
+                    "role": "Developer"
+                }
+            ],
+            "description": "iFrames for Neos CMS",
+            "keywords": [
+                "Neos",
+                "contentelement",
+                "flow",
+                "iframe"
+            ],
+            "funding": [
+                {
+                    "url": "https://www.paypal.me/Jonnitto/20eur",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/jonnitto",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-08-22T14:37:23+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -6512,6 +6831,81 @@
             "time": "2019-09-17T06:45:36+00:00"
         },
         {
+            "name": "sitegeist/kaleidoscope",
+            "version": "v5.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sitegeist/Sitegeist.Kaleidoscope.git",
+                "reference": "948e4573fa3959c2065e7d67b830339ca7acb8a4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sitegeist/Sitegeist.Kaleidoscope/zipball/948e4573fa3959c2065e7d67b830339ca7acb8a4",
+                "reference": "948e4573fa3959c2065e7d67b830339ca7acb8a4",
+                "shasum": ""
+            },
+            "require": {
+                "neos/fusion-afx": "^1.2 || dev-master",
+                "neos/imagine": "*",
+                "neos/media": "*",
+                "neos/neos": "^4.3 || ^5.0 || dev-master"
+            },
+            "type": "neos-package",
+            "extra": {
+                "neos": {
+                    "package-key": "Sitegeist.Kaleidoscope"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Sitegeist\\Kaleidoscope\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "description": "Responsive-images for Neos",
+            "time": "2020-08-15T14:52:38+00:00"
+        },
+        {
+            "name": "sitegeist/lazybones",
+            "version": "v2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sitegeist/Sitegeist.Lazybones.git",
+                "reference": "b4b9302423ed1979b2107e5cf598fa4087d26609"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sitegeist/Sitegeist.Lazybones/zipball/b4b9302423ed1979b2107e5cf598fa4087d26609",
+                "reference": "b4b9302423ed1979b2107e5cf598fa4087d26609",
+                "shasum": ""
+            },
+            "require": {
+                "neos/fusion-afx": "^1.2",
+                "neos/neos": "^4.3 || ^5.0 || dev-master",
+                "sitegeist/kaleidoscope": "^4.0 || ^5.0 || dev-master"
+            },
+            "type": "neos-package",
+            "extra": {
+                "neos": {
+                    "package-key": "Sitegeist.Lazybones"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Sitegeist\\Lazybones\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "description": "Lazy loading for sitegeist/kaleidoscope",
+            "time": "2019-10-29T14:02:39+00:00"
+        },
+        {
             "name": "sitegeist/silhouettes",
             "version": "v1.1.0",
             "source": {
@@ -7398,16 +7792,16 @@
         },
         {
             "name": "typo3fluid/fluid",
-            "version": "2.6.9",
+            "version": "2.6.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3/Fluid.git",
-                "reference": "ba05e165bb4fd1302edf3f0280a149992e8c79be"
+                "reference": "f20db4e74cf9803c6cffca2ed2f03e1b0b89d0dc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3/Fluid/zipball/ba05e165bb4fd1302edf3f0280a149992e8c79be",
-                "reference": "ba05e165bb4fd1302edf3f0280a149992e8c79be",
+                "url": "https://api.github.com/repos/TYPO3/Fluid/zipball/f20db4e74cf9803c6cffca2ed2f03e1b0b89d0dc",
+                "reference": "f20db4e74cf9803c6cffca2ed2f03e1b0b89d0dc",
                 "shasum": ""
             },
             "require": {
@@ -7433,7 +7827,7 @@
                 "LGPL-3.0-or-later"
             ],
             "description": "The TYPO3 Fluid template rendering engine",
-            "time": "2020-02-03T10:46:43+00:00"
+            "time": "2020-11-16T21:38:14+00:00"
         },
         {
             "name": "zendframework/zend-code",
