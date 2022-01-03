@@ -444,35 +444,6 @@ if (typeof element != 'undefined' && element != null) {
 	});
 }
 
-// GrooveWasher G-SONIC
-var element = document.getElementById('GW-SONIC');
-if (typeof element != 'undefined' && element != null) {
-	ui.createComponent('product', {
-		id: '6834020057135',
-		node: document.getElementById('GW-SONIC'),
-		moneyFormat: '€{{amount}}',
-		options: {
-			product: {
-				iframe: false,
-				buttonDestination: 'cart',
-				contents: {
-					img: false,
-					button: false,
-					buttonWithQuantity: true,
-					title: false,
-					price: true
-				},
-				text: {
-					button: 'Add to cart'
-				}
-			},
-			cart: {
-				startOpen: true
-			}
-		}
-	});
-}
-
 // Bundles //
 
 // Twelve Inch 4ECO Bundle
