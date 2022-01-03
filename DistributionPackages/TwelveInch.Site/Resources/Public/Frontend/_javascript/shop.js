@@ -396,6 +396,36 @@ if (typeof(element) != 'undefined' && element != null)
 	});
 }
 
+// GrooveWasher Record & Stylus
+var element =  document.getElementById('GW-COM');
+if (typeof(element) != 'undefined' && element != null)
+{
+	ui.createComponent('product', {
+		id: '6841143001135',
+		node: document.getElementById('GW-COM'),
+		moneyFormat: '€{{amount}}',
+		options: {
+			product: {
+				iframe: false,
+				buttonDestination: 'cart',
+				contents: {
+					img: false,
+					button: false,
+					buttonWithQuantity: true,
+					title: false,
+					price: true,
+			    },
+				text: {
+			    	button: 'Add to cart',
+			    }
+			},
+			cart: {
+				startOpen: true,
+			},
+		}
+	});
+}
+
 // GrooveWasher Big Bundle
 var element =  document.getElementById('GWBIGB');
 if (typeof(element) != 'undefined' && element != null)
