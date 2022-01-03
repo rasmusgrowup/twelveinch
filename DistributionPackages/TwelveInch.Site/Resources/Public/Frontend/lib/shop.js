@@ -387,11 +387,11 @@ if (typeof element != 'undefined' && element != null) {
 }
 
 // GrooveWasher Record & Stylus
-var element = document.getElementById('GW-COM');
+var element = document.getElementById('GW-RSC');
 if (typeof element != 'undefined' && element != null) {
 	ui.createComponent('product', {
 		id: '6841143001135',
-		node: document.getElementById('GW-COM'),
+		node: document.getElementById('GW-RSC'),
 		moneyFormat: '€{{amount}}',
 		options: {
 			product: {
